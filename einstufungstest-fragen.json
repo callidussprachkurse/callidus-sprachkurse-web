@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "titel": "Italienisch-Einstufungstest",
+    "hinweis": "24 Fragen, ansteigend von A1 bis C2. Keine Zeitbegrenzung. Bitte ohne Hilfsmittel.",
+    "scoring": {
+      "order": ["A1", "A2", "B1", "B2", "C1", "C2"],
+      "proStufe": 4,
+      "schwelle": 3,
+      "kommentar": "Streng/konservativ: Stufe gilt ab 3/4 als bestanden; Ergebnis = höchste Stufe, bei der ALLE darunter bestanden sind (durchgehende Beherrschung)."
+    },
+    "niveaus": {
+      "A1": "Einsteiger – erste Wörter und Sätze für den Alltag.",
+      "A2": "Grundlagen – einfache, vertraute Situationen.",
+      "B1": "Selbständig – Alltag, Reisen, vertraute Themen.",
+      "B2": "Souverän – komplexere Themen, klar und flüssig.",
+      "C1": "Fortgeschritten – anspruchsvolle Texte, sehr flüssig.",
+      "C2": "Meisterschaft – nahezu muttersprachlich."
+    }
+  },
+  "fragen": [
+    {"f": "Ciao, ___ ti chiami?", "o": ["Come", "Dove", "Quando", "Chi"], "r": 0, "n": "A1", "e": "Nach dem Namen fragt man mit „come“: „Come ti chiami?“ = „Wie heißt du?“"},
+    {"f": "Io ___ uno studente italiano.", "o": ["sei", "sono", "è", "hai"], "r": 1, "n": "A1", "e": "1. Person Singular von „essere“ (sein): „io sono“."},
+    {"f": "In casa ho ___ cane e ___ gatto.", "o": ["una – uno", "un – un", "uno – una", "un' – un"], "r": 1, "n": "A1", "e": "„cane“ und „gatto“ sind männlich → unbestimmter Artikel „un“."},
+    {"f": "— Che ore sono? — ___ le tre.", "o": ["È", "Ho", "Sono", "Siamo"], "r": 2, "n": "A1", "e": "Uhrzeit ab 2 Uhr steht im Plural: „Sono le tre“."},
+    {"f": "Ieri ___ al cinema con Maria.", "o": ["vado", "andrò", "sono andato", "vada"], "r": 2, "n": "A2", "e": "Vergangenheit (passato prossimo) von „andare“ mit „essere“: „sono andato“."},
+    {"f": "Stamattina Paolo ___ molto presto.", "o": ["si è svegliato", "ha svegliato", "è svegliato", "in"], "r": 0, "n": "A2", "e": "Reflexives Verb „svegliarsi“ (aufwachen) im passato prossimo: „si è svegliato“."},
+    {"f": "Vado ___ supermercato a piedi.", "o": ["alla", "al", "nel", "del"], "r": 1, "n": "A2", "e": "„a“ + „il“ verschmelzen zu „al“: „al supermercato“."},
+    {"f": "Questo libro è ___ interessante ___ quello.", "o": ["molto – di", "tanto – che", "più – di", "più – che"], "r": 2, "n": "A2", "e": "Vergleich „interessanter als“: „più … di“."},
+    {"f": "Mentre ___, è suonato il telefono.", "o": ["ho cucinato", "cucinavo", "cucinerò", "cucini"], "r": 1, "n": "B1", "e": "Andauernde Handlung in der Vergangenheit → imperfetto: „cucinavo“."},
+    {"f": "Se ho tempo, domani ti ___.", "o": ["chiamavo", "chiamerei", "chiamerò", "chiami"], "r": 2, "n": "B1", "e": "Realer Bedingungssatz mit Zukunft: „ti chiamerò“."},
+    {"f": "Quel vestito mi piace molto: ___ compro subito.", "o": ["lo", "li", "le", "gli"], "r": 0, "n": "B1", "e": "„il vestito“ (männl. Singular) → direktes Objektpronomen „lo“."},
+    {"f": "Ho saputo ___ ti sei laureato. Complimenti!", "o": ["di", "che", "come", "se"], "r": 1, "n": "B1", "e": "„sapere che …“ („dass“) leitet den Nebensatz ein."},
+    {"f": "Penso che lui ___ ragione.", "o": ["ha", "avrà", "abbia", "aveva"], "r": 2, "n": "B2", "e": "Nach „penso che“ steht der Konjunktiv (congiuntivo): „abbia“."},
+    {"f": "Se ___ più tempo, viaggerei molto di più.", "o": ["avrei", "avessi", "ho", "avrò"], "r": 1, "n": "B2", "e": "Irrealer Bedingungssatz: congiuntivo imperfetto „avessi“ + condizionale."},
+    {"f": "Il libro ___ ti ho parlato è bellissimo.", "o": ["che", "cui", "di cui", "il quale"], "r": 2, "n": "B2", "e": "Es heißt „parlare di“ → Relativpronomen „di cui“."},
+    {"f": "Quando sono arrivato, la riunione ___ già ___.", "o": ["è – iniziata", "aveva – iniziato", "fu – iniziata", "era – iniziata"], "r": 3, "n": "B2", "e": "Vorvergangenheit (trapassato prossimo) mit „essere“: „era già iniziata“."},
+    {"f": "Vorrei che tu mi ___ prima di decidere.", "o": ["avvisavi", "avvisassi", "hai avvisato", "avviserai"], "r": 1, "n": "C1", "e": "Nach „vorrei che“ steht der congiuntivo imperfetto: „avvisassi“."},
+    {"f": "Nonostante ___ molto stanco, ha continuato a lavorare.", "o": ["era", "fosse", "sarebbe", "è"], "r": 1, "n": "C1", "e": "„nonostante“ (obwohl) verlangt den Konjunktiv: „fosse“."},
+    {"f": "Non appena ___ la notizia, lo chiamai subito.", "o": ["sapevo", "ho saputo", "seppi", "saprò"], "r": 2, "n": "C1", "e": "Abgeschlossene Handlung (passato remoto) von „sapere“: „seppi“ (erfuhr)."},
+    {"f": "Gli ho creduto e ci sono cascato ___.", "o": ["in pieno", "di pieno", "al pieno", "per pieno"], "r": 0, "n": "C1", "e": "Redewendung „cascarci in pieno“ = voll darauf hereinfallen."},
+    {"f": "Fosse stato per me, ___ diversamente.", "o": ["agirei", "avrei agito", "ho agito", "agissi"], "r": 1, "n": "C2", "e": "Irreale Vergangenheit: „avrei agito“ (condizionale passato)."},
+    {"f": "Per quanto ___, non riuscì a convincerli.", "o": ["si sforzava", "si sforzò", "si sforzasse", "si sforza"], "r": 2, "n": "C2", "e": "„per quanto“ (so sehr auch) verlangt den Konjunktiv: „si sforzasse“."},
+    {"f": "Non vedo l'ora che ___ le vacanze!", "o": ["arrivano", "arriveranno", "arrivino", "arrivavano"], "r": 2, "n": "C2", "e": "„non vedo l'ora che“ + congiuntivo presente: „arrivino“."},
+    {"f": "È una promessa che lascia ___ il tempo che trova.", "o": ["un", "del", "il", "—"], "r": 2, "n": "C2", "e": "Feste Redewendung „lasciare il tempo che trova“ (nichts bewirken)."}
+  ]
+}

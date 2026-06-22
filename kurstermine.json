@@ -1,0 +1,15 @@
+{
+  "_hinweis": "Verfügbare Gruppen-Kurstermine (Slots) für die Anmeldung. Vom Team pflegbar. Pro Slot: kurs = Kurs-Code (A1, A2, B1, B2, C1, C2, KULTUR, ONLINE, KINDER, INTENSIV, SOMMER), titel = Teilkurs/Anzeige, tage, zeit, start (TT.MM.JJJJ), plaetze_frei (0 = ausgebucht), ort. Slot entfernen = Zeile löschen. SOP: handbuch/02-sprachkurse-hamburg/02-04-kurstermine-pflegen.md",
+  "slots": [
+    { "id": "a1-1-mi-0209", "kurs": "A1", "titel": "A1.1", "tage": "Mittwoch", "zeit": "18:00–20:00", "start": "02.09.2026", "plaetze_frei": 8, "ort": "Italienisches Kulturinstitut Hamburg" },
+    { "id": "a1-1-fr-online-0409", "kurs": "A1", "titel": "A1.1 · Online", "tage": "Freitag", "zeit": "18:00–20:00", "start": "04.09.2026", "plaetze_frei": 6, "ort": "Online (Video)" },
+    { "id": "a1-2-mi-0209", "kurs": "A1", "titel": "A1.2", "tage": "Mittwoch", "zeit": "15:00–17:00", "start": "02.09.2026", "plaetze_frei": 8, "ort": "Italienisches Kulturinstitut Hamburg" },
+    { "id": "a2-1-do-0309", "kurs": "A2", "titel": "A2.1", "tage": "Donnerstag", "zeit": "18:00–20:00", "start": "03.09.2026", "plaetze_frei": 8, "ort": "Italienisches Kulturinstitut Hamburg" },
+    { "id": "b1-1-do-0309", "kurs": "B1", "titel": "B1.1", "tage": "Donnerstag", "zeit": "18:00–20:00", "start": "03.09.2026", "plaetze_frei": 8, "ort": "Italienisches Kulturinstitut Hamburg" },
+    { "id": "b1-2-do-0309", "kurs": "B1", "titel": "B1.2", "tage": "Donnerstag", "zeit": "15:00–17:00", "start": "03.09.2026", "plaetze_frei": 8, "ort": "Italienisches Kulturinstitut Hamburg" },
+    { "id": "b1-2-mi-online-0209", "kurs": "B1", "titel": "B1.2 · Online", "tage": "Mittwoch", "zeit": "16:00–18:00", "start": "02.09.2026", "plaetze_frei": 6, "ort": "Online (Video)" },
+    { "id": "konv-mi-0209", "kurs": "KONV", "titel": "Conversazione", "tage": "Mittwoch", "zeit": "17:00–18:00", "start": "02.09.2026", "plaetze_frei": 4, "ort": "Italienisches Kulturinstitut Hamburg" },
+    { "id": "konv-do-0309", "kurs": "KONV", "titel": "Conversazione", "tage": "Donnerstag", "zeit": "17:00–18:00", "start": "03.09.2026", "plaetze_frei": 4, "ort": "Italienisches Kulturinstitut Hamburg" },
+    { "id": "kinder-mi-0209", "kurs": "KINDER", "titel": "Kinderkurs", "tage": "Mittwoch", "zeit": "17:00–18:00", "start": "02.09.2026", "plaetze_frei": 6, "ort": "Italienisches Kulturinstitut Hamburg" }
+  ]
+}
