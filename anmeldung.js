@@ -806,11 +806,11 @@
     var d = st.data, c = COURSES[st.kurs] || {};
     var anschrift = [d.strasse, ((d.plz||"")+" "+(d.ort||"")).trim()].filter(Boolean).join("\n");
     var termin = st.slot
-      ? (st.slot.titel+" · "+st.slot.tage+" · "+st.slot.zeit+" · ab "+st.slot.start+(st.slot.warteliste?" (WARTELISTE)":""))
+      ? (st.slot.titel+" · "+tagEN(st.slot.tage)+" · "+st.slot.zeit+" · "+(CALLIDUS_LANG==="en"?"from ":"ab ")+st.slot.start+(st.slot.warteliste?(CALLIDUS_LANG==="en"?" (WAITING LIST)":" (WARTELISTE)"):""))
       : (st.wunsch || "-");
     var nachricht = "[Online-Anmeldung Website]\n"
       + "LANG: "+CALLIDUS_LANG.toUpperCase()+"\n"
-      + "Kurs: "+(c.label||st.kurs)+" ("+(c.preis||"")+")\n"
+      + "Kurs: "+kursLabel(st.kurs)+" ("+(c.preis||"")+")\n"
       + "Form: "+(st.branch==="einzel"?"Einzelunterricht":"Gruppe")+"\n"
       + "Termin/Wunsch: "+termin+"\n"
       + "Vorkenntnisse: "+(d.vorkenntnisse||"-")+"\n"
