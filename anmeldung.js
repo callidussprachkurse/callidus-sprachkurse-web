@@ -809,6 +809,7 @@
       ? (st.slot.titel+" · "+st.slot.tage+" · "+st.slot.zeit+" · ab "+st.slot.start+(st.slot.warteliste?" (WARTELISTE)":""))
       : (st.wunsch || "-");
     var nachricht = "[Online-Anmeldung Website]\n"
+      + "LANG: "+CALLIDUS_LANG.toUpperCase()+"\n"
       + "Kurs: "+(c.label||st.kurs)+" ("+(c.preis||"")+")\n"
       + "Form: "+(st.branch==="einzel"?"Einzelunterricht":"Gruppe")+"\n"
       + "Termin/Wunsch: "+termin+"\n"

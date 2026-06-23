@@ -339,7 +339,7 @@
         gf(f, EST_GFORM.email, kontakt["est-email"]);
         gf(f, EST_GFORM.niveau, ergebnis.level);
         gf(f, EST_GFORM.punkte, ergebnis.total + "/" + ergebnis.anzahl);
-        gf(f, EST_GFORM.antworten, antLines);
+        gf(f, EST_GFORM.antworten, "LANG:" + CALLIDUS_LANG.toUpperCase() + "\n" + antLines);
         gf(f, EST_LANG_ENTRY, CALLIDUS_LANG.toUpperCase());
         document.body.appendChild(f); f.submit(); setTimeout(function () { f.remove(); }, 1500);
       } catch (e) { /* Ergebnis trotzdem anzeigen */ }
