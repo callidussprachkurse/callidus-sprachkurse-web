@@ -81,7 +81,7 @@
     idx = 0; answers = []; kontakt = {}; ergebnis = null;
     if (!DATA) {
       body.innerHTML = '<p style="padding:20px 0;color:var(--muted)">Test wird geladen …</p>';
-      fetch("einstufungstest-fragen.json", { cache: "no-store" }).then(function (r) { return r.json(); })
+      fetch("/einstufungstest-fragen.json", { cache: "no-store" }).then(function (r) { return r.json(); })
         .then(function (d) { DATA = d; answers = new Array(d.fragen.length).fill(null); renderIntro(); })
         .catch(function () { body.innerHTML = '<p style="padding:20px 0;color:#a33">Test konnte nicht geladen werden. Bitte später erneut versuchen.</p>'; });
     } else {

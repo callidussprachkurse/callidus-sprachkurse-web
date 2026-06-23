@@ -616,7 +616,7 @@
   }
 
   function ladeSlots() {
-    return fetch("kurstermine.json", { cache: "no-store" })
+    return fetch("/kurstermine.json", { cache: "no-store" })
       .then(function (r) { return r.json(); })
       .then(function (j) { slotsData = j; })
       .catch(function () { slotsData = { slots: [] }; });
