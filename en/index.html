@@ -341,13 +341,21 @@ footer{background:var(--ink);color:#9a917f;text-align:center;padding:54px 40px;f
 footer .wm{color:#E7DFCD;font-family:'Cormorant Garamond',serif;font-size:24px;letter-spacing:.16em;
   display:block;margin-bottom:14px}
 footer a{color:#9a917f;text-decoration:none}
-.footer-logos{display:flex;gap:26px;justify-content:center;align-items:center;flex-wrap:wrap;margin:0 auto 24px}
-.footer-logo{display:inline-flex;align-items:center;justify-content:center;width:220px;height:220px;border-radius:50%;background:#fff;margin:0;box-shadow:0 12px 34px rgba(0,0,0,.30)}
-.footer-logo-link{text-decoration:none;transition:transform .2s}
-.footer-logo-link:hover{transform:translateY(-4px)}
+.footer-logos{margin:0 auto 14px}
+.logo-stage{position:relative;width:460px;max-width:94vw;height:430px;margin:0 auto}
+.footer-logo{display:inline-flex;align-items:center;justify-content:center;width:220px;height:220px;border-radius:50%;background:#fff;box-shadow:0 12px 34px rgba(0,0,0,.30)}
+.callidus-medallion{position:absolute;left:50%;bottom:0;margin:0;transform:translateX(-50%)}
+.footer-logo-link{text-decoration:none}
+.iic-orbit{position:absolute;left:50%;bottom:110px;width:0;height:0;animation:iic-swing 10s ease-in-out infinite}
+.iic-mount{position:absolute;left:0;bottom:162px;transform:translateX(-50%)}
+.iic-medallion{width:147px;height:147px;animation:iic-upright 10s ease-in-out infinite;will-change:transform;box-shadow:0 10px 26px rgba(0,0,0,.34)}
+.iic-medallion img{width:112px;max-width:none}
+@keyframes iic-swing{0%{transform:rotate(-35deg)}50%{transform:rotate(35deg)}100%{transform:rotate(-35deg)}}
+@keyframes iic-upright{0%{transform:rotate(35deg)}50%{transform:rotate(-35deg)}100%{transform:rotate(35deg)}}
+@media(prefers-reduced-motion:reduce){.iic-orbit{animation:none;transform:rotate(0)}.iic-medallion{animation:none}}
 .footer-logo img{width:168px;max-width:78%;height:auto;display:block}
 .footer-links{font-size:13px;letter-spacing:.04em}
-@media(max-width:600px){.footer-logo{width:180px;height:180px}.footer-logo img{width:138px}}
+@media(max-width:600px){.logo-stage{transform:scale(.64);transform-origin:top center;margin-bottom:-155px}}
 
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
 .reveal.in{opacity:1;transform:none}
@@ -693,8 +701,10 @@ footer a{color:#9a917f;text-decoration:none}
 
 <footer>
   <div class="footer-logos">
-    <div class="footer-logo"><img src="/logo-callidus-italiano.png" alt="CALLIDUS goes Italiano — on behalf of the Italian Cultural Institute Hamburg"></div>
-    <a class="footer-logo footer-logo-link" href="https://iicamburgo.esteri.it/de/" target="_blank" rel="noopener" aria-label="Istituto Italiano di Cultura Hamburg — open website (new tab)"><img src="/logo-iic-hamburg.jpg?v=20260624" alt="Istituto Italiano di Cultura Hamburg"></a>
+    <div class="logo-stage">
+      <div class="footer-logo callidus-medallion"><img src="/logo-callidus-italiano.png" alt="CALLIDUS goes Italiano — on behalf of the Italian Cultural Institute Hamburg"></div>
+      <div class="iic-orbit"><div class="iic-mount"><a class="footer-logo footer-logo-link iic-medallion" href="https://iicamburgo.esteri.it/de/" target="_blank" rel="noopener" aria-label="Istituto Italiano di Cultura Hamburg — open website (new tab)"><img src="/logo-iic-hamburg.jpg?v=20260624" alt="Istituto Italiano di Cultura Hamburg"></a></div></div>
+    </div>
   </div>
   <div class="footer-links"><a href="#" id="imp-link">Imprint</a> · <a href="#" id="ds-link">Privacy Policy</a> · <a href="#" id="wr-link">Right of Withdrawal</a></div>
 </footer>
