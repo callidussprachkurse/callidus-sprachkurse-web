@@ -109,7 +109,7 @@
       coupon_banner_b: " € Willkommens-Rabatt</b> aus Ihrem Einstufungstest wird verrechnet (Code <b>",
       coupon_banner_c: "</b>).",
       kind_hinweis: "<b>Hinweis:</b> Bei minderjährigen Teilnehmern erfolgt die Anmeldung durch eine/n Erziehungsberechtigte/n.",
-      consent_a: "Ich habe die <a href=\"agb-datenschutz.pdf\" target=\"_blank\" rel=\"noopener\">AGB und Datenschutzerklärung</a> gelesen und willige in die Verarbeitung meiner Daten zur Bearbeitung meiner Anmeldung ein. *",
+      consent_a: "Ich habe die <a href=\"agb-datenschutz.pdf\" target=\"_blank\" rel=\"noopener\">AGB</a>, die <a href=\"#\" id=\"anm-ds-link\">Datenschutzerklärung</a> und die <a href=\"#\" id=\"anm-wr-link2\">Widerrufsbelehrung</a> gelesen und willige in die Verarbeitung meiner Daten zur Bearbeitung meiner Anmeldung ein. *",
       consent_err: "Bitte bestätigen Sie die Einwilligung.",
       widerruf_a: "Falls mein Kurs innerhalb der 14-tägigen Widerrufsfrist beginnt: Ich verlange ausdrücklich den Beginn vor Ablauf der Frist und weiß, dass ich bei einem Widerruf für bereits erbrachte Leistungen anteilig Wertersatz schulde. <a href=\"#\" id=\"anm-wr-link\">Widerrufsbelehrung</a> (optional)",
       // Danke
@@ -223,7 +223,7 @@
       coupon_banner_b: " welcome discount</b> from your placement test will be applied (code <b>",
       coupon_banner_c: "</b>).",
       kind_hinweis: "<b>Note:</b> For minors, registration is completed by a parent or legal guardian.",
-      consent_a: "I have read the <a href=\"agb-datenschutz.pdf\" target=\"_blank\" rel=\"noopener\">terms and conditions and privacy policy</a> and consent to the processing of my data for the purpose of handling my registration. *",
+      consent_a: "I have read the <a href=\"agb-datenschutz.pdf\" target=\"_blank\" rel=\"noopener\">terms and conditions</a>, the <a href=\"#\" id=\"anm-ds-link\">privacy policy</a> and the <a href=\"#\" id=\"anm-wr-link2\">cancellation policy</a> and consent to the processing of my data for the purpose of handling my registration. *",
       consent_err: "Please confirm your consent.",
       widerruf_a: "If my course begins within the 14-day cancellation period: I expressly request that it start before the period expires and I am aware that, in the event of cancellation, I owe proportionate compensation for services already provided. <a href=\"#\" id=\"anm-wr-link\">Cancellation policy</a> (optional)",
       // Thank you
@@ -683,6 +683,11 @@
       '<input type="checkbox" id="anm-consent"> ' +
       '<span>' + t("consent_a") + '</span>';
     elBody.appendChild(consent);
+    function _openLegal(id){ var ov=document.getElementById(id); if(ov){ ov.style.zIndex="400"; ov.classList.add("open"); } }
+    var cdl = consent.querySelector("#anm-ds-link");
+    if (cdl) cdl.addEventListener("click", function(e){ e.preventDefault(); _openLegal("ds-overlay"); });
+    var cwl = consent.querySelector("#anm-wr-link2");
+    if (cwl) cwl.addEventListener("click", function(e){ e.preventDefault(); _openLegal("wr-overlay"); });
     var ph = el("div", "anm-errmsg"); ph.id = "anm-consent-err"; ph.style.display = "none"; ph.textContent = t("consent_err");
     elBody.appendChild(ph);
 
@@ -693,7 +698,7 @@
     elBody.appendChild(wr);
     wr.querySelector("#anm-widerruf").addEventListener("change", function(){ d._vorzeitig = this.checked; });
     var wl = wr.querySelector("#anm-wr-link");
-    if (wl) wl.addEventListener("click", function(e){ e.preventDefault(); var ov=document.getElementById("wr-overlay"); if(ov){ ov.classList.add("open"); } });
+    if (wl) wl.addEventListener("click", function(e){ e.preventDefault(); _openLegal("wr-overlay"); });
   }
 
   function r_danke() {
