@@ -272,6 +272,9 @@ section.sec{padding:100px 0;border-bottom:.5px solid var(--line)}
 .niv .tip .sub{display:block;margin-top:12px;padding-top:12px;border-top:.5px solid rgba(168,129,74,.35);
   font-size:13.5px;letter-spacing:.04em;color:#D4B574}
 .niv span:hover .tip{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+.ger-info{position:relative;display:inline-block;cursor:help;border-bottom:1px dotted currentColor}
+.ger-info .ger-tip{position:absolute;left:0;top:calc(100% + 10px);width:min(280px,82vw);background:var(--ink);color:#F1E9D7;border:.5px solid var(--brass2);padding:14px 16px;border-radius:10px;box-shadow:0 16px 40px rgba(15,12,9,.30);font-family:'Inter',sans-serif;font-size:13.5px;font-weight:400;letter-spacing:normal;text-transform:none;line-height:1.55;opacity:0;visibility:hidden;transform:translateY(6px);transition:opacity .25s,transform .25s,visibility .25s;z-index:30}
+.ger-info:hover .ger-tip,.ger-info.open .ger-tip{opacity:1;visibility:visible;transform:none}
 .niv span.tip-open .tip{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
 
 /* PARALLAX BANDS */
@@ -561,7 +564,7 @@ footer a{color:#9a917f;text-decoration:none}
 
 <section class="sec">
   <div class="wrap">
-    <span class="ey reveal">Levels by the Common European Framework of Reference for Languages (CEFR)</span>
+    <span class="ey reveal">Levels by <span class="ger-info" tabindex="0">CEFR<span class="ger-tip">Common European Framework of Reference for Languages — the internationally recognised system for describing language ability (A1 to C2).</span></span></span>
     <div class="sh serif reveal">From the first words to true mastery</div>
     <div class="niv reveal">
       <span>A1<small>Beginner</small>
@@ -598,7 +601,7 @@ footer a{color:#9a917f;text-decoration:none}
   <div class="wrap">
     <span class="ey reveal">Culture & language</span>
     <div class="sh serif reveal">Our culture courses</div>
-    <p class="reveal" style="max-width:620px;margin-top:18px;color:var(--muted);font-weight:300;font-size:16.5px">Language thrives on culture. In our culture courses we combine Italian with everything that makes Italy what it is — from level B1, 370 € each.</p>
+    <p class="reveal" style="max-width:620px;margin-top:18px;color:var(--muted);font-weight:300;font-size:16.5px">Language thrives on culture. In our culture courses we combine Italian with everything that makes Italy what it is — from level B1, 16 hrs, 370 € each.</p>
     <div class="kultur-grid reveal">
       <div class="ktile reveal"><div class="kimg" style="background-image:url('/kultur-cucina.jpg')"></div><div class="kbody"><div class="kcap">Cuisine</div><h4 class="serif">Cucina</h4><p>Not a cooking class, but a culture of good taste: we read and exchange recipes, get to know regional specialities and wines, and discover the history of Italian cuisine. To round things off, we visit a partner restaurant together — a follow-up cooking class with a partner is in the works.</p></div></div>
       <div class="ktile reveal"><div class="kimg" style="background-image:url('/kultur-oper.jpg')"></div><div class="kbody"><div class="kcap">Music & stage</div><h4 class="serif">Opera</h4><p>From Verdi to Puccini — language and music as one. In cooperation with Hamburg’s stages, you experience Italian where it truly resounds.</p></div></div>
@@ -622,10 +625,10 @@ footer a{color:#9a917f;text-decoration:none}
         <div class="pitem"><div class="prow"><span class="pn">Course B2 <small>B2.1 / B2.2 · 24 hrs</small></span><span class="pd"></span><span class="pp">540 €</span></div><div class="pdesc"><span class="pcap">max. 8 participants</span></div></div>
         <div class="pitem"><div class="prow"><span class="pn">Course C1 <small>C1.1 / C1.2 · 24 hrs</small></span><span class="pd"></span><span class="pp">560 €</span></div><div class="pdesc"><span class="pcap">max. 8 participants</span></div></div>
         <div class="pitem"><div class="prow"><span class="pn">Course C2 <small>C2.1 / C2.2 · 24 hrs</small></span><span class="pd"></span><span class="pp">599 €</span></div><div class="pdesc"><span class="pcap">max. 8 participants</span></div></div>
-        <div class="pitem"><div class="prow"><span class="pn">CILS preparation <small>all levels</small></span><span class="pd"></span><span class="pp">640 €</span></div></div>
+        <div class="pitem"><div class="prow"><span class="pn">CILS preparation <small>all levels · 24 hrs</small></span><span class="pd"></span><span class="pp">640 €</span></div></div>
       </div>
       <div>
-        <div class="pitem"><div class="prow"><span class="pn">Culture course <small>from level B1</small></span><span class="pd"></span><span class="pp">370 €</span></div><div class="pdesc">Opera · Cucina · Cinema · Letteratura <span class="pcap">· 10–15 participants</span></div></div>
+        <div class="pitem"><div class="prow"><span class="pn">Culture course <small>from level B1 · 16 hrs</small></span><span class="pd"></span><span class="pp">370 €</span></div><div class="pdesc">Opera · Cucina · Cinema · Letteratura <span class="pcap">· 10–15 participants</span></div></div>
         <div class="pitem"><div class="prow"><span class="pn">Conversazione <small>from level B1 · 1 hr/week</small></span><span class="pd"></span><span class="pp">370 €</span></div><div class="pdesc">Conversation — speaking freely with a teacher alongside <span class="pcap">· max. 4 participants</span></div></div>
         <div class="pitem"><div class="prow"><span class="pn">Online course <small>all levels</small></span><span class="pd"></span><span class="pp">455 €</span></div><div class="pdesc"><span class="pcap">max. 6 participants</span></div></div>
         <div class="pitem"><div class="prow"><span class="pn">Business <small>12 hrs</small></span><span class="pd"></span><span class="pp">610 €</span></div><div class="pdesc"><span class="pcap">by arrangement per company</span></div></div>
@@ -768,6 +771,7 @@ footer a{color:#9a917f;text-decoration:none}
     t.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){e.preventDefault();t.click();} });
   });
   document.addEventListener('click',function(){ tiles.forEach(function(x){x.classList.remove('tip-open');}); });
+  (function(){var g=document.querySelector('.ger-info');if(!g)return;g.addEventListener('click',function(e){e.stopPropagation();g.classList.toggle('open');});g.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();g.click();}});document.addEventListener('click',function(){g.classList.remove('open');});}());
 }());
 </script>
 <div class="anm-overlay" id="imp-overlay" role="dialog" aria-modal="true" aria-label="Imprint">

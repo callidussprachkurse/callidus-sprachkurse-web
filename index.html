@@ -272,6 +272,9 @@ section.sec{padding:100px 0;border-bottom:.5px solid var(--line)}
 .niv .tip .sub{display:block;margin-top:12px;padding-top:12px;border-top:.5px solid rgba(168,129,74,.35);
   font-size:13.5px;letter-spacing:.04em;color:#D4B574}
 .niv span:hover .tip{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+.ger-info{position:relative;display:inline-block;cursor:help;border-bottom:1px dotted currentColor}
+.ger-info .ger-tip{position:absolute;left:0;top:calc(100% + 10px);width:min(280px,82vw);background:var(--ink);color:#F1E9D7;border:.5px solid var(--brass2);padding:14px 16px;border-radius:10px;box-shadow:0 16px 40px rgba(15,12,9,.30);font-family:'Inter',sans-serif;font-size:13.5px;font-weight:400;letter-spacing:normal;text-transform:none;line-height:1.55;opacity:0;visibility:hidden;transform:translateY(6px);transition:opacity .25s,transform .25s,visibility .25s;z-index:30}
+.ger-info:hover .ger-tip,.ger-info.open .ger-tip{opacity:1;visibility:visible;transform:none}
 .niv span.tip-open .tip{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
 
 /* PARALLAX BANDS */
@@ -561,7 +564,7 @@ footer a{color:#9a917f;text-decoration:none}
 
 <section class="sec">
   <div class="wrap">
-    <span class="ey reveal">Niveaus nach dem Gemeinsamen Europäischen Referenzrahmen für Sprachen</span>
+    <span class="ey reveal">Niveaus nach <span class="ger-info" tabindex="0">GER<span class="ger-tip">Gemeinsamer Europäischer Referenzrahmen für Sprachen — das international anerkannte System zur Beschreibung von Sprachkenntnissen (A1 bis C2).</span></span></span>
     <div class="sh serif reveal">Von den ersten Worten bis zur Meisterschaft</div>
     <div class="niv reveal">
       <span>A1<small>Anfang</small>
@@ -598,7 +601,7 @@ footer a{color:#9a917f;text-decoration:none}
   <div class="wrap">
     <span class="ey reveal">Kultur & Sprache</span>
     <div class="sh serif reveal">Unsere Kulturkurse</div>
-    <p class="reveal" style="max-width:620px;margin-top:18px;color:var(--muted);font-weight:300;font-size:16.5px">Sprache lebt von Kultur. In unseren Kulturkursen verbinden wir Italienisch mit dem, was Italien ausmacht — ab Niveau B1, je 370 €.</p>
+    <p class="reveal" style="max-width:620px;margin-top:18px;color:var(--muted);font-weight:300;font-size:16.5px">Sprache lebt von Kultur. In unseren Kulturkursen verbinden wir Italienisch mit dem, was Italien ausmacht — ab Niveau B1, je 16 Std., 370 €.</p>
     <div class="kultur-grid reveal">
       <div class="ktile reveal"><div class="kimg" style="background-image:url('kultur-cucina.jpg')"></div><div class="kbody"><div class="kcap">Kulinarik</div><h4 class="serif">Cucina</h4><p>Kein Kochkurs, sondern Genuss-Kultur: Wir lesen und tauschen Rezepte, lernen regionale Spezialitäten und Weine kennen und entdecken die Geschichte der italienischen Küche. Zum Abschluss kehren wir gemeinsam in einem Partner-Restaurant ein — ein anschließender Kochkurs bei einem Partner ist in Planung.</p></div></div>
       <div class="ktile reveal"><div class="kimg" style="background-image:url('kultur-oper.jpg')"></div><div class="kbody"><div class="kcap">Musik & Bühne</div><h4 class="serif">Opera</h4><p>Von Verdi bis Puccini — Sprache und Musik vereint. In Kooperation mit Hamburgs Bühnen erleben Sie Italienisch dort, wo es klingt.</p></div></div>
@@ -622,10 +625,10 @@ footer a{color:#9a917f;text-decoration:none}
         <div class="pitem"><div class="prow"><span class="pn">Kurs B2 <small>B2.1 / B2.2 · 24 Std.</small></span><span class="pd"></span><span class="pp">540 €</span></div><div class="pdesc"><span class="pcap">max. 8 Teilnehmer</span></div></div>
         <div class="pitem"><div class="prow"><span class="pn">Kurs C1 <small>C1.1 / C1.2 · 24 Std.</small></span><span class="pd"></span><span class="pp">560 €</span></div><div class="pdesc"><span class="pcap">max. 8 Teilnehmer</span></div></div>
         <div class="pitem"><div class="prow"><span class="pn">Kurs C2 <small>C2.1 / C2.2 · 24 Std.</small></span><span class="pd"></span><span class="pp">599 €</span></div><div class="pdesc"><span class="pcap">max. 8 Teilnehmer</span></div></div>
-        <div class="pitem"><div class="prow"><span class="pn">CILS-Vorbereitung <small>alle Niveaus</small></span><span class="pd"></span><span class="pp">640 €</span></div></div>
+        <div class="pitem"><div class="prow"><span class="pn">CILS-Vorbereitung <small>alle Niveaus · 24 Std.</small></span><span class="pd"></span><span class="pp">640 €</span></div></div>
       </div>
       <div>
-        <div class="pitem"><div class="prow"><span class="pn">Kulturkurs <small>ab Niveau B1</small></span><span class="pd"></span><span class="pp">370 €</span></div><div class="pdesc">Opera · Cucina · Cinema · Letteratura <span class="pcap">· 10–15 Teilnehmer</span></div></div>
+        <div class="pitem"><div class="prow"><span class="pn">Kulturkurs <small>ab Niveau B1 · 16 Std.</small></span><span class="pd"></span><span class="pp">370 €</span></div><div class="pdesc">Opera · Cucina · Cinema · Letteratura <span class="pcap">· 10–15 Teilnehmer</span></div></div>
         <div class="pitem"><div class="prow"><span class="pn">Conversazione <small>ab Niveau B1 · 1 Std./Woche</small></span><span class="pd"></span><span class="pp">370 €</span></div><div class="pdesc">Konversation — locker sprechen mit Lehrkraft-Begleitung <span class="pcap">· max. 4 Teilnehmer</span></div></div>
         <div class="pitem"><div class="prow"><span class="pn">Online-Kurs <small>alle Niveaus</small></span><span class="pd"></span><span class="pp">455 €</span></div><div class="pdesc"><span class="pcap">max. 6 Teilnehmer</span></div></div>
         <div class="pitem"><div class="prow"><span class="pn">Business <small>12 Std.</small></span><span class="pd"></span><span class="pp">610 €</span></div><div class="pdesc"><span class="pcap">nach Vereinbarung je Firma</span></div></div>
@@ -768,6 +771,7 @@ footer a{color:#9a917f;text-decoration:none}
     t.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){e.preventDefault();t.click();} });
   });
   document.addEventListener('click',function(){ tiles.forEach(function(x){x.classList.remove('tip-open');}); });
+  (function(){var g=document.querySelector('.ger-info');if(!g)return;g.addEventListener('click',function(e){e.stopPropagation();g.classList.toggle('open');});g.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();g.click();}});document.addEventListener('click',function(){g.classList.remove('open');});}());
 }());
 </script>
 <div class="anm-overlay" id="imp-overlay" role="dialog" aria-modal="true" aria-label="Impressum">
