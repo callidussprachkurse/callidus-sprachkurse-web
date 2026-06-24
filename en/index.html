@@ -341,7 +341,10 @@ footer{background:var(--ink);color:#9a917f;text-align:center;padding:54px 40px;f
 footer .wm{color:#E7DFCD;font-family:'Cormorant Garamond',serif;font-size:24px;letter-spacing:.16em;
   display:block;margin-bottom:14px}
 footer a{color:#9a917f;text-decoration:none}
-.footer-logo{display:inline-flex;align-items:center;justify-content:center;width:220px;height:220px;border-radius:50%;background:#fff;margin:0 auto 24px;box-shadow:0 12px 34px rgba(0,0,0,.30)}
+.footer-logos{display:flex;gap:26px;justify-content:center;align-items:center;flex-wrap:wrap;margin:0 auto 24px}
+.footer-logo{display:inline-flex;align-items:center;justify-content:center;width:220px;height:220px;border-radius:50%;background:#fff;margin:0;box-shadow:0 12px 34px rgba(0,0,0,.30)}
+.footer-logo-link{text-decoration:none;transition:transform .2s}
+.footer-logo-link:hover{transform:translateY(-4px)}
 .footer-logo img{width:168px;max-width:78%;height:auto;display:block}
 .footer-links{font-size:13px;letter-spacing:.04em}
 @media(max-width:600px){.footer-logo{width:180px;height:180px}.footer-logo img{width:138px}}
@@ -689,7 +692,10 @@ footer a{color:#9a917f;text-decoration:none}
 </div>
 
 <footer>
-  <div class="footer-logo"><img src="/logo-callidus-italiano.png" alt="CALLIDUS goes Italiano — on behalf of the Italian Cultural Institute Hamburg"></div>
+  <div class="footer-logos">
+    <div class="footer-logo"><img src="/logo-callidus-italiano.png" alt="CALLIDUS goes Italiano — on behalf of the Italian Cultural Institute Hamburg"></div>
+    <a class="footer-logo footer-logo-link" href="https://iicamburgo.esteri.it/en/" target="_blank" rel="noopener" aria-label="Istituto Italiano di Cultura Hamburg — open website (new tab)"><img src="/logo-iic-hamburg.jpg" alt="Istituto Italiano di Cultura Hamburg"></a>
+  </div>
   <div class="footer-links"><a href="#" id="imp-link">Imprint</a> · <a href="#" id="ds-link">Privacy Policy</a> · <a href="#" id="wr-link">Right of Withdrawal</a></div>
 </footer>
 
