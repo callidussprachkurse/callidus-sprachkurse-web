@@ -332,6 +332,15 @@ section.sec{padding:100px 0;border-bottom:.5px solid var(--line)}
 .cta-video video{display:block;width:300px;max-width:78vw;aspect-ratio:9/16;object-fit:cover;border-radius:16px;box-shadow:0 18px 50px rgba(0,0,0,.45);border:.5px solid rgba(231,207,158,.22);background:#000}
 .cta-loc{margin-top:24px;font-size:14px;color:#CDC3B0;line-height:1.6}
 .cta-loc b{color:#E7CF9E;font-weight:600;font-size:15px}
+.map-wrap{position:relative;display:inline-block}
+.map-trigger{display:inline-block;background:none;border:0;padding:0;margin:0;cursor:pointer;color:inherit;font:inherit;text-align:center}
+.map-trigger b{border-bottom:1px dotted #E7CF9E}
+.map-hint{display:block;margin-top:6px;font-size:12px;color:#A89878;font-weight:400;letter-spacing:.04em}
+.map-pop{position:absolute;left:50%;top:calc(100% + 12px);transform:translateX(-50%) translateY(8px);width:min(340px,86vw);background:var(--ink);border:.5px solid var(--brass2);border-radius:12px;padding:10px;box-shadow:0 18px 46px rgba(15,12,9,.45);opacity:0;visibility:hidden;transition:opacity .25s,transform .25s,visibility .25s;z-index:40}
+.map-pop.open{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+.map-note{display:block;font-size:11px;color:#9a8f7c;margin:0 2px 8px;text-align:left}
+.map-frame iframe{display:block;width:100%;height:220px;border:0;border-radius:8px}
+.map-link{display:inline-block;margin-top:8px;font-size:12px;color:#E7CF9E;text-decoration:none}
 @media(min-width:901px){
   .cta-grid{grid-template-columns:auto 1fr;gap:64px}
   .cta-video{order:-1}
@@ -692,7 +701,12 @@ footer a{color:#9a917f;text-decoration:none}
         <a href="tel:+4939155576211">☎ 0391 555 76 211</a>
         <a href="mailto:info@callidus-sprachkurse.de">✉ info@callidus-sprachkurse.de</a>
       </div>
-      <div class="cta-loc">Und hier finden unsere Kurse statt:<br><b>Italienisches Kulturinstitut Hamburg<br>Hansastraße 6 · 20149 Hamburg</b></div>
+      <div class="cta-loc">Und hier finden unsere Kurse statt:<br>
+      <span class="map-wrap">
+        <button type="button" class="map-trigger" id="map-trigger" aria-expanded="false" aria-controls="map-pop"><b>Italienisches Kulturinstitut Hamburg<br>Hansastraße 6 · 20149 Hamburg</b><span class="map-hint">📍 Karte anzeigen</span></button>
+        <span class="map-pop" id="map-pop" role="dialog" aria-label="Karte: Italienisches Kulturinstitut Hamburg"><span class="map-note">Beim Öffnen wird Google Maps geladen.</span><span class="map-frame"></span><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Italienisches+Kulturinstitut+Hamburg+Hansastra%C3%9Fe+6+20149+Hamburg" target="_blank" rel="noopener">In Google Maps öffnen ↗</a></span>
+      </span>
+</div>
     </div>
     <div class="cta-video">
       <video src="kontakt-hansastrasse.mp4" poster="kontakt-hansastrasse.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Unser Kursort: Italienisches Kulturinstitut Hamburg, Hansastraße 6, Hamburg"></video>
@@ -906,5 +920,22 @@ footer a{color:#9a917f;text-decoration:none}
   <svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
 </a>
 <script src="/consent.js?v=20260624" defer></script>
+<script>
+(function(){
+  var t=document.getElementById('map-trigger'), p=document.getElementById('map-pop');
+  if(!t||!p) return;
+  var frame=p.querySelector('.map-frame'), loaded=false;
+  function load(){ if(loaded) return; loaded=true;
+    var ifr=document.createElement('iframe');
+    ifr.src='https://www.google.com/maps?q=Italienisches%20Kulturinstitut%20Hamburg%2C%20Hansastra%C3%9Fe%206%2C%2020149%20Hamburg&output=embed';
+    ifr.loading='lazy'; ifr.title='Italienisches Kulturinstitut Hamburg'; ifr.setAttribute('referrerpolicy','no-referrer-when-downgrade');
+    frame.appendChild(ifr);
+  }
+  function toggle(){ if(p.classList.contains('open')){ p.classList.remove('open'); t.setAttribute('aria-expanded','false'); } else { load(); p.classList.add('open'); t.setAttribute('aria-expanded','true'); } }
+  t.addEventListener('click',function(e){ e.stopPropagation(); toggle(); });
+  p.addEventListener('click',function(e){ e.stopPropagation(); });
+  document.addEventListener('click',function(){ p.classList.remove('open'); t.setAttribute('aria-expanded','false'); });
+}());
+</script>
 </body>
 </html>
