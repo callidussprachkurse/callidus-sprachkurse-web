@@ -111,7 +111,7 @@
       kind_hinweis: "<b>Hinweis:</b> Bei minderjährigen Teilnehmern erfolgt die Anmeldung durch eine/n Erziehungsberechtigte/n.",
       consent_a: "Ich habe die <a href=\"agb-datenschutz.pdf\" target=\"_blank\" rel=\"noopener\">AGB</a>, die <a href=\"#\" id=\"anm-ds-link\">Datenschutzerklärung</a> und die <a href=\"#\" id=\"anm-wr-link2\">Widerrufsbelehrung</a> gelesen und willige in die Verarbeitung meiner Daten zur Bearbeitung meiner Anmeldung ein. *",
       consent_err: "Bitte bestätigen Sie die Einwilligung.",
-      widerruf_a: "Falls mein Kurs innerhalb der 14-tägigen Widerrufsfrist beginnt: Ich verlange ausdrücklich den Beginn vor Ablauf der Frist und weiß, dass ich bei einem Widerruf für bereits erbrachte Leistungen anteilig Wertersatz schulde. <a href=\"#\" id=\"anm-wr-link\">Widerrufsbelehrung</a> (optional)",
+      widerruf_a: "Falls mein Kurs innerhalb der 14-tägigen Widerrufsfrist beginnt: Ich verlange ausdrücklich den Beginn vor Ablauf der Frist und weiß, dass ich bei einem Widerruf für bereits erbrachte Leistungen anteilig Wertersatz schulde. (optional)",
       // Danke
       danke_titel: "Grazie mille!",
       danke_h: "Ihre Anmeldung ist eingegangen",
@@ -225,7 +225,7 @@
       kind_hinweis: "<b>Note:</b> For minors, registration is completed by a parent or legal guardian.",
       consent_a: "I have read the <a href=\"agb-datenschutz.pdf\" target=\"_blank\" rel=\"noopener\">terms and conditions</a>, the <a href=\"#\" id=\"anm-ds-link\">privacy policy</a> and the <a href=\"#\" id=\"anm-wr-link2\">cancellation policy</a> and consent to the processing of my data for the purpose of handling my registration. *",
       consent_err: "Please confirm your consent.",
-      widerruf_a: "If my course begins within the 14-day cancellation period: I expressly request that it start before the period expires and I am aware that, in the event of cancellation, I owe proportionate compensation for services already provided. <a href=\"#\" id=\"anm-wr-link\">Cancellation policy</a> (optional)",
+      widerruf_a: "If my course begins within the 14-day cancellation period: I expressly request that it start before the period expires and I am aware that, in the event of cancellation, I owe proportionate compensation for services already provided. (optional)",
       // Thank you
       danke_titel: "Grazie mille!",
       danke_h: "Your registration has been received",
