@@ -394,6 +394,13 @@
       '</div>';
     document.body.appendChild(overlay);
 
+    // Spamschutz: unsichtbares Honeypot-Feld — nur Bots füllen es aus (echte Nutzer sehen es nie)
+    var _hp = document.createElement("input");
+    _hp.type = "text"; _hp.id = "anm-hp"; _hp.name = "anm_hp"; _hp.tabIndex = -1;
+    _hp.setAttribute("autocomplete", "off"); _hp.setAttribute("aria-hidden", "true");
+    _hp.style.cssText = "position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;opacity:0;pointer-events:none";
+    overlay.appendChild(_hp);
+
     modal      = overlay.querySelector(".anm-modal");
     elTitle    = overlay.querySelector(".anm-head .t");
     elBody     = overlay.querySelector(".anm-body");
@@ -415,8 +422,10 @@
   }
 
   // ---- Flow steuern -------------------------------------------------------
+  var _anmOpenedAt = 0;
   function oeffnen(code) {
     if (code && !niveauErlaubt(code)) { zeigeNiveauHinweis(code); return; }
+    _anmOpenedAt = Date.now();
     st = neuerState();
     if (code && COURSES[code]) {
       st.kurs = code;
@@ -808,6 +817,11 @@
   }
 
   function absenden() {
+    // Spamschutz: Honeypot ausgefüllt ODER verdächtig schnell (<3s) -> Bot, still verwerfen (nichts senden)
+    var _hp = document.getElementById("anm-hp");
+    if ((_hp && _hp.value) || (_anmOpenedAt && (Date.now() - _anmOpenedAt) < 3000)) {
+      st.i = st.steps.length - 1; render(); return;
+    }
     var d = st.data, c = COURSES[st.kurs] || {};
     var anschrift = [d.strasse, ((d.plz||"")+" "+(d.ort||"")).trim()].filter(Boolean).join("\n");
     var termin = st.slot
