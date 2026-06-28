@@ -306,11 +306,7 @@
     try { var v = localStorage.getItem("callidus_est_niveau"); return NIV_RANK[v] ? v : null; } catch (e) { return null; }
   }
   function niveauErlaubt(code) {
-    var L = gespeichertesNiveau(); if (!L) return true;
-    var lr = NIV_RANK[L];
-    if (NIV_RANK[code]) return NIV_RANK[code] <= lr;   // graduierte Kurse A1–C2: nur Niveau oder darunter
-    if (code === "KULTUR" || code === "KONV") return lr >= NIV_RANK.B1;  // Kultur- & Konversationskurs ab B1
-    return true;                                        // CILS/Online/Business/… niveau-übergreifend
+    return true; // Freie Kurswahl: Kunde darf jeden Kurs buchen (kein Niveau-Lock aus dem Test)
   }
   function zeigeNiveauHinweis(code) {
     var L = gespeichertesNiveau();
@@ -908,15 +904,10 @@
   // Niveau gesetzt -> Ergebnis-Niveau und darunter wählbar, höher gesperrt; dann Terminauswahl.
   function autoOpenAusTest() {
     try {
-      var um = location.search.match(/[?&]est=([A-Za-z0-9]+)/i);
-      if (!um) return;
-      var lvl = decodeURIComponent(um[1]).toUpperCase();
-      if (!NIV_RANK[lvl]) return;
-      try { localStorage.setItem("callidus_est_niveau", lvl); } catch (e) {}
-      markiereNiveau();
+      if (!/[?&]est=/i.test(location.search)) return; // Aufruf aus der Test-Mail (?est=…)
       st = neuerState();
       st.branch = "gruppe";
-      st.steps = ["kurswahl", "termin", "teilnehmer", "kontakt", "pruefung", "danke"];
+      st.steps = ["kurswahl", "termin", "teilnehmer", "kontakt", "pruefung", "danke"]; // direkt in die freie Kurswahl
       _anmOpenedAt = Date.now();
       overlay.classList.add("open");
       document.body.style.overflow = "hidden";
