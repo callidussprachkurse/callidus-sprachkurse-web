@@ -340,6 +340,18 @@
 
   // ---- Willkommens-Gutschein (10 € bei direkter Anmeldung nach dem Test) --
   var GUTSCHEIN_WERT = 10;
+  // Gutschein aus E-Mail-Link (?gutschein=CODE) übernehmen — gilt 7 Tage, damit der Rabatt aus der Test-Mail mitreist
+  (function () {
+    try {
+      var um = location.search.match(/[?&]gutschein=([A-Za-z0-9-]+)/i);
+      if (!um) return;
+      var c = decodeURIComponent(um[1]);
+      var ex = null; try { ex = JSON.parse(localStorage.getItem("callidus_coupon") || "null"); } catch (e) {}
+      if (!ex || ex.code !== c || ex.used) {
+        localStorage.setItem("callidus_coupon", JSON.stringify({ code: c, exp: Date.now() + 7 * 24 * 60 * 60 * 1000, used: false }));
+      }
+    } catch (e) {}
+  }());
   function aktiverGutschein() {
     try {
       var g = JSON.parse(localStorage.getItem("callidus_coupon") || "null");
