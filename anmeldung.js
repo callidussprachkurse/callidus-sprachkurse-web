@@ -904,10 +904,31 @@
       .catch(function () { slotsData = { slots: [] }; });
   }
 
+  // Aus der Einstufungstest-Mail (?est=NIVEAU): Formular direkt in der Kurswahl öffnen,
+  // Niveau gesetzt -> Ergebnis-Niveau und darunter wählbar, höher gesperrt; dann Terminauswahl.
+  function autoOpenAusTest() {
+    try {
+      var um = location.search.match(/[?&]est=([A-Za-z0-9]+)/i);
+      if (!um) return;
+      var lvl = decodeURIComponent(um[1]).toUpperCase();
+      if (!NIV_RANK[lvl]) return;
+      try { localStorage.setItem("callidus_est_niveau", lvl); } catch (e) {}
+      markiereNiveau();
+      st = neuerState();
+      st.branch = "gruppe";
+      st.steps = ["kurswahl", "termin", "teilnehmer", "kontakt", "pruefung", "danke"];
+      _anmOpenedAt = Date.now();
+      overlay.classList.add("open");
+      document.body.style.overflow = "hidden";
+      if (modal) modal.scrollTop = 0;
+      render();
+    } catch (e) {}
+  }
+
   function start() {
     baueModal();
     bindeTrigger();
-    ladeSlots();
+    ladeSlots().then(autoOpenAusTest);
   }
   // Auch bei dynamischem/spätem Laden initialisieren (DOMContentLoaded ggf. schon vorbei)
   if (document.readyState === "loading") {
