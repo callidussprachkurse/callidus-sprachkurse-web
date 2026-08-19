@@ -1,0 +1,40 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" aria-label="Navigare">
+  <!-- Steuerrad-Griffe (8) -->
+  <g fill="currentColor">
+    <g id="spoke"><rect x="114.5" y="17" width="11" height="30" rx="5.5"/></g>
+    <use href="#spoke" transform="rotate(45 120 120)"/>
+    <use href="#spoke" transform="rotate(90 120 120)"/>
+    <use href="#spoke" transform="rotate(135 120 120)"/>
+    <use href="#spoke" transform="rotate(180 120 120)"/>
+    <use href="#spoke" transform="rotate(225 120 120)"/>
+    <use href="#spoke" transform="rotate(270 120 120)"/>
+    <use href="#spoke" transform="rotate(315 120 120)"/>
+  </g>
+
+  <!-- Radkranz -->
+  <circle cx="120" cy="120" r="65" stroke="currentColor" stroke-width="7"/>
+  <circle cx="120" cy="120" r="55" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Gestrichelte Herz-/Reiselinie hinter dem Anker -->
+  <path d="M120,158 C66,120 84,72 120,100 C156,72 174,120 120,158 Z"
+        stroke="currentColor" stroke-width="2.6" stroke-linecap="round"
+        stroke-dasharray="1.5 8.5" opacity="0.85"/>
+
+  <!-- Anker -->
+  <g fill="currentColor">
+    <!-- Auge -->
+    <circle cx="120" cy="72" r="9.5" fill="none" stroke="currentColor" stroke-width="7"/>
+    <!-- Schaft -->
+    <rect x="114.5" y="80" width="11" height="94" rx="4"/>
+    <!-- Spitze unten -->
+    <path d="M114.5,170 L120,184 L125.5,170 Z"/>
+    <!-- Stock (Querbalken) -->
+    <rect x="90" y="101" width="60" height="10.5" rx="5.25"/>
+    <!-- Krone + Arme (geschwungen) -->
+    <path d="M76,150 C90,192 150,192 164,150" fill="none"
+          stroke="currentColor" stroke-width="12" stroke-linecap="round"/>
+    <!-- Flunken (spitze Barben) -->
+    <path d="M76,153 L52,137 L83,126 Z"/>
+    <path d="M164,153 L188,137 L157,126 Z"/>
+  </g>
+</svg>

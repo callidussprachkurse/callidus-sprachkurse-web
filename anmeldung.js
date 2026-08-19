@@ -886,6 +886,15 @@
       item.addEventListener("click", function () { oeffnen(code); });
       item.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); oeffnen(code); } });
     });
+    // Direkte Buchen-Auslöser (z. B. Kultur-Kacheln): Element mit data-kurs-buchen="CODE" öffnet gezielt diesen Kurs
+    document.querySelectorAll("[data-kurs-buchen]").forEach(function (el2) {
+      var code = el2.getAttribute("data-kurs-buchen");
+      if (!code) return;
+      el2.setAttribute("role", "button");
+      el2.setAttribute("tabindex", "0");
+      el2.addEventListener("click", function (e) { e.preventDefault(); oeffnen(code); });
+      el2.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); oeffnen(code); } });
+    });
     markiereNiveau(); // bereits vorhandenes Test-Ergebnis (z. B. aus früherer Sitzung) berücksichtigen
     // Allgemeine CTA-Buttons
     document.querySelectorAll("[data-anmelden]").forEach(function (b) {

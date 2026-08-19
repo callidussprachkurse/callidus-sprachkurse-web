@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>European Centre of Performing Arts — Where training becomes a career</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0f1d36; --navy2:#1c2f54; --gold:#c2a14e; --gold-soft:#d9c391; --gold-ink:#9a7d2e;
+    --cream:#f7f3ea; --cream2:#efe9dc; --ink:#1a1c20; --muted:#5f636b; --line:rgba(154,125,46,.28);
+    --serif:'Cormorant Garamond',Georgia,serif; --sans:'Inter',-apple-system,Segoe UI,Roboto,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+  .eyebrow{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-ink);font-weight:600}
+  .on-navy .eyebrow,.strip .eyebrow,.reach .eyebrow,.final .eyebrow{color:var(--gold)}
+  h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.12;letter-spacing:.01em}
+  .gold{color:var(--gold)}
+  a{color:inherit;text-decoration:none}
+
+  .draft-note{position:relative;z-index:30;background:var(--gold);color:var(--navy);text-align:center;font-size:.76rem;letter-spacing:.04em;padding:8px 14px;font-weight:600}
+
+  /* NAV (inside hero) */
+  nav{position:absolute;top:0;left:0;right:0;z-index:20}
+  nav .wrap{display:flex;align-items:center;gap:18px;height:84px}
+  .brand{font-family:var(--serif);font-size:1.15rem;color:#fff;letter-spacing:.04em;margin-right:auto}
+  .brand b{color:var(--gold);font-weight:600}
+  .nav-links{display:flex;gap:30px;font-size:.82rem;letter-spacing:.05em;color:rgba(255,255,255,.82)}
+  .nav-links a:hover{color:var(--gold)}
+  .nav-cta{border:1px solid var(--gold);color:var(--gold);padding:10px 20px;border-radius:2px;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase}
+  .nav-cta:hover{background:var(--gold);color:var(--navy)}
+  #navtoggle{display:none}
+  .burger{display:none;font-size:1.5rem;color:#fff;cursor:pointer;line-height:1;padding:6px 4px}
+  @media(max-width:860px){
+    .burger{display:block}
+    .nav-links{position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--navy);
+      max-height:0;overflow:hidden;transition:max-height .3s ease;box-shadow:0 18px 40px rgba(0,0,0,.3)}
+    #navtoggle:checked ~ .nav-links{max-height:280px}
+    .nav-links a{padding:16px 28px;border-top:1px solid rgba(255,255,255,.08)}
+  }
+
+  /* HERO */
+  .hero{position:relative;display:flex;flex-direction:column;justify-content:center;min-height:92vh;
+    background:linear-gradient(90deg,rgba(8,9,14,.94) 0%,rgba(11,12,19,.64) 52%,rgba(11,12,19,.42) 100%),url('img/house6.jpg') center/cover no-repeat,#0a1326;color:#fff;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(60% 60% at 82% 82%,rgba(194,161,78,.10),transparent 70%);pointer-events:none}
+  .hero-inner{position:relative;z-index:2;padding-top:148px;padding-bottom:48px}
+  .hero h1{font-size:clamp(2.6rem,6.6vw,5rem);max-width:15ch;margin:.4em 0 .35em;color:#fff}
+  .hero h1 em{font-style:italic;color:var(--gold-soft)}
+  .hero .lead{font-size:clamp(1.02rem,2.1vw,1.26rem);max-width:52ch;color:rgba(255,255,255,.86)}
+  .cta-row{display:flex;gap:15px;flex-wrap:wrap;margin-top:36px}
+  .btn{display:inline-block;padding:15px 30px;border-radius:2px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;transition:.25s;cursor:pointer}
+  .btn-gold{background:var(--gold);color:var(--navy);border:1px solid var(--gold)}
+  .btn-gold:hover{background:var(--gold-soft);border-color:var(--gold-soft)}
+  .btn-ghost{border:1px solid rgba(255,255,255,.42);color:#fff;background:transparent}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+  .hero-tag{position:relative;z-index:2;margin-top:54px}
+  .hero-tag .wrap{display:flex;gap:28px;flex-wrap:wrap;font-size:.73rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+  .hero-tag span{display:flex;align-items:center;gap:10px}
+  .hero-tag span::before{content:"";width:6px;height:6px;background:var(--gold);border-radius:50%;flex:none}
+  @media(max-width:860px){.hero-tag .wrap{flex-direction:column;gap:12px}.hero-inner{padding-top:128px}}
+
+  /* SECTIONS */
+  section{padding:clamp(68px,10vw,124px) 0}
+  .divider{width:54px;height:1px;background:var(--gold);margin-bottom:26px}
+  .center .divider{margin-left:auto;margin-right:auto}
+  .lede{font-family:var(--serif);font-size:clamp(1.7rem,3.6vw,2.6rem);line-height:1.3;max-width:22ch;font-weight:500}
+  .sub{color:var(--muted);max-width:56ch;margin-top:20px;font-size:1.02rem}
+  .center{text-align:center;display:flex;flex-direction:column;align-items:center}
+  .center .sub,.center .lede{margin-left:auto;margin-right:auto}
+
+  .strip{background:var(--navy);color:#fff;text-align:center}
+  .strip .lede{color:#fff;margin:0 auto}.strip .lede em{color:var(--gold-soft);font-style:italic}
+  .strip .sub{color:rgba(255,255,255,.72);margin:22px auto 0}
+  .strip .divider{margin:0 auto 26px}
+
+  /* PILLARS */
+  .pillars{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:60px}
+  .pillar{background:var(--cream);padding:38px 34px;transition:.3s}
+  .pillar:hover{background:#fff}
+  .pillar .no{font-family:var(--serif);font-size:1.05rem;color:var(--gold-ink)}
+  .pillar h3{font-size:1.65rem;margin:6px 0 12px}
+  .pillar p{color:var(--muted);font-size:.96rem}
+  .capstone{grid-column:1/-1;background:var(--navy2);color:#fff}
+  .capstone:hover{background:var(--navy2)}.capstone .no{color:var(--gold-soft)}.capstone h3{color:#fff}.capstone p{color:rgba(255,255,255,.8)}
+  @media(max-width:720px){.pillars{grid-template-columns:1fr}}
+
+  /* DISCIPLINES */
+  .disc{background:var(--cream2)}
+  .disc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:54px}
+  .disc-card{background:var(--cream2);padding:34px 26px}
+  .disc-card .ic{font-family:var(--serif);font-size:1.9rem;color:var(--gold-ink);line-height:1}
+  .disc-card h3{font-size:1.3rem;margin:14px 0 10px}
+  .disc-card p{color:var(--muted);font-size:.92rem}
+  @media(max-width:860px){.disc-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:480px){.disc-grid{grid-template-columns:1fr}}
+
+  /* SPLIT */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,6vw,80px);align-items:stretch}
+  .split .txt{align-self:center}
+  @media(max-width:860px){.split{grid-template-columns:1fr;gap:32px}.split .panel{order:2}.split .txt{order:1}}
+  .split h2{font-size:clamp(2rem,4.4vw,3rem);margin-bottom:18px}
+  .split p{color:var(--muted);margin-bottom:14px}
+  .alt{background:var(--cream2)}
+  .markers{list-style:none;margin-top:20px}
+  .markers li{padding:13px 0;border-top:1px solid var(--line);display:flex;gap:14px;font-size:.98rem}
+  .markers li::before{content:"";width:7px;height:7px;background:var(--gold);border-radius:50%;margin-top:9px;flex:none}
+  .panel{background:var(--navy);color:#fff;border-radius:3px;padding:clamp(34px,5vw,52px);display:flex;flex-direction:column;justify-content:center;position:relative}
+  .panel .q{font-family:var(--serif);font-size:clamp(1.5rem,3vw,2rem);line-height:1.4;font-style:italic;color:var(--gold-soft)}
+  .panel .a{margin-top:20px;color:rgba(255,255,255,.82);font-size:.96rem}
+
+  /* REACH */
+  .reach{position:relative;overflow:hidden;display:flex;align-items:center;min-height:600px;background:radial-gradient(130% 120% at 16% 32%,#182c50 0%,#0e1f3b 55%,#0a1730 100%);color:#fff;text-align:left}
+  .reach .globe-bg{position:absolute;right:-3%;top:50%;transform:translateY(-50%);width:min(60vw,840px);opacity:.6;pointer-events:none;z-index:1;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 34%);mask-image:linear-gradient(90deg,transparent 0,#000 34%)}
+  .reach .wrap{position:relative;z-index:2}
+  .reach-txt{max-width:42ch}
+  @media(max-width:860px){
+    .reach{display:block;min-height:auto;text-align:center}
+    .reach .globe-bg{position:relative;right:auto;top:auto;transform:none;display:block;width:min(360px,84%);opacity:.5;margin:34px auto 0;-webkit-mask-image:none;mask-image:none}
+    .reach-txt{max-width:none}
+  }
+  .reach .lede{color:#fff;margin:0}.reach .divider{margin:0 0 26px}
+  .reach .sub{color:rgba(255,255,255,.78);margin:20px 0 0}
+  @media(max-width:860px){.reach .divider{margin:0 auto 26px}.reach .lede,.reach .sub{margin-left:auto;margin-right:auto}}
+  .reach-row{display:flex;gap:34px;flex-wrap:wrap;justify-content:center;margin-top:40px;font-family:var(--serif);font-size:clamp(1.1rem,2.4vw,1.55rem);color:rgba(255,255,255,.85)}
+  .reach-row span.fz{color:var(--gold)}
+
+  /* FORM */
+  .final{background:linear-gradient(160deg,#16284a,#0c1730);color:#fff}
+  .final .center{margin-bottom:42px}
+  .final h2{font-size:clamp(2.1rem,5vw,3.2rem);max-width:20ch;margin:14px auto 16px}
+  .final .sub{color:rgba(255,255,255,.78);margin:0 auto}
+  form{max-width:640px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .field{display:flex;flex-direction:column;gap:7px}
+  .field.full{grid-column:1/-1}
+  label{font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-soft)}
+  input,select{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.22);border-radius:2px;
+    padding:13px 14px;color:#fff;font-family:var(--sans);font-size:.95rem}
+  input::placeholder{color:rgba(255,255,255,.4)}
+  input:focus,select:focus{outline:none;border-color:var(--gold)}
+  select option{color:#111}
+  .submit{grid-column:1/-1;margin-top:6px}
+  .submit button{width:100%;border:none}
+  .form-note{grid-column:1/-1;font-size:.78rem;color:rgba(255,255,255,.5);text-align:center;margin-top:4px}
+  @media(max-width:560px){form{grid-template-columns:1fr}}
+
+  /* FOOTER */
+  footer{background:#0a1326;color:rgba(255,255,255,.66);padding:62px 0 38px;font-size:.86rem}
+  footer .grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:34px;border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:32px}
+  footer .brand{font-size:1.3rem;color:#fff}
+  footer .fcol h4{color:var(--gold);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:13px;font-family:var(--sans);font-weight:600}
+  footer .fcol a,footer .fcol p{display:block;color:rgba(255,255,255,.66);margin-bottom:8px}
+  footer .fcol a:hover{color:var(--gold)}
+  footer .base{margin-top:26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.78rem;color:rgba(255,255,255,.55)}
+</style>
+</head>
+<body>
+
+<div class="draft-note">ENTWURF / DRAFT — Vorschau für internen Gebrauch. Inhalte &amp; Bilder folgen.</div>
+
+<header class="hero">
+  <nav>
+    <div class="wrap">
+      <a class="brand" href="#">European Centre of <b>Performing Arts</b></a>
+      <input type="checkbox" id="navtoggle">
+      <div class="nav-links">
+        <a href="#programme">Programme</a>
+        <a href="#disciplines">Disciplines</a>
+        <a href="#residency">Residency</a>
+        <a href="#who">Who It&rsquo;s For</a>
+      </div>
+      <a href="#apply" class="nav-cta">Register Interest</a>
+      <label for="navtoggle" class="burger" aria-label="Menu">&#9776;</label>
+    </div>
+  </nav>
+
+  <div class="wrap hero-inner">
+    <span class="eyebrow" style="color:var(--gold)">European Centre of Performing Arts</span>
+    <h1>You have the training.<br>We build the <em>career</em>.</h1>
+    <p class="lead">An international residency for opera&rsquo;s emerging professionals &mdash; singers, pianists, r&eacute;p&eacute;titeurs and managers. We teach what training leaves out: how to turn it into a working career.</p>
+    <div class="cta-row">
+      <a href="#apply" class="btn btn-gold">Register Interest</a>
+      <a href="#programme" class="btn btn-ghost">Discover the Programme</a>
+    </div>
+  </div>
+  <div class="hero-tag">
+    <div class="wrap">
+      <span>Three-month European residency</span>
+      <span>Masterclasses with leading coaches</span>
+      <span>A stage, an audience, a launch</span>
+    </div>
+  </div>
+</header>
+
+<!-- POSITIONING -->
+<section class="strip">
+  <div class="wrap">
+    <div class="divider"></div>
+    <p class="lede">Not a conservatoire. Not a degree.<br><em>ECPA begins where your training ended.</em></p>
+    <p class="sub">We do not award degrees, diplomas or certificates. ECPA is for artists who have <strong>already completed their training</strong> &mdash; and now need the one thing the academy never taught: the profession itself.</p>
+  </div>
+</section>
+
+<!-- THE GAP / PROGRAMME -->
+<section id="programme">
+  <div class="wrap center">
+    <span class="eyebrow">The Gap</span>
+    <p class="lede" style="margin-top:14px">Training perfects the craft. It does not teach the career.</p>
+    <p class="sub">How to find representation. How to negotiate. How to command an audition or an interview. How to truly inhabit the work &mdash; so meaning, mood and intention ring true. That is the work of ECPA.</p>
+  </div>
+  <div class="wrap">
+    <div class="pillars">
+      <div class="pillar">
+        <span class="no">01</span><h3>Career</h3>
+        <p>Finding representation, negotiating engagements, professional auditioning and self-marketing &mdash; the business of the profession.</p>
+      </div>
+      <div class="pillar">
+        <span class="no">02</span><h3>Interpretation</h3>
+        <p>Understanding the work in its original language, so that mood, intonation and dramatic meaning are true &mdash; not merely performed.</p>
+      </div>
+      <div class="pillar">
+        <span class="no">03</span><h3>Foundation</h3>
+        <p>Music theory and history &mdash; the bedrock that turns fine technique into an informed, complete artist.</p>
+      </div>
+      <div class="pillar">
+        <span class="no">04</span><h3>Masterclasses</h3>
+        <p>Time with leading figures of the industry, drawn from our network of the world&rsquo;s most respected coaches.</p>
+      </div>
+      <div class="pillar capstone">
+        <span class="no">&#9733; &nbsp;The Showcase</span>
+        <h3 style="margin-top:10px">Every trimester closes on a real stage.</h3>
+        <p style="max-width:62ch">A public performance at a partner venue across Europe &mdash; your work seen by an audience, by agencies and houses, and captured on film. Not an exam. A debut.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DISCIPLINES -->
+<section id="disciplines" class="disc">
+  <div class="wrap center">
+    <span class="eyebrow">Who We Prepare</span>
+    <p class="lede" style="margin-top:14px">The people who make opera &mdash; given the final polish.</p>
+    <p class="sub">Whatever your role on the stage or behind it, ECPA prepares you for the realities of the profession before you step into your real career.</p>
+  </div>
+  <div class="wrap">
+    <div class="disc-grid">
+      <div class="disc-card"><div class="ic">&#9834;</div><h3>Singers</h3><p>Vocal artists ready to step onto the professional stage and sustain a career.</p></div>
+      <div class="disc-card"><div class="ic">&#9835;</div><h3>Pianists</h3><p>Soloists preparing for a performing and collaborative life in music.</p></div>
+      <div class="disc-card"><div class="ic">&#9836;</div><h3>R&eacute;p&eacute;titeurs &amp; Accompanists</h3><p>The pianists at the heart of every rehearsal room and production.</p></div>
+      <div class="disc-card"><div class="ic">&#9733;</div><h3>Opera Managers</h3><p>The leaders who run the houses, the productions and the careers.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFFERENCE -->
+<section id="difference" class="alt">
+  <div class="wrap split">
+    <div class="txt">
+      <span class="eyebrow">The Difference</span>
+      <h2>A name the industry knows.</h2>
+      <p>ECPA does not represent artists and is not an agency. Instead, we become a trusted interface: those we train arrive prepared, ready and connected.</p>
+      <p>Agencies and houses come to recognise what an ECPA artist brings to the room &mdash; a reputation earned through results, not a certificate.</p>
+      <ul class="markers">
+        <li>Prepared, audition-ready professionals</li>
+        <li>Direct exposure to agencies and houses at every showcase</li>
+        <li>A network that opens doors, in Europe and beyond</li>
+      </ul>
+    </div>
+    <div class="panel on-navy">
+      <p class="q">&ldquo;It is one thing to perform the notes. It is another to know the story &mdash; and make an audience believe it.&rdquo;</p>
+      <p class="a">The interpretive depth that separates a trained talent from a working artist sits at the heart of everything we teach.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RESIDENCY -->
+<section id="residency">
+  <div class="wrap split">
+    <div class="panel on-navy" style="background:linear-gradient(160deg,#1c2f54,#0f1d36)">
+      <p class="q">A three-month European residency.</p>
+      <p class="a">Preparation in Germany. A furnished home in a vibrant district. A final performance on a real European stage &mdash; celebrated, filmed, and seen by the people who matter.</p>
+    </div>
+    <div class="txt">
+      <span class="eyebrow">The Residency</span>
+      <h2>Train in Europe. Perform on its stages.</h2>
+      <p>Each cohort is small and selective. You live and work alongside fellow professionals from around the world, coached intensively, and finish on stage &mdash; where careers are noticed.</p>
+      <ul class="markers">
+        <li>One trimester &middot; three immersive months</li>
+        <li>Housing included &mdash; live in the heart of the city</li>
+        <li>Culminating performance at a partner venue</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- WHO / REACH -->
+<section id="who" class="reach">
+  <div class="wrap">
+    <div class="reach-txt">
+      <div class="divider"></div>
+      <p class="lede">For professionals at the threshold of a career.</p>
+      <p class="sub">You have completed your training. Now you are ready for the profession. ECPA welcomes artists from across the world.</p>
+    </div>
+  </div>
+  <img class="globe-bg" src="img/ecpa-globe.svg" alt="A globe centred on Europe with curved paths from countries across the world converging on Germany">
+</section>
+
+<!-- FORM -->
+<section id="apply" class="final">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Begin</span>
+      <h2>Begin your career &mdash; not another course.</h2>
+      <p class="sub">Register your interest to receive details of upcoming cohorts, the application process and the placement assessment.</p>
+    </div>
+    <form onsubmit="return false">
+      <div class="field"><label for="n">Full name</label><input id="n" type="text" placeholder="Your name"></div>
+      <div class="field"><label for="e">Email</label><input id="e" type="email" placeholder="you@example.com"></div>
+      <div class="field"><label for="d">Discipline</label>
+        <select id="d">
+          <option value="">Please choose&hellip;</option>
+          <option>Singer</option>
+          <option>Pianist</option>
+          <option>R&eacute;p&eacute;titeur / Accompanist</option>
+          <option>Opera Manager</option>
+        </select>
+      </div>
+      <div class="field"><label for="c">Country</label><input id="c" type="text" placeholder="Your country"></div>
+      <div class="field full"><label for="m">Message <span style="opacity:.5;text-transform:none;letter-spacing:0">(optional)</span></label><input id="m" type="text" placeholder="Tell us about yourself"></div>
+      <div class="submit"><button type="submit" class="btn btn-gold">Register Interest</button></div>
+      <p class="form-note">Entwurf &mdash; das Formular ist noch nicht angeschlossen (Lead-Versand folgt).</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="grid">
+      <div class="fcol" style="max-width:290px">
+        <div class="brand" style="font-family:var(--serif)">European Centre of <span class="gold" style="font-weight:600">Performing Arts</span></div>
+        <p style="margin-top:14px">An international residency preparing trained opera professionals for the realities of a career.</p>
+      </div>
+      <div class="fcol">
+        <h4>Programme</h4>
+        <a href="#programme">The Programme</a>
+        <a href="#disciplines">Disciplines</a>
+        <a href="#residency">The Residency</a>
+        <a href="#apply">Register Interest</a>
+      </div>
+      <div class="fcol">
+        <h4>Contact</h4>
+        <p>info@ecpa.eu &nbsp;<em style="opacity:.5">(Platzhalter)</em></p>
+        <p>Founded by Danny Matz &amp; Ambra Sorrentino</p>
+      </div>
+    </div>
+    <div class="base">
+      <span>&copy; 2026 European Centre of Performing Arts</span>
+      <span>ECPA does not award academic degrees or diplomas &middot; Career preparation for trained professionals</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

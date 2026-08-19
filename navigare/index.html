@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Agenzia Navigare — Yacht nuovi e usati · Mediatori marittimi · Cecina</title>
+<meta name="description" content="Compravendita, noleggio e mediazione di imbarcazioni nuove e usate. Broker marittimi a Cecina, operativi in tutta Europa.">
+<link rel="preconnect" href="https://dgbstore.blob.core.windows.net">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== SVG-Sprite: Logo-Emblem + Flaggen ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="nav-emblem" viewBox="0 0 240 240" fill="none">
+    <g fill="currentColor">
+      <g id="spoke"><rect x="114.5" y="17" width="11" height="30" rx="5.5"/></g>
+      <use href="#spoke" transform="rotate(45 120 120)"/>
+      <use href="#spoke" transform="rotate(90 120 120)"/>
+      <use href="#spoke" transform="rotate(135 120 120)"/>
+      <use href="#spoke" transform="rotate(180 120 120)"/>
+      <use href="#spoke" transform="rotate(225 120 120)"/>
+      <use href="#spoke" transform="rotate(270 120 120)"/>
+      <use href="#spoke" transform="rotate(315 120 120)"/>
+    </g>
+    <circle cx="120" cy="120" r="65" stroke="currentColor" stroke-width="7"/>
+    <circle cx="120" cy="120" r="55" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+    <path d="M120,158 C66,120 84,72 120,100 C156,72 174,120 120,158 Z"
+          stroke="currentColor" stroke-width="2.6" stroke-linecap="round"
+          stroke-dasharray="1.5 8.5" opacity="0.85"/>
+    <g fill="currentColor">
+      <circle cx="120" cy="72" r="9.5" fill="none" stroke="currentColor" stroke-width="7"/>
+      <rect x="114.5" y="80" width="11" height="94" rx="4"/>
+      <path d="M114.5,170 L120,184 L125.5,170 Z"/>
+      <rect x="90" y="101" width="60" height="10.5" rx="5.25"/>
+      <path d="M76,150 C90,192 150,192 164,150" fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round"/>
+      <path d="M76,153 L52,137 L83,126 Z"/>
+      <path d="M164,153 L188,137 L157,126 Z"/>
+    </g>
+  </symbol>
+  <!-- Flaggen -->
+  <symbol id="fl-it" viewBox="0 0 3 2"><rect width="3" height="2" fill="#fff"/><rect width="1" height="2" fill="#009246"/><rect x="2" width="1" height="2" fill="#ce2b37"/></symbol>
+  <symbol id="fl-fr" viewBox="0 0 3 2"><rect width="3" height="2" fill="#fff"/><rect width="1" height="2" fill="#0055a4"/><rect x="2" width="1" height="2" fill="#ef4135"/></symbol>
+  <symbol id="fl-de" viewBox="0 0 5 3"><rect width="5" height="3" fill="#ffce00"/><rect width="5" height="2" fill="#d00"/><rect width="5" height="1" fill="#000"/></symbol>
+  <symbol id="fl-es" viewBox="0 0 3 2"><rect width="3" height="2" fill="#c60b1e"/><rect y="0.5" width="3" height="1" fill="#ffc400"/></symbol>
+  <symbol id="fl-ru" viewBox="0 0 3 3"><rect width="3" height="3" fill="#d52b1e"/><rect width="3" height="2" fill="#0039a6"/><rect width="3" height="1" fill="#fff"/></symbol>
+  <symbol id="fl-gb" viewBox="0 0 60 30">
+    <clipPath id="gbc"><rect width="60" height="30"/></clipPath>
+    <g clip-path="url(#gbc)">
+      <rect width="60" height="30" fill="#012169"/>
+      <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>
+      <path d="M0,0 L60,30 M60,0 L0,30" stroke="#c8102e" stroke-width="4"/>
+      <path d="M30,0 V30 M0,15 H60" stroke="#fff" stroke-width="10"/>
+      <path d="M30,0 V30 M0,15 H60" stroke="#c8102e" stroke-width="6"/>
+    </g>
+  </symbol>
+</svg>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <svg class="brand-emblem" aria-hidden="true"><use href="#nav-emblem"/></svg>
+      <span class="brand-text">
+        <span class="brand-name">navigare</span>
+        <span class="brand-sub">Mediatori marittimi · Cecina</span>
+      </span>
+    </a>
+    <nav class="mainnav" id="mainnav">
+      <a href="#flotta" data-i18n="nav_flotta">La flotta</a>
+      <a href="#servizi" data-i18n="nav_servizi">Servizi</a>
+      <a href="#agenzia" data-i18n="nav_agenzia">L'agenzia</a>
+      <a href="#contatti" data-i18n="nav_contatti">Contatti</a>
+      <a class="nav-call" href="tel:+390586621381">+39 0586 621381</a>
+      <div class="langbar" id="langbar">
+        <button class="flag" data-lang="it" aria-label="Italiano" title="Italiano"><svg viewBox="0 0 3 2"><use href="#fl-it"/></svg></button>
+        <button class="flag" data-lang="en" aria-label="English" title="English"><svg viewBox="0 0 60 30"><use href="#fl-gb"/></svg></button>
+        <button class="flag" data-lang="fr" aria-label="Français" title="Français"><svg viewBox="0 0 3 2"><use href="#fl-fr"/></svg></button>
+        <button class="flag" data-lang="de" aria-label="Deutsch" title="Deutsch"><svg viewBox="0 0 5 3"><use href="#fl-de"/></svg></button>
+        <button class="flag" data-lang="ru" aria-label="Русский" title="Русский"><svg viewBox="0 0 3 3"><use href="#fl-ru"/></svg></button>
+        <button class="flag" data-lang="es" aria-label="Español" title="Español"><svg viewBox="0 0 3 2"><use href="#fl-es"/></svg></button>
+      </div>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-veil"></div>
+  <div class="wrap hero-content">
+    <p class="eyebrow" data-i18n="hero_eyebrow">Cecina Mare · dal cuore della Toscana, in tutta Europa</p>
+    <h1 data-i18n-html="hero_h1">L'arte di<br><em>navigare</em></h1>
+    <p class="hero-lead" data-i18n="hero_lead">Compravendita, noleggio e mediazione di imbarcazioni nuove e usate. Una selezione curata, dalla barca da diporto al superyacht.</p>
+    <div class="hero-actions">
+      <a class="btn btn-gold" href="#flotta" data-i18n="hero_cta1">Esplora la flotta</a>
+      <a class="btn btn-ghost" href="#contatti" data-i18n="hero_cta2">Affidaci la tua barca</a>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#flotta" aria-label="Scorri">↓</a>
+</section>
+
+<!-- ===== STRIP ===== -->
+<section class="strip wrap">
+  <div class="strip-item"><span class="k" id="statBoats">—</span><span class="l" data-i18n="strip_1">Imbarcazioni in vendita</span></div>
+  <div class="strip-item"><span class="k">Europa</span><span class="l" data-i18n="strip_2">Rete di broker qualificati</span></div>
+  <div class="strip-item"><span class="k">1979</span><span class="l" data-i18n="strip_3">Esperienza sul mare</span></div>
+  <div class="strip-item"><span class="k">Cecina</span><span class="l">Via Ginori 74, LI</span></div>
+</section>
+
+<!-- ===== FLOTTA / CATALOGO ===== -->
+<section class="catalog" id="flotta">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow gold" data-i18n="cat_eyebrow">La flotta</p>
+      <h2 data-i18n="cat_h2">Trova la tua imbarcazione</h2>
+      <p class="section-sub" data-i18n="cat_sub">Ogni barca è verificata dai nostri mediatori. Filtra per tipologia, misura e budget.</p>
+    </div>
+
+    <div class="filters" id="filters">
+      <div class="chips" id="typeChips">
+        <button data-type="" class="chip is-active" data-i18n="chip_all">Tutte</button>
+        <button data-type="motore" class="chip" data-i18n="chip_motor">Motore</button>
+        <button data-type="vela" class="chip" data-i18n="chip_sail">Vela</button>
+        <button data-type="gommone" class="chip" data-i18n="chip_rib">Gommoni</button>
+      </div>
+      <div class="selects">
+        <label><span data-i18n="f_price_label">Prezzo</span>
+          <select id="fPrice">
+            <option value="" data-i18n="opt_any">Qualsiasi</option>
+            <option value="0-50000" data-i18n="price_1">fino a 50.000 €</option>
+            <option value="50000-150000" data-i18n="price_2">50.000 – 150.000 €</option>
+            <option value="150000-500000" data-i18n="price_3">150.000 – 500.000 €</option>
+            <option value="500000-2000000" data-i18n="price_4">500.000 – 2 mln €</option>
+            <option value="2000000-99999999999" data-i18n="price_5">oltre 2 mln €</option>
+          </select>
+        </label>
+        <label><span data-i18n="f_len_label">Lunghezza</span>
+          <select id="fLen">
+            <option value="" data-i18n="opt_any">Qualsiasi</option>
+            <option value="0-8" data-i18n="len_1">fino a 8 m</option>
+            <option value="8-12" data-i18n="len_2">8 – 12 m</option>
+            <option value="12-18" data-i18n="len_3">12 – 18 m</option>
+            <option value="18-999" data-i18n="len_4">oltre 18 m</option>
+          </select>
+        </label>
+        <label><span data-i18n="f_sort_label">Ordina</span>
+          <select id="fSort">
+            <option value="feat" data-i18n="sort_feat">In evidenza</option>
+            <option value="price-desc" data-i18n="sort_pd">Prezzo ↓</option>
+            <option value="price-asc" data-i18n="sort_pa">Prezzo ↑</option>
+            <option value="len-desc" data-i18n="sort_ld">Lunghezza ↓</option>
+            <option value="year-desc" data-i18n="sort_yd">Più recenti</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <p class="result-count"><span id="count">—</span> <span data-i18n="count_suffix">imbarcazioni</span></p>
+    <div class="grid" id="grid"></div>
+    <div class="load-more-wrap"><button class="btn btn-ghost" id="loadMore" data-i18n="load_more" hidden>Mostra altre</button></div>
+  </div>
+</section>
+
+<!-- ===== SERVIZI ===== -->
+<section class="services" id="servizi">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow gold" data-i18n="svc_eyebrow">Servizi</p>
+      <h2 data-i18n="svc_h2">Al vostro fianco, prima e dopo l'acquisto</h2>
+    </div>
+    <div class="svc-grid">
+      <article class="svc"><h3 data-i18n="svc1_t">Compravendita</h3><p data-i18n="svc1_p">Barche nuove e usate selezionate. Trattativa riservata e assistenza in ogni fase, fino al passaggio di proprietà.</p></article>
+      <article class="svc"><h3 data-i18n="svc2_t">Noleggio</h3><p data-i18n="svc2_p">Charter per una giornata o per la stagione. Imbarcazioni pronte, con o senza skipper, lungo la costa toscana.</p></article>
+      <article class="svc"><h3 data-i18n="svc3_t">Mediazione</h3><p data-i18n="svc3_p">Affidateci la vostra barca: la promuoviamo alla nostra rete europea di broker qualificati fino alla vendita.</p></article>
+      <article class="svc"><h3 data-i18n="svc4_t">Valutazione</h3><p data-i18n="svc4_p">Stima di mercato accurata e trasparente, basata su decenni di compravendite e sui valori reali del settore.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AGENZIA ===== -->
+<section class="about" id="agenzia">
+  <div class="wrap about-inner">
+    <div class="about-txt">
+      <p class="eyebrow gold" data-i18n="about_eyebrow">L'agenzia</p>
+      <h2 data-i18n="about_h2">Da Cecina, sul mare da una vita</h2>
+      <p data-i18n="about_p1">Agenzia Navigare è un punto di riferimento per chi compra e vende imbarcazioni sulla costa tirrenica. Lavoriamo come mediatori marittimi: mettiamo in contatto armatori e acquirenti con competenza, discrezione e una conoscenza reale delle barche che trattiamo.</p>
+      <p data-i18n="about_p2">Il nostro porto d'origine è Cecina Mare, ma la nostra rete è europea. Che si tratti di un gommone o di un superyacht, seguiamo ogni cliente con la stessa cura.</p>
+      <a class="btn btn-gold" href="#contatti" data-i18n="about_cta">Parla con un broker</a>
+    </div>
+    <div class="about-img" id="aboutImg"></div>
+  </div>
+</section>
+
+<!-- ===== CONTATTI ===== -->
+<section class="contact" id="contatti">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow gold" data-i18n="con_eyebrow">Contatti</p>
+      <h2 data-i18n="con_h2">Veniteci a trovare</h2>
+    </div>
+    <div class="contact-grid">
+      <a class="cc" href="tel:+390586621381"><span class="cc-k" data-i18n="con_phone">Telefono</span><span class="cc-v">+39 0586 621381</span></a>
+      <a class="cc" href="tel:+39337718301"><span class="cc-k" data-i18n="con_cell">Cellulare</span><span class="cc-v">+39 337 718301</span></a>
+      <a class="cc" href="mailto:navigare@navigare.it"><span class="cc-k" data-i18n="con_email">Email</span><span class="cc-v">navigare@navigare.it</span></a>
+      <div class="cc"><span class="cc-k" data-i18n="con_seat">Sede</span><span class="cc-v">Via Ginori 74<br>Cecina Mare (LI)</span></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <a class="footer-brand" href="#top">
+      <svg class="footer-emblem" aria-hidden="true"><use href="#nav-emblem"/></svg>
+      <span class="footer-word">navigare</span>
+    </a>
+    <div class="footer-lines">
+      <span>Agenzia Navigare · Mediatori marittimi · Via Ginori 74, Cecina Mare (LI)</span>
+      <span class="footer-note" data-i18n="footer_note">Anteprima di studio — realizzata come dimostrazione. Dati e foto dal sito attuale.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== DETTAGLIO BARCA (overlay) ===== -->
+<div class="detail" id="detail" aria-hidden="true">
+  <div class="detail-panel" id="detailPanel"></div>
+</div>
+
+<script src="i18n.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
