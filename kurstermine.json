@@ -9,7 +9,8 @@
       "zeit": "18:00–20:00",
       "start": "02.09.2026",
       "plaetze_frei": 2,
-      "ort": "Italienisches Kulturinstitut Hamburg"
+      "ort": "Italienisches Kulturinstitut Hamburg",
+      "plaetze_max": 8
     },
     {
       "id": "a1-2-fr-0409",
@@ -19,7 +20,8 @@
       "zeit": "10:00–12:00",
       "start": "04.09.2026",
       "plaetze_frei": 8,
-      "ort": "Italienisches Kulturinstitut Hamburg"
+      "ort": "Italienisches Kulturinstitut Hamburg",
+      "plaetze_max": 8
     },
     {
       "id": "a2-1-mi-0209",
@@ -29,7 +31,8 @@
       "zeit": "16:00–18:00",
       "start": "02.09.2026",
       "plaetze_frei": 8,
-      "ort": "Italienisches Kulturinstitut Hamburg"
+      "ort": "Italienisches Kulturinstitut Hamburg",
+      "plaetze_max": 8
     },
     {
       "id": "b1-1-do-0309",
@@ -39,7 +42,8 @@
       "zeit": "15:00–17:00",
       "start": "03.09.2026",
       "plaetze_frei": 6,
-      "ort": "Italienisches Kulturinstitut Hamburg"
+      "ort": "Italienisches Kulturinstitut Hamburg",
+      "plaetze_max": 8
     },
     {
       "id": "b2-1-do-0309",
@@ -49,7 +53,8 @@
       "zeit": "15:00–17:00",
       "start": "03.09.2026",
       "plaetze_frei": 8,
-      "ort": "Italienisches Kulturinstitut Hamburg"
+      "ort": "Italienisches Kulturinstitut Hamburg",
+      "plaetze_max": 8
     },
     {
       "id": "b2-1-fr-0409",
@@ -59,7 +64,8 @@
       "zeit": "10:00–12:00",
       "start": "04.09.2026",
       "plaetze_frei": 8,
-      "ort": "Italienisches Kulturinstitut Hamburg"
+      "ort": "Italienisches Kulturinstitut Hamburg",
+      "plaetze_max": 8
     },
     {
       "id": "c1-1-do-0309",
@@ -69,7 +75,8 @@
       "zeit": "17:00–19:00",
       "start": "03.09.2026",
       "plaetze_frei": 7,
-      "ort": "Italienisches Kulturinstitut Hamburg"
+      "ort": "Italienisches Kulturinstitut Hamburg",
+      "plaetze_max": 8
     },
     {
       "id": "online-a1-1-fr-0409",
@@ -79,7 +86,8 @@
       "zeit": "18:00–20:00",
       "start": "04.09.2026",
       "plaetze_frei": 5,
-      "ort": "Online (Video)"
+      "ort": "Online (Video)",
+      "plaetze_max": 6
     },
     {
       "id": "online-a2-1-fr-0409",
@@ -89,7 +97,8 @@
       "zeit": "17:00–19:00",
       "start": "04.09.2026",
       "plaetze_frei": 6,
-      "ort": "Online (Video)"
+      "ort": "Online (Video)",
+      "plaetze_max": 6
     },
     {
       "id": "online-b1-1-do-0309",
@@ -99,7 +108,8 @@
       "zeit": "16:00–18:00",
       "start": "03.09.2026",
       "plaetze_frei": 6,
-      "ort": "Online (Video)"
+      "ort": "Online (Video)",
+      "plaetze_max": 6
     },
     {
       "id": "intensiv-a1-1-do-0309",
@@ -109,7 +119,8 @@
       "zeit": "18:00–20:00",
       "start": "03.09.2026",
       "plaetze_frei": 4,
-      "ort": "Italienisches Kulturinstitut Hamburg"
+      "ort": "Italienisches Kulturinstitut Hamburg",
+      "plaetze_max": 4
     },
     {
       "id": "intensiv-a2-1-mi-0209",
@@ -119,7 +130,8 @@
       "zeit": "18:00–20:00",
       "start": "02.09.2026",
       "plaetze_frei": 4,
-      "ort": "Italienisches Kulturinstitut Hamburg"
+      "ort": "Italienisches Kulturinstitut Hamburg",
+      "plaetze_max": 4
     },
     {
       "id": "kinder-mi-0209",
@@ -129,7 +141,8 @@
       "zeit": "17:00–18:00",
       "start": "02.09.2026",
       "plaetze_frei": 6,
-      "ort": "Italienisches Kulturinstitut Hamburg"
+      "ort": "Italienisches Kulturinstitut Hamburg",
+      "plaetze_max": 6
     },
     {
       "id": "konv-do-0309",
@@ -139,7 +152,8 @@
       "zeit": "17:00–18:00",
       "start": "03.09.2026",
       "plaetze_frei": 2,
-      "ort": "Italienisches Kulturinstitut Hamburg"
+      "ort": "Italienisches Kulturinstitut Hamburg",
+      "plaetze_max": 4
     },
     {
       "id": "kultur-opera-fr-0409",
@@ -149,7 +163,8 @@
       "zeit": "14:00–16:00",
       "start": "04.09.2026",
       "plaetze_frei": 12,
-      "ort": "Italienisches Kulturinstitut Hamburg"
+      "ort": "Italienisches Kulturinstitut Hamburg",
+      "plaetze_max": 12
     }
   ]
 }

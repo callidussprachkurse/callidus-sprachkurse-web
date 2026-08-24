@@ -925,10 +925,37 @@
     } catch (e) {}
   }
 
+  // Live-Verfügbarkeit direkt in der Preisliste anzeigen (aus kurstermine.json)
+  function tagKurz(t) {
+    return ({ Montag: "Mo", Dienstag: "Di", Mittwoch: "Mi", Donnerstag: "Do",
+              Freitag: "Fr", Samstag: "Sa", Sonntag: "So" })[t] || t;
+  }
+  function slotKurzLabel(s) { return String(s.titel || "").split("·")[0].trim(); }
+  function zeigeVerfuegbarkeit() {
+    if (!slotsData || !slotsData.slots) return;
+    document.querySelectorAll(".price .pitem[data-kurs]").forEach(function (it) {
+      var code = it.getAttribute("data-kurs");
+      var mine = slotsData.slots.filter(function (s) { return s.kurs === code; });
+      var alt = it.querySelector(".pfrei"); if (alt) alt.remove();
+      if (!mine.length) return;
+      var parts = mine.map(function (s) {
+        var frei = s.plaetze_frei | 0;
+        var lbl = esc(slotKurzLabel(s) + " (" + tagKurz(s.tage) + ")");
+        return frei <= 0
+          ? '<span class="voll">' + lbl + " — ausgebucht</span>"
+          : lbl + " — noch <b>" + frei + "</b> frei";
+      });
+      var d = document.createElement("div");
+      d.className = "pfrei";
+      d.innerHTML = parts.join(" · ");
+      it.appendChild(d);
+    });
+  }
+
   function start() {
     baueModal();
     bindeTrigger();
-    ladeSlots().then(autoOpenAusTest);
+    ladeSlots().then(function () { zeigeVerfuegbarkeit(); autoOpenAusTest(); });
   }
   // Auch bei dynamischem/spätem Laden initialisieren (DOMContentLoaded ggf. schon vorbei)
   if (document.readyState === "loading") {
