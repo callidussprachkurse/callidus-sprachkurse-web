@@ -1,0 +1,15 @@
+⚠️ TRIGGER-ERINNERUNG — beim Anpassen der Kurstermine für JANUAR 2027 / 1. Trimester 2027
+
+Sobald die Kurstermine auf der Hamburg-Website (kurstermine.json / Startseiten-Preisliste)
+für das 1. Trimester 2027 (Januar-Start) aktualisiert werden, ist das der Auslöser für:
+
+1. Danny eine GESONDERTE Nachricht schicken: "Januar-Kurse sind terminiert — Frau Nguyen
+   kann jetzt informiert werden." (Danny will den Bescheid, bevor die Kundin angeschrieben wird.)
+
+2. Danach an Frau Nguyen: Anh-Thu Nguyen <thu.plum@gmail.com>, über info@callidus-sprachkurse.de
+   → dass sie sich jetzt über die Januar-Kurse informieren und anmelden kann.
+
+Hintergrund: Sie hat erst ab Januar Zeit, wollte kontaktiert werden, sobald die Kurse
+feststehen. Ihr wurde gesagt: Anmeldung bis spätestens November/Dezember, damit wir planen können.
+
+(Stand: 20.08.2026 — diese Datei löschen, sobald Frau Nguyen informiert wurde.)

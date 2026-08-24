@@ -1,20 +1,155 @@
 {
   "_hinweis": "Verfügbare Gruppen-Kurstermine (Slots) für die Anmeldung. Vom Team pflegbar. Pro Slot: kurs = Kurs-Code = Preis-Kategorie (A1, A2, B1, B2, C1, C2 = reguläres Niveau; ONLINE = Online-Kurs 455€; INTENSIV = Intensivkurs 699€; KULTUR, KONV, KINDER). titel = Anzeige (Niveau + Format), tage, zeit, start (TT.MM.JJJJ), plaetze_frei (0 = ausgebucht), ort. Slot entfernen = Zeile löschen. Stand: Trimester Sep–Nov 2026 (Quelle: Sheet 'Courselist September-November 2026'). SOP: handbuch/02-sprachkurse-hamburg/02-04-kurstermine-pflegen.md",
   "slots": [
-    { "id": "a1-1-mi-0209", "kurs": "A1", "titel": "A1.1", "tage": "Mittwoch", "zeit": "18:00–20:00", "start": "02.09.2026", "plaetze_frei": 8, "ort": "Italienisches Kulturinstitut Hamburg" },
-    { "id": "a1-2-fr-0409", "kurs": "A1", "titel": "A1.2", "tage": "Freitag", "zeit": "10:00–12:00", "start": "04.09.2026", "plaetze_frei": 8, "ort": "Italienisches Kulturinstitut Hamburg" },
-    { "id": "a2-1-mi-0209", "kurs": "A2", "titel": "A2.1", "tage": "Mittwoch", "zeit": "16:00–18:00", "start": "02.09.2026", "plaetze_frei": 8, "ort": "Italienisches Kulturinstitut Hamburg" },
-    { "id": "b1-1-do-0309", "kurs": "B1", "titel": "B1.1", "tage": "Donnerstag", "zeit": "15:00–17:00", "start": "03.09.2026", "plaetze_frei": 8, "ort": "Italienisches Kulturinstitut Hamburg" },
-    { "id": "b2-1-do-0309", "kurs": "B2", "titel": "B2.1", "tage": "Donnerstag", "zeit": "15:00–17:00", "start": "03.09.2026", "plaetze_frei": 8, "ort": "Italienisches Kulturinstitut Hamburg" },
-    { "id": "b2-1-fr-0409", "kurs": "B2", "titel": "B2.1", "tage": "Freitag", "zeit": "10:00–12:00", "start": "04.09.2026", "plaetze_frei": 8, "ort": "Italienisches Kulturinstitut Hamburg" },
-    { "id": "c1-1-do-0309", "kurs": "C1", "titel": "C1.1", "tage": "Donnerstag", "zeit": "17:00–19:00", "start": "03.09.2026", "plaetze_frei": 8, "ort": "Italienisches Kulturinstitut Hamburg" },
-    { "id": "online-a1-1-fr-0409", "kurs": "ONLINE", "titel": "A1.1 · Online", "tage": "Freitag", "zeit": "18:00–20:00", "start": "04.09.2026", "plaetze_frei": 6, "ort": "Online (Video)" },
-    { "id": "online-a2-1-fr-0409", "kurs": "ONLINE", "titel": "A2.1 · Online", "tage": "Freitag", "zeit": "17:00–19:00", "start": "04.09.2026", "plaetze_frei": 6, "ort": "Online (Video)" },
-    { "id": "online-b1-1-do-0309", "kurs": "ONLINE", "titel": "B1.1 · Online", "tage": "Donnerstag", "zeit": "16:00–18:00", "start": "03.09.2026", "plaetze_frei": 6, "ort": "Online (Video)" },
-    { "id": "intensiv-a1-1-do-0309", "kurs": "INTENSIV", "titel": "A1.1 · Intensiv", "tage": "Donnerstag", "zeit": "18:00–20:00", "start": "03.09.2026", "plaetze_frei": 4, "ort": "Italienisches Kulturinstitut Hamburg" },
-    { "id": "intensiv-a2-1-mi-0209", "kurs": "INTENSIV", "titel": "A2.1 · Intensiv", "tage": "Mittwoch", "zeit": "18:00–20:00", "start": "02.09.2026", "plaetze_frei": 4, "ort": "Italienisches Kulturinstitut Hamburg" },
-    { "id": "kinder-mi-0209", "kurs": "KINDER", "titel": "Kinderkurs (Bambini)", "tage": "Mittwoch", "zeit": "17:00–18:00", "start": "02.09.2026", "plaetze_frei": 6, "ort": "Italienisches Kulturinstitut Hamburg" },
-    { "id": "konv-do-0309", "kurs": "KONV", "titel": "Conversazione (A2–B2)", "tage": "Donnerstag", "zeit": "17:00–18:00", "start": "03.09.2026", "plaetze_frei": 4, "ort": "Italienisches Kulturinstitut Hamburg" },
-    { "id": "kultur-opera-fr-0409", "kurs": "KULTUR", "titel": "Opera · Kulturkurs (B1–C1)", "tage": "Freitag", "zeit": "14:00–16:00", "start": "04.09.2026", "plaetze_frei": 12, "ort": "Italienisches Kulturinstitut Hamburg" }
+    {
+      "id": "a1-1-mi-0209",
+      "kurs": "A1",
+      "titel": "A1.1",
+      "tage": "Mittwoch",
+      "zeit": "18:00–20:00",
+      "start": "02.09.2026",
+      "plaetze_frei": 2,
+      "ort": "Italienisches Kulturinstitut Hamburg"
+    },
+    {
+      "id": "a1-2-fr-0409",
+      "kurs": "A1",
+      "titel": "A1.2",
+      "tage": "Freitag",
+      "zeit": "10:00–12:00",
+      "start": "04.09.2026",
+      "plaetze_frei": 8,
+      "ort": "Italienisches Kulturinstitut Hamburg"
+    },
+    {
+      "id": "a2-1-mi-0209",
+      "kurs": "A2",
+      "titel": "A2.1",
+      "tage": "Mittwoch",
+      "zeit": "16:00–18:00",
+      "start": "02.09.2026",
+      "plaetze_frei": 8,
+      "ort": "Italienisches Kulturinstitut Hamburg"
+    },
+    {
+      "id": "b1-1-do-0309",
+      "kurs": "B1",
+      "titel": "B1.1",
+      "tage": "Donnerstag",
+      "zeit": "15:00–17:00",
+      "start": "03.09.2026",
+      "plaetze_frei": 6,
+      "ort": "Italienisches Kulturinstitut Hamburg"
+    },
+    {
+      "id": "b2-1-do-0309",
+      "kurs": "B2",
+      "titel": "B2.1",
+      "tage": "Donnerstag",
+      "zeit": "15:00–17:00",
+      "start": "03.09.2026",
+      "plaetze_frei": 8,
+      "ort": "Italienisches Kulturinstitut Hamburg"
+    },
+    {
+      "id": "b2-1-fr-0409",
+      "kurs": "B2",
+      "titel": "B2.1",
+      "tage": "Freitag",
+      "zeit": "10:00–12:00",
+      "start": "04.09.2026",
+      "plaetze_frei": 8,
+      "ort": "Italienisches Kulturinstitut Hamburg"
+    },
+    {
+      "id": "c1-1-do-0309",
+      "kurs": "C1",
+      "titel": "C1.1",
+      "tage": "Donnerstag",
+      "zeit": "17:00–19:00",
+      "start": "03.09.2026",
+      "plaetze_frei": 7,
+      "ort": "Italienisches Kulturinstitut Hamburg"
+    },
+    {
+      "id": "online-a1-1-fr-0409",
+      "kurs": "ONLINE",
+      "titel": "A1.1 · Online",
+      "tage": "Freitag",
+      "zeit": "18:00–20:00",
+      "start": "04.09.2026",
+      "plaetze_frei": 5,
+      "ort": "Online (Video)"
+    },
+    {
+      "id": "online-a2-1-fr-0409",
+      "kurs": "ONLINE",
+      "titel": "A2.1 · Online",
+      "tage": "Freitag",
+      "zeit": "17:00–19:00",
+      "start": "04.09.2026",
+      "plaetze_frei": 6,
+      "ort": "Online (Video)"
+    },
+    {
+      "id": "online-b1-1-do-0309",
+      "kurs": "ONLINE",
+      "titel": "B1.1 · Online",
+      "tage": "Donnerstag",
+      "zeit": "16:00–18:00",
+      "start": "03.09.2026",
+      "plaetze_frei": 6,
+      "ort": "Online (Video)"
+    },
+    {
+      "id": "intensiv-a1-1-do-0309",
+      "kurs": "INTENSIV",
+      "titel": "A1.1 · Intensiv",
+      "tage": "Donnerstag",
+      "zeit": "18:00–20:00",
+      "start": "03.09.2026",
+      "plaetze_frei": 4,
+      "ort": "Italienisches Kulturinstitut Hamburg"
+    },
+    {
+      "id": "intensiv-a2-1-mi-0209",
+      "kurs": "INTENSIV",
+      "titel": "A2.1 · Intensiv",
+      "tage": "Mittwoch",
+      "zeit": "18:00–20:00",
+      "start": "02.09.2026",
+      "plaetze_frei": 4,
+      "ort": "Italienisches Kulturinstitut Hamburg"
+    },
+    {
+      "id": "kinder-mi-0209",
+      "kurs": "KINDER",
+      "titel": "Kinderkurs (Bambini)",
+      "tage": "Mittwoch",
+      "zeit": "17:00–18:00",
+      "start": "02.09.2026",
+      "plaetze_frei": 6,
+      "ort": "Italienisches Kulturinstitut Hamburg"
+    },
+    {
+      "id": "konv-do-0309",
+      "kurs": "KONV",
+      "titel": "Conversazione (A2–B2)",
+      "tage": "Donnerstag",
+      "zeit": "17:00–18:00",
+      "start": "03.09.2026",
+      "plaetze_frei": 2,
+      "ort": "Italienisches Kulturinstitut Hamburg"
+    },
+    {
+      "id": "kultur-opera-fr-0409",
+      "kurs": "KULTUR",
+      "titel": "Opera · Kulturkurs (B1–C1)",
+      "tage": "Freitag",
+      "zeit": "14:00–16:00",
+      "start": "04.09.2026",
+      "plaetze_frei": 12,
+      "ort": "Italienisches Kulturinstitut Hamburg"
+    }
   ]
 }
