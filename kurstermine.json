@@ -8,9 +8,10 @@
       "tage": "Mittwoch",
       "zeit": "18:00–20:00",
       "start": "02.09.2026",
-      "plaetze_frei": 2,
+      "plaetze_frei": 9,
       "ort": "Italienisches Kulturinstitut Hamburg",
-      "plaetze_max": 8
+      "plaetze_max": 16,
+      "hinweis": "2 Parallelgruppen à 8 (Francesco + Damiano), zeitgleich Mi 18–20"
     },
     {
       "id": "a1-2-fr-0409",
@@ -19,6 +20,17 @@
       "tage": "Freitag",
       "zeit": "10:00–12:00",
       "start": "04.09.2026",
+      "plaetze_frei": 8,
+      "ort": "Italienisches Kulturinstitut Hamburg",
+      "plaetze_max": 8
+    },
+    {
+      "id": "a1-1-do-0309",
+      "kurs": "A1",
+      "titel": "A1.1",
+      "tage": "Donnerstag",
+      "zeit": "15:00–17:00",
+      "start": "03.09.2026",
       "plaetze_frei": 8,
       "ort": "Italienisches Kulturinstitut Hamburg",
       "plaetze_max": 8
@@ -42,17 +54,6 @@
       "zeit": "15:00–17:00",
       "start": "03.09.2026",
       "plaetze_frei": 6,
-      "ort": "Italienisches Kulturinstitut Hamburg",
-      "plaetze_max": 8
-    },
-    {
-      "id": "b2-1-do-0309",
-      "kurs": "B2",
-      "titel": "B2.1",
-      "tage": "Donnerstag",
-      "zeit": "15:00–17:00",
-      "start": "03.09.2026",
-      "plaetze_frei": 8,
       "ort": "Italienisches Kulturinstitut Hamburg",
       "plaetze_max": 8
     },
@@ -118,17 +119,6 @@
       "tage": "Donnerstag",
       "zeit": "18:00–20:00",
       "start": "03.09.2026",
-      "plaetze_frei": 4,
-      "ort": "Italienisches Kulturinstitut Hamburg",
-      "plaetze_max": 4
-    },
-    {
-      "id": "intensiv-a2-1-mi-0209",
-      "kurs": "INTENSIV",
-      "titel": "A2.1 · Intensiv",
-      "tage": "Mittwoch",
-      "zeit": "18:00–20:00",
-      "start": "02.09.2026",
       "plaetze_frei": 4,
       "ort": "Italienisches Kulturinstitut Hamburg",
       "plaetze_max": 4
