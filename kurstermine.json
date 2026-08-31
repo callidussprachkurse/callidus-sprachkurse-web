@@ -4,26 +4,14 @@
     {
       "id": "a1-1-mi-0209",
       "kurs": "A1",
-      "titel": "A1.1 Parallelkurs 1",
+      "titel": "A1.1",
       "tage": "Mittwoch",
       "zeit": "18:00–20:00",
       "start": "02.09.2026",
-      "plaetze_frei": 1,
+      "plaetze_frei": 0,
       "ort": "Italienisches Kulturinstitut Hamburg",
       "plaetze_max": 8,
-      "hinweis": "Parallelgruppe (Francesco), zeitgleich Mi 18–20"
-    },
-    {
-      "id": "a1-1-mi-0209-2",
-      "kurs": "A1",
-      "titel": "A1.1 Parallelkurs 2",
-      "tage": "Mittwoch",
-      "zeit": "18:00–20:00",
-      "start": "02.09.2026",
-      "plaetze_frei": 8,
-      "ort": "Italienisches Kulturinstitut Hamburg",
-      "plaetze_max": 8,
-      "hinweis": "Parallelgruppe (Damiano), zeitgleich Mi 18–20"
+      "hinweis": "Francesco"
     },
     {
       "id": "a1-2-fr-0409",
