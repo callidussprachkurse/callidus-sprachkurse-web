@@ -876,6 +876,7 @@
   function bindeTrigger() {
     // Preislisten-Zeilen klickbar machen (Code aus dem Namen ableiten)
     document.querySelectorAll(".price .pitem").forEach(function (item) {
+      if (item.hasAttribute("data-nobook")) return;  // Kurse ohne aktuelle Termine: nicht buchbar
       var pn = item.querySelector(".pn");
       var code = codeAusName(pn ? pn.textContent : "");
       if (!code) return;
