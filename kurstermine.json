@@ -179,6 +179,17 @@
       "plaetze_max": 4
     },
     {
+      "id": "urlaub-mo-1101",
+      "kurs": "URLAUB",
+      "titel": "Italienisch für den Urlaub (A1–B1)",
+      "tage": "Montag",
+      "zeit": "17:00–18:00",
+      "start": "11.01.2027",
+      "plaetze_frei": 6,
+      "ort": "Italienisches Kulturinstitut Hamburg",
+      "plaetze_max": 6
+    },
+    {
       "id": "cils-b1-di-do-1201",
       "kurs": "CILS",
       "titel": "CILS B1 · Online-Intensiv",

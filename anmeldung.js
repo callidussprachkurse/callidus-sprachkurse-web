@@ -271,6 +271,7 @@
     CILSC1:   { label: "CILS-Vorbereitung C1 · Sonderkurs (Online-Intensiv)", preis: "390 €", typ: "gruppe" },
     KULTUR:   { label: "Kulturkurs",         preis: "370 €",   typ: "gruppe" },
     KONV:     { label: "Conversazione",       preis: "370 €",   typ: "gruppe" },
+    URLAUB:   { label: "Italienisch für den Urlaub", preis: "370 €", typ: "gruppe" },
     ONLINE:   { label: "Online-Kurs",        preis: "455 €",   typ: "gruppe" },
     BUSINESS: { label: "Business-Kurs",      preis: "610 €",   typ: "gruppe", aufAnfrage: true },
     KINDER:   { label: "Kinderkurs",         preis: "365 €",   typ: "gruppe", kind: true },
@@ -280,13 +281,14 @@
   };
 
   // Gruppen-Kurse, die in der Kurswahl (generischer Einstieg) auswählbar sind
-  var GRUPPEN_WAHL = ["A1","A2","B1","B2","C1","C2","CILS","KULTUR","KONV","ONLINE","KINDER","INTENSIV","SOMMER","BUSINESS"];
+  var GRUPPEN_WAHL = ["A1","A2","B1","B2","C1","C2","CILS","KULTUR","KONV","URLAUB","ONLINE","KINDER","INTENSIV","SOMMER","BUSINESS"];
 
   // Kurs-Code aus dem Namen in der Preisliste ableiten
   function codeAusName(text) {
     var t = (text || "").toLowerCase();
     // Erst die Spezial-Kurse (deren Beschreibung kann ein Niveau wie "ab B1" enthalten)
     if (t.indexOf("cils") > -1) return "CILS";
+    if (t.indexOf("urlaub") > -1) return "URLAUB";
     if (t.indexOf("conversazione") > -1 || t.indexOf("konversation") > -1) return "KONV";
     if (t.indexOf("kultur") > -1) return "KULTUR";
     if (t.indexOf("online") > -1) return "ONLINE";
@@ -817,7 +819,7 @@
   var AGB_OK = "Hiermit bestätige ich, dass ich die allgemeinen Geschäftsbedingungen gelesen habe und mich darüber hinaus mit ihnen einverstanden erkläre.";
 
   function kategorie() {
-    var KAT = {A1:"A1",A2:"A2",B1:"B1",B2:"B2",C1:"C1",C2:"C2",CILS:"CILS",CILSC1:"CILS",KULTUR:"Sprach & Kultur",KONV:"Sprach & Kultur",BUSINESS:"Business",KINDER:"Kinder Kultur und Sprach",EINZEL:"Einzelunterricht"};
+    var KAT = {A1:"A1",A2:"A2",B1:"B1",B2:"B2",C1:"C1",C2:"C2",CILS:"CILS",CILSC1:"CILS",KULTUR:"Sprach & Kultur",KONV:"Sprach & Kultur",URLAUB:"Sprach & Kultur",BUSINESS:"Business",KINDER:"Kinder Kultur und Sprach",EINZEL:"Einzelunterricht"};
     if (KAT[st.kurs]) return KAT[st.kurs];
     var m = st.slot && /\b([ABC][12])\b/i.exec(st.slot.titel || "");
     if (m) return m[1].toUpperCase();
