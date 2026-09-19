@@ -268,6 +268,7 @@
     C1:       { label: "Kurs C1",            preis: "560 €",   typ: "gruppe" },
     C2:       { label: "Kurs C2",            preis: "599 €",   typ: "gruppe" },
     CILS:     { label: "CILS-Vorbereitung",  preis: "640 €",   typ: "gruppe" },
+    CILSC1:   { label: "CILS-Vorbereitung C1 · Sonderkurs (Online-Intensiv)", preis: "390 €", typ: "gruppe" },
     KULTUR:   { label: "Kulturkurs",         preis: "370 €",   typ: "gruppe" },
     KONV:     { label: "Conversazione",       preis: "370 €",   typ: "gruppe" },
     ONLINE:   { label: "Online-Kurs",        preis: "455 €",   typ: "gruppe" },
@@ -816,7 +817,7 @@
   var AGB_OK = "Hiermit bestätige ich, dass ich die allgemeinen Geschäftsbedingungen gelesen habe und mich darüber hinaus mit ihnen einverstanden erkläre.";
 
   function kategorie() {
-    var KAT = {A1:"A1",A2:"A2",B1:"B1",B2:"B2",C1:"C1",C2:"C2",CILS:"CILS",KULTUR:"Sprach & Kultur",KONV:"Sprach & Kultur",BUSINESS:"Business",KINDER:"Kinder Kultur und Sprach",EINZEL:"Einzelunterricht"};
+    var KAT = {A1:"A1",A2:"A2",B1:"B1",B2:"B2",C1:"C1",C2:"C2",CILS:"CILS",CILSC1:"CILS",KULTUR:"Sprach & Kultur",KONV:"Sprach & Kultur",BUSINESS:"Business",KINDER:"Kinder Kultur und Sprach",EINZEL:"Einzelunterricht"};
     if (KAT[st.kurs]) return KAT[st.kurs];
     var m = st.slot && /\b([ABC][12])\b/i.exec(st.slot.titel || "");
     if (m) return m[1].toUpperCase();
