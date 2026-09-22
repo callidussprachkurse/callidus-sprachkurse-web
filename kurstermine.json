@@ -1,5 +1,5 @@
 {
-  "_hinweis": "Verfügbare Gruppen-Kurstermine (Slots) für die Anmeldung. Vom Team pflegbar. Pro Slot: kurs = Kurs-Code = Preis-Kategorie (A1, A2, B1, B2, C1, C2 = reguläres Niveau/Präsenz; ONLINE = Online-Kurs 455€; CILS = CILS-Vorbereitung; CILSC1 = CILS-C1-Sonderkurs 390€; KONV = Conversazione; INTENSIV, KULTUR, KINDER). titel = Anzeige (Niveau + Format), tage, zeit, start (TT.MM.JJJJ), plaetze_frei (0 = ausgebucht), ort. KEINE Lehrernamen (öffentlich). Slot entfernen = Zeile löschen. Stand: 1. Trimester 2027 (Start 07.01.2027; Do-Kurse ab 07.01., Mo-Kurse ab 11.01.) + CILS-C1-Sonderkurs Nov 2026. Instituts-Schließtage (CILS-Prüfungen): 18.02. und 08.04.2027 (Do). Quelle: Sheet 'Course List 3rd Trimester 2026- 1st Trimester 2027' / Draft-Mail Istituto. SOP: handbuch/02-sprachkurse-hamburg/02-04-kurstermine-pflegen.md",
+  "_hinweis": "Verfügbare Gruppen-Kurstermine (Slots) für die Anmeldung. Vom Team pflegbar. Pro Slot: kurs = Kurs-Code = Preis-Kategorie (A1, A2, B1, B2, C1, C2 = reguläres Niveau/Präsenz; ONLINE = Online-Kurs 455€; CILS = CILS-Vorbereitung; CILSC1 = CILS-C1-Sonderkurs 390€; KONV = Conversazione; INTENSIV, KULTUR, KINDER). titel = Anzeige (Niveau + Format), tage, zeit, start (TT.MM.JJJJ), plaetze_frei (0 = ausgebucht), ort. KEINE Lehrernamen (öffentlich). Slot entfernen = Zeile löschen. Stand: 1. Trimester 2027 (Start 07.01.2027; Do-Kurse ab 07.01., Mo-Kurse ab 11.01.) + CILS-C1-Sonderkurs Nov 2026 + CILS-B1/B2-Intensivkurse Okt 2026 (3. Trimester). Instituts-Schließtage (CILS-Prüfungen): 18.02. und 08.04.2027 (Do). Quelle: Sheet 'Course List 3rd Trimester 2026- 1st Trimester 2027' / Draft-Mail Istituto. SOP: handbuch/02-sprachkurse-hamburg/02-04-kurstermine-pflegen.md",
   "slots": [
     {
       "id": "cilsc1-son-1611",
@@ -12,6 +12,28 @@
       "ort": "Online (Video)",
       "plaetze_max": 6,
       "sonder": true
+    },
+    {
+      "id": "cils-b2-mo-fr-1910",
+      "kurs": "CILS",
+      "titel": "CILS B2 · Online-Intensiv",
+      "tage": "Montag & Freitag",
+      "zeit": "09:00–11:00",
+      "start": "19.10.2026",
+      "plaetze_frei": 6,
+      "ort": "Online (Video)",
+      "plaetze_max": 6
+    },
+    {
+      "id": "cils-b1-di-do-2010",
+      "kurs": "CILS",
+      "titel": "CILS B1 · Online-Intensiv",
+      "tage": "Dienstag & Donnerstag",
+      "zeit": "09:00–11:00",
+      "start": "20.10.2026",
+      "plaetze_frei": 6,
+      "ort": "Online (Video)",
+      "plaetze_max": 6
     },
     {
       "id": "a1-1-mo-1101",
