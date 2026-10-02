@@ -1,0 +1,51 @@
+{
+  "weeks": [
+    {
+      "place": "Magdeburg",
+      "theme": "Arrival & foundations"
+    },
+    {
+      "place": "Magdeburg",
+      "theme": "Masterclass & opera industry"
+    },
+    {
+      "place": "Magdeburg",
+      "theme": "Auditions & final recital in Germany"
+    },
+    {
+      "place": "Tuscany, Italy",
+      "theme": "Public final concert in an Italian theatre"
+    }
+  ],
+  "strands": [
+    {
+      "name": "Repertoire & masterclass",
+      "hours": 34
+    },
+    {
+      "name": "Excursions & travel",
+      "hours": 26
+    },
+    {
+      "name": "Rehearsals, auditions & concerts",
+      "hours": 25
+    },
+    {
+      "name": "Individual lessons",
+      "hours": 24
+    },
+    {
+      "name": "Management & opera industry",
+      "hours": 22
+    },
+    {
+      "name": "Language, intonation and interpretation",
+      "hours": 14
+    },
+    {
+      "name": "Welcome & networking",
+      "hours": 4
+    }
+  ],
+  "hours_total": 149
+}

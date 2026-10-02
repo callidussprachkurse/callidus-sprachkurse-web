@@ -1,0 +1,65 @@
+{
+ "costabile-cisco": {
+  "name": "William Costabile Cisco",
+  "field": "Stagecraft",
+  "ini": "WC",
+  "now": "Workshop — working with a stage director on Bellini's Il Pirata.",
+  "cv": ""
+ },
+ "temesi": {
+  "name": "Mária Temesi",
+  "field": "Voice",
+  "ini": "MT",
+  "now": "Professor and head of the vocal department at the Faculty of Music, University of Szeged; official ambassador and vocal consultant to the Hungarian State Opera.",
+  "cv": "Hungarian dramatic soprano. She studied at the Conservatory of Szeged and took her degree in opera at the Franz Liszt Academy of Music in Budapest, joining the Hungarian State Opera in 1981. She was a prizewinner at the Maria Callas Grand Prix in Athens in 1979 and won first prize at the Luciano Pavarotti International Voice Competition in Philadelphia in 1985. A career in the Verdi and Wagner repertoire followed; today she teaches, sits on international juries and gives masterclasses."
+ },
+ "marghe": {
+  "name": "Margherita Pucillo",
+  "field": "Voice",
+  "ini": "MP",
+  "now": "Individual vocal coaching and the Puccini repertoire.",
+  "cv": ""
+ },
+ "borisov": {
+  "name": "Svetoslav Borisov",
+  "field": "Work with a conductor",
+  "ini": "SB",
+  "now": "Masterclass — score interpretation with the conductor, with a focus on the French repertoire.",
+  "cv": ""
+ },
+ "ianone": {
+  "name": "Massimo Ianone",
+  "field": "Repertoire & the profession",
+  "ini": "MI",
+  "now": "Individual lessons, repertoire choice and management; the Verdi repertoire; mock auditions with feedback.",
+  "cv": ""
+ },
+ "bockstiegel": {
+  "name": "Thomas Bockstiegel",
+  "field": "Repertoire",
+  "ini": "TB",
+  "now": "Insights into the Wagner repertoire.",
+  "cv": ""
+ },
+ "des-aubris": {
+  "name": "Zenaida des Aubris",
+  "field": "The profession",
+  "ini": "ZA",
+  "now": "Mock auditions with feedback, and management — how to find your agent and present your portfolio.",
+  "cv": "More than thirty-five years in artist management and production, from the artistic administration of San Francisco Opera to personal manager of Jean-Pierre Ponnelle and Lorin Maazel, project director of <em>Turandot in the Forbidden City</em> in Beijing and first director of the Hangzhou Grand Theatre. With us she teaches the part no conservatoire covers: agencies, contracts, fees and how singers manage their own careers."
+ },
+ "sorrentino": {
+  "name": "Ambra Sorrentino",
+  "field": "Opera management & Italian",
+  "ini": "AS",
+  "now": "Founder and CEO of Opera Co-Pro, the international marketplace for opera co-productions, active in more than thirty-six countries; member of our advisory board.",
+  "cv": "Opera manager and cultural entrepreneur, trained as a harpist (diploma 110/110 cum laude) with a master's degree in International Management of Opera Theatres. Stations include Teatro San Carlo in Naples, Oper Leipzig, Teatro Goldoni, the Puccini Festival, artistic leadership roles in Ingolstadt and at the Hamburger Kammeroper, Robert Gilder &amp; Co in London and New York, and project management at Theater Magdeburg. She sits on juries of international singing competitions and is an EU expert for culture. In the programme she teaches how a German opera house is built and run, the Italian theatre landscape, repertoire and season planning, and the Italian language."
+ },
+ "demichele": {
+  "name": "Maria Grazia De Michele",
+  "field": "Role work",
+  "ini": "MG",
+  "now": "Doctoral researcher in library science and musical bibliography at the Conservatorio “L. Boccherini” in Lucca, and a specialist in artistic vocology. In the programme she takes role work, and the Puccini and verismo repertoire together with her colleagues.",
+  "cv": "Born in Milan in 1995. She read musicology at the University of Rome Tor Vergata, taking her master’s degree in 2019, after a bachelor’s degree in accompaniment at the Conservatorio of Benevento, and completed a specialisation in artistic vocology at the Conservatorio “Giuseppe Verdi” in Milan in 2023. She studied classical singing and sang in the chorus of the Teatro dell’Opera di Roma. She has catalogued music for the libraries of the conservatoires of Como and Milan and for the Accademia Teatro alla Scala. Since 2024 she has been working towards a doctorate in Lucca on the Luporini collections, publishing and speaking on that research internationally, most recently at the IAML congress in Thessaloniki."
+ }
+}

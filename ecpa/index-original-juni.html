@@ -157,21 +157,13 @@
   footer .fcol a,footer .fcol p{display:block;color:rgba(255,255,255,.66);margin-bottom:8px}
   footer .fcol a:hover{color:var(--gold)}
   footer .base{margin-top:26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.78rem;color:rgba(255,255,255,.55)}
-  .castle-hero{display:flex;flex-direction:column;justify-content:space-between;min-height:100vh;overflow:hidden;text-align:center;background:radial-gradient(120% 75% at 50% 0%,#22345a 0%,#0f1d36 52%,#0a1326 100%);color:#fff}
-  .castle-hero .ch-text{position:relative;z-index:2;max-width:880px;margin:0 auto;padding:128px 28px 18px}
-  .castle-hero .eyebrow{color:var(--gold)}
-  .castle-hero h1{font-size:clamp(2.3rem,5.2vw,4.1rem);margin:.4em 0 .35em;color:#fff;line-height:1.12}
-  .castle-hero h1 em{font-style:italic;color:var(--gold-soft)}
-  .castle-hero .lead{font-size:clamp(1rem,2vw,1.18rem);max-width:50ch;margin:0 auto;color:rgba(255,255,255,.85)}
-  .castle-hero .cta-row{justify-content:center;margin-top:26px}
-  .castle-hero .castle-art{position:relative;z-index:1;display:block;width:min(1000px,94%);margin:6px auto 0}
 </style>
 </head>
 <body>
 
-<div class="draft-note">ENTWURF — SCHLOSS-/VOLLVISIONS-VARIANTE (nur zur Ansicht)</div>
+<div class="draft-note">ENTWURF / DRAFT — Vorschau für internen Gebrauch. Inhalte &amp; Bilder folgen.</div>
 
-<header class="hero castle-hero">
+<header class="hero">
   <nav>
     <div class="wrap">
       <a class="brand" href="#">European Centre of <b>Performing Arts</b></a>
@@ -186,16 +178,23 @@
       <label for="navtoggle" class="burger" aria-label="Menu">&#9776;</label>
     </div>
   </nav>
-  <div class="ch-text">
-    <span class="eyebrow">A Total-Immersion Residency</span>
-    <h1>Come live with us in a 19th-century <em>German castle</em>.</h1>
-    <p class="lead">Three months. Work, eat, sleep &mdash; everything under one roof. A total-immersion residency where nothing comes between you and your art.</p>
+
+  <div class="wrap hero-inner">
+    <span class="eyebrow" style="color:var(--gold)">European Centre of Performing Arts</span>
+    <h1>You have the training.<br>We build the <em>career</em>.</h1>
+    <p class="lead">An international residency for opera&rsquo;s emerging professionals &mdash; singers, pianists, r&eacute;p&eacute;titeurs and managers. We teach what training leaves out: how to turn it into a working career.</p>
     <div class="cta-row">
       <a href="#apply" class="btn btn-gold">Register Interest</a>
       <a href="#programme" class="btn btn-ghost">Discover the Programme</a>
     </div>
   </div>
-  <img class="castle-art" src="img/castle-outline.svg" alt="Detailed line illustration of a 19th-century German castle">
+  <div class="hero-tag">
+    <div class="wrap">
+      <span>Three-month European residency</span>
+      <span>Masterclasses with leading coaches</span>
+      <span>A stage, an audience, a launch</span>
+    </div>
+  </div>
 </header>
 
 <!-- POSITIONING -->

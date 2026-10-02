@@ -36,6 +36,17 @@
       "sonder": true
     },
     {
+      "id": "kinder-mi-0710",
+      "kurs": "KINDER",
+      "titel": "Bambini (Italienisch für Kinder)",
+      "tage": "Mittwoch",
+      "zeit": "17:00–18:00",
+      "start": "07.10.2026",
+      "plaetze_frei": 5,
+      "ort": "Italienisches Kulturinstitut Hamburg",
+      "plaetze_max": 6
+    },
+    {
       "id": "cils-b2-mo-fr-1910",
       "kurs": "CILS",
       "titel": "CILS B2 · Online-Intensiv",
