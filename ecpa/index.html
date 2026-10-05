@@ -1033,6 +1033,15 @@ section em,.metall.hell{
         <div><label for="gj">Year</label><select id="gj"></select></div>
       </div>
       <div class="field"><label for="na">Nationality</label><input id="na" name="nationality" type="text" placeholder="Italian"></div>
+      <div class="field"><label for="g">Gender</label>
+        <select id="g" name="gender"><option value="">Please choose&hellip;</option><option value="female">Female</option><option value="male">Male</option><option value="diverse">Diverse</option></select>
+      </div>
+      <div class="field full"><label>Which languages do you speak?</label>
+        <div class="msel" id="langsel">
+          <button type="button" class="mbtn empty" id="langbtn"><span id="langlabel">Please choose one or more&hellip;</span><span class="mcar">&#9662;</span></button>
+          <div class="mmenu" id="langmenu"></div>
+        </div>
+      </div>
       <div class="field full"><label for="s">Training &mdash; where, with whom, until when</label><input id="s" name="training" type="text" placeholder="Conservatoire, teacher, year of completion"></div>
       <div class="field full"><label for="r">Repertoire you would bring</label><textarea id="r" name="repertoire" rows="3" placeholder="Roles and arias you have sung or are studying"></textarea></div>
 
@@ -1062,6 +1071,34 @@ section em,.metall.hell{
       <div class="fortschritt" id="bw-bar" hidden><span></span></div>
       <p class="form-note" id="bw-msg">Everything is transmitted to our own machine in Germany. Nothing is passed on.</p>
     </form>
+    <style>
+    #apply .msel{position:relative}
+    #apply .mbtn{width:100%;background:transparent;border:0;border-bottom:1px solid var(--hair);padding:11px 0;color:var(--text);text-align:left;cursor:pointer;display:flex;align-items:center;justify-content:space-between;font:inherit}
+    #apply .mbtn.empty{color:rgba(26,23,20,.32)}
+    #apply .mbtn .mcar{color:var(--brass2);margin-left:10px}
+    #apply .mmenu{position:absolute;top:calc(100% + 4px);left:0;right:0;background:#fff;border:1px solid var(--hair);border-radius:8px;box-shadow:0 10px 28px rgba(0,0,0,.14);padding:6px;max-height:280px;overflow:auto;z-index:30;display:none;grid-template-columns:1fr 1fr;gap:1px}
+    #apply .mmenu.on{display:grid}
+    #apply .mitem{display:flex;align-items:center;gap:9px;padding:8px 10px;border-radius:6px;cursor:pointer;font-size:.92rem;color:var(--text)}
+    #apply .mitem:hover{background:rgba(140,105,56,.08)}
+    #apply .mitem input{width:auto;margin:0;accent-color:var(--brass)}
+    @media(max-width:560px){#apply .mmenu{grid-template-columns:1fr}}
+    </style>
+    <script>
+    (function(){
+      const LANGS=['English','Mandarin Chinese','Hindi','Spanish','French','Arabic','Bengali','Portuguese','Russian','Urdu','Indonesian','German','Japanese','Italian','Korean','Turkish','Vietnamese','Tamil','Telugu','Marathi'];
+      const menu=document.getElementById('langmenu'),btn=document.getElementById('langbtn'),lab=document.getElementById('langlabel');
+      if(!menu||!btn) return;
+      menu.innerHTML=LANGS.map(l=>'<label class="mitem"><input type="checkbox" value="'+l+'">'+l+'</label>').join('');
+      function upd(){
+        const sel=[...menu.querySelectorAll('input:checked')].map(i=>i.value);
+        if(sel.length){lab.textContent=sel.length<=3?sel.join(', '):sel.slice(0,2).join(', ')+' +'+(sel.length-2);btn.classList.remove('empty');}
+        else{lab.textContent='Please choose one or more…';btn.classList.add('empty');}
+      }
+      menu.addEventListener('change',upd);
+      btn.addEventListener('click',e=>{e.stopPropagation();menu.classList.toggle('on');});
+      document.addEventListener('click',e=>{if(!e.target.closest('#langsel'))menu.classList.remove('on');});
+    })();
+    </script>
   </div>
 </section>
 
@@ -1103,8 +1140,8 @@ section em,.metall.hell{
      Leer -> Button zeigt vorlaeufig auf die Plattform-Startseite (Entwurf). */
   (function(){
     var HANDLES = {
-      instagram: "",   /* z. B. "ecp.arts" */
-      facebook:  ""    /* Seitenname, z. B. "ecparts" */
+      instagram: "ecp.arts",   /* Handle */
+      facebook:  "https://www.facebook.com/profile.php?id=61594745325348"    /* volle URL oder Seitenname */
     };
     /* ------------------------------------------------------------------ */
     var DEF = {
@@ -1121,7 +1158,7 @@ section em,.metall.hell{
     ['instagram','facebook'].forEach(function(k){
       if (!DEF[k]) return;
       var h = (HANDLES[k] || '').trim();
-      var href = h ? DEF[k].u(h) : DEF[k].home;
+      var href = h ? (/^https?:\/\//.test(h) ? h : DEF[k].u(h)) : DEF[k].home;
       html += '<a class="social" href="'+href+'" target="_blank" rel="noopener" aria-label="ECP-Arts on '+DEF[k].l+'">'+DEF[k].svg+'</a>';
     });
     row.innerHTML = html;
@@ -1195,12 +1232,13 @@ document.querySelectorAll('.rv').forEach(el => io.observe(el));
           bar = document.getElementById('bw-bar');
     const T = (s) => (window.ecpaT ? window.ecpaT(s) : s);   // Meldung in der gewaehlten Sprache
     const d = new FormData();
-    ['email','country','nationality','voice','training','repertoire','links','message','website']
+    ['email','country','nationality','gender','voice','training','repertoire','links','message','website']
       .forEach(n => d.append(n, f.elements[n]?.value || ''));
     d.append('birth', geburtsdatum());
     d.append('lang', document.documentElement.lang || 'en');   // fuer die Bestaetigungsmail
     d.append('name', nameGanz('vn', 'nn'));
     d.append('phone', telefonGanz('bw-vw', 't'));
+    d.append('languages', [...document.querySelectorAll('#langmenu input:checked')].map(i => i.value).join(', '));
     ['terms','privacy','future'].forEach(n => d.append(n, f.elements[n]?.checked ? '1' : '0'));
     let zuviel = false, gesamt = 0, docAnzahl = 0;
     ['doc'].forEach(id => {
@@ -1220,6 +1258,10 @@ document.querySelectorAll('.rv').forEach(el => io.observe(el));
       msg.textContent = T('Please choose your country code and enter your number.'); return; }
     if ((d.get('name') || '').split(' ').filter(Boolean).length < 2) {
       msg.textContent = T('Please enter first name and surname.'); return; }
+    if (!f.elements.gender.value) {
+      msg.textContent = T('Please choose your gender.'); return; }
+    if (!document.querySelectorAll('#langmenu input:checked').length) {
+      msg.textContent = T('Please select at least one language.'); return; }
     const geb = d.get('birth');
     if (!geb) { msg.textContent = T('Please give your full date of birth.'); return; }
     if (geb === 'ungueltig') { msg.textContent = T('That date does not exist — please check it.'); return; }
