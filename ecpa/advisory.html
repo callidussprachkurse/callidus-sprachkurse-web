@@ -484,6 +484,11 @@ section em,.metall.hell{
 .beirat .nm{display:block;font-family:var(--serif);font-size:1.3rem;line-height:1.3;letter-spacing:-.006em}
 .beirat .fd{display:block;margin-top:6px;font-family:var(--sans);font-size:9.5px;letter-spacing:.28em;
   text-transform:uppercase;color:var(--brass2)}
+.beirat li.invited .pf{filter:grayscale(1);opacity:.55}
+.beirat li.invited .nm{opacity:.72}
+.beirat .status{display:block;margin-top:5px;font-family:var(--sans);font-size:8px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--muted);opacity:.9}
+.beirat-legend{margin-top:18px;font-family:var(--sans);font-size:11px;letter-spacing:.02em;color:var(--muted)}
 @media(max-width:700px){.beirat{grid-template-columns:1fr}}
 .beirat .nm{background:none;border:0;padding:0;text-align:left;cursor:pointer;color:var(--text);
   display:block;font-family:var(--serif);font-size:1.3rem;line-height:1.3;letter-spacing:-.006em;
@@ -529,7 +534,8 @@ nav .nl a.hier::after{right:0}
     <a href="index.html#edition">The 2027 Edition</a>
     <a href="index.html#who">Who It&rsquo;s For</a>
     <a href="advisory.html" class="hier">Advisory Board</a>
-    <a href="teachers.html">Teachers &amp; Coaches</a>
+    <a href="teachers.html">The Faculty</a>
+    <a href="agency-partners.html">Agency Partners</a>
     <a href="index.html#apply">Apply</a>
   </div>
 </nav>
@@ -544,21 +550,20 @@ nav .nl a.hier::after{right:0}
   <div class="wrap duo">
     <div class="side rv">
       <div class="ey">The Board</div>
-      <h2 style="margin-top:26px">Honorary, and&nbsp;<em>exacting</em>.</h2>
+      <h2 style="margin-top:26px">Guidance, from the&nbsp;<em>profession</em>.</h2>
     </div>
     <div class="rv">
-      <p class="body">ECP-Arts is guided by an honorary board drawn from the opera profession itself &mdash; artist management, house leadership, musicology, media and international relations. Between them they have spent their working lives deciding which young voices get heard.</p>
-      <p class="body" style="margin-top:18px">The board advises the company, not the individual singer. It guides ECP-Arts as a whole &mdash; the artistic standard we hold ourselves to, the shape of the curriculum, our bearing in the profession. Some of its members also teach on the programme in their own right; as a body, it does not run the day-to-day business and holds no share in the company.</p>
-      <p class="bfakten rv"><span>Six members</span><span>From around the world</span><span>Equal, women and men</span></p>
+      <p class="body">The board advises and guides ECP-Arts as a whole &mdash; the artistic standard we hold ourselves to, the shape of the curriculum, our bearing in the profession. As a body, it does not run the day-to-day business and holds no share in the company.</p>
+      <p class="bfakten rv"><span>Six members</span><span>From around the world</span><span>Women and men</span></p>
       <ul class="beirat">
         <li><span class="pf"><i>ZA</i><img src="img/board/des-aubris.jpg" alt="Zenaida des Aubris" loading="lazy" onerror="this.remove()"></span><span class="tx"><button type="button" class="nm" data-p="des-aubris">Zenaida des Aubris</button><span class="fd">Artist management</span></span></li>
         <li><span class="pf"><i>PD</i><img src="img/board/danish.jpg" alt="Peter Danish" loading="lazy" onerror="this.remove()"></span><span class="tx"><button type="button" class="nm" data-p="danish">Peter Danish</button><span class="fd">Media &amp; marketing</span></span></li>
-        <li><span class="pf"><i>AG</i><img src="img/board/grigorev.jpg" alt="Alex Grigorev" loading="lazy" onerror="this.remove()"></span><span class="tx"><button type="button" class="nm" data-p="grigorev">Alex Grigorev</button><span class="fd">Artist management</span></span></li>
+        <li class="invited"><span class="pf"><i>AG</i><img src="img/board/grigorev.jpg" alt="Alex Grigorev" loading="lazy" onerror="this.remove()"></span><span class="tx"><button type="button" class="nm" data-p="grigorev">Alex Grigorev</button><span class="fd">Artist management</span><span class="status">Invited &middot; confirmation pending</span></span></li>
         <li><span class="pf"><i>LP</i><img src="img/board/pokkinen.jpg" alt="Lauri Pokkinen" loading="lazy" onerror="this.remove()"></span><span class="tx"><button type="button" class="nm" data-p="pokkinen">Lauri Pokkinen</button><span class="fd">Musicology</span></span></li>
         <li><span class="pf"><i>AS</i><img src="img/board/sorrentino.jpg" alt="Ambra Sorrentino" loading="lazy" onerror="this.remove()"></span><span class="tx"><button type="button" class="nm" data-p="sorrentino">Ambra Sorrentino</button><span class="fd">International relations</span></span></li>
-        <li><span class="pf"><i>KS</i><img src="img/board/stone.jpg" alt="Karen Stone" loading="lazy" onerror="this.remove()"></span><span class="tx"><button type="button" class="nm" data-p="stone">Karen Stone</button><span class="fd">Finance &amp; management</span></span></li>
+        <li class="invited"><span class="pf"><i>LF</i><img src="img/board/friedmann.jpg" alt="Lidia Friedmann" loading="lazy" onerror="this.remove()"></span><span class="tx"><button type="button" class="nm" data-p="friedmann">Lidia Friedmann</button><span class="fd">Vocal coaching</span><span class="status">Invited &middot; confirmation pending</span></span></li>
       </ul>
-      <p class="beirat-note rv">The board has neither a chair nor a ranking.</p>
+      <p class="beirat-legend rv">Names shown in grey are invited; their membership is confirmed in due course.</p>
     </div>
   </div>
 </section>
@@ -586,7 +591,8 @@ nav .nl a.hier::after{right:0}
         <a href="index.html#edition">The 2027 Edition</a>
         <a href="index.html#who">Who It&rsquo;s For</a>
         <a href="advisory.html" class="hier">Advisory Board</a>
-        <a href="teachers.html">Teachers &amp; Coaches</a>
+        <a href="teachers.html">The Faculty</a>
+    <a href="agency-partners.html">Agency Partners</a>
         <a href="index.html#apply">Apply</a>
       </div>
       <div>

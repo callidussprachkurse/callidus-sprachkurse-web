@@ -20,7 +20,7 @@
   "pokkinen": {
     "name": "Lauri Pokkinen",
     "field": "Musicology",
-    "now": "Development Manager at the Foundation for the Finnish Museum of Architecture and Design, Helsinki; board member of Opera Europa since 2017.",
+    "now": "Development Manager at the Foundation for the Finnish Museum of Architecture and Design, Helsinki.",
     "cv": "Musicologist and arts manager. He studied musicology, marketing and management at the University of Helsinki and the Freie Universität Berlin and holds a master's degree in musicology from Helsinki. He was a producer at the Helsinki Festival and Musica nova Helsinki, then the first audience outreach and social responsibility manager at the Finnish National Opera and Ballet, later its External Relations Manager. His subject is the one most academies leave out: how an audience is actually won."
   },
   "sorrentino": {
@@ -29,10 +29,10 @@
     "now": "Founder and CEO of Opera Co-Pro, the international marketplace for opera co-productions, active in more than thirty-six countries.",
     "cv": "Opera manager and cultural entrepreneur, trained as a harpist (diploma 110/110 cum laude) with a master's degree in International Management of Opera Theatres. Stations include Teatro San Carlo in Naples, Oper Leipzig, Teatro Goldoni, the Puccini Festival, artistic leadership roles in Ingolstadt and at the Hamburger Kammeroper, Robert Gilder &amp; Co in London and New York, and project management at Theater Magdeburg. She sits on juries of international singing competitions and is an EU expert for culture."
   },
-  "stone": {
-    "name": "Karen Stone",
-    "field": "Finance & management",
-    "now": "Director of Opera Europa, the association of professional opera houses and festivals across Europe.",
-    "cv": "British-German director and intendant. She studied piano and singing in London and Rome, worked at English National Opera, then as a staff director at the Royal Opera House and at the Bavarian State Opera. She was opera director in Cologne (1997–2000), General Intendant of Theater Graz (2000–2003) and General Director of The Dallas Opera (2003–2007). From 2009 until 2022 she was General Intendant of Theater Magdeburg, directing productions from <em>Lucia di Lammermoor</em> to <em>Tosca</em> and <em>Le nozze di Figaro</em>."
+  "friedmann": {
+    "name": "Lidia Friedmann",
+    "field": "Vocal coaching",
+    "now": "Vocal coach for emerging opera singers — technique, language and interpretation.",
+    "cv": ""
   }
 }
