@@ -20,7 +20,7 @@
       "tage": "Mittwoch",
       "zeit": "17:00–18:00",
       "start": "07.10.2026",
-      "plaetze_frei": 5,
+      "plaetze_frei": 6,
       "ort": "Italienisches Kulturinstitut Hamburg",
       "plaetze_max": 6
     },
@@ -53,7 +53,7 @@
       "tage": "Montag",
       "zeit": "18:00–20:00",
       "start": "11.01.2027",
-      "plaetze_frei": 8,
+      "plaetze_frei": 7,
       "ort": "Italienisches Kulturinstitut Hamburg",
       "plaetze_max": 8
     },
@@ -64,7 +64,7 @@
       "tage": "Donnerstag",
       "zeit": "18:00–20:00",
       "start": "07.01.2027",
-      "plaetze_frei": 8,
+      "plaetze_frei": 6,
       "ort": "Italienisches Kulturinstitut Hamburg",
       "plaetze_max": 8
     },
@@ -108,7 +108,7 @@
       "tage": "Donnerstag",
       "zeit": "15:00–17:00",
       "start": "07.01.2027",
-      "plaetze_frei": 8,
+      "plaetze_frei": 7,
       "ort": "Italienisches Kulturinstitut Hamburg",
       "plaetze_max": 8
     },
@@ -152,7 +152,7 @@
       "tage": "Freitag",
       "zeit": "18:00–20:00",
       "start": "08.01.2027",
-      "plaetze_frei": 6,
+      "plaetze_frei": 5,
       "ort": "Online (Video)",
       "plaetze_max": 6
     },
@@ -207,7 +207,7 @@
       "tage": "Donnerstag",
       "zeit": "17:00–18:00",
       "start": "07.01.2027",
-      "plaetze_frei": 4,
+      "plaetze_frei": 0,
       "ort": "Italienisches Kulturinstitut Hamburg",
       "plaetze_max": 4
     },

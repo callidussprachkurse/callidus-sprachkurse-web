@@ -103,7 +103,7 @@ nav .wm{display:flex;align-items:center;text-decoration:none}
 .ecplogo{display:block;position:relative;overflow:hidden;width:224px;height:46.7px;flex:none}
 .ecplogo img{position:absolute;width:245.7px;max-width:none;left:-14.2px;top:-104.7px;display:block}
 @media(max-width:560px){.ecplogo{width:172px;height:35.9px}.ecplogo img{width:188.7px;left:-10.9px;top:-80.4px}}
-nav .nl{display:flex;gap:clamp(20px,3vw,38px);align-items:center;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+nav .nl{display:flex;gap:clamp(13px,1.9vw,26px);align-items:center;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
 nav .nl a{text-decoration:none;color:var(--cream);opacity:.78;transition:opacity .3s,color .3s;position:relative;padding:4px 0}
 nav .nl a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--brass-hi);transition:right .5s var(--ease)}
 nav .nl a:hover{opacity:1}
@@ -115,7 +115,7 @@ nav.menu-open .navtoggle span:nth-child(1){top:22px;transform:rotate(45deg)}
 nav.menu-open .navtoggle span:nth-child(2){opacity:0}
 nav.menu-open .navtoggle span:nth-child(3){top:22px;transform:rotate(-45deg)}
 /* Klappmenue frueher: ab hier draengt sich der erste Reiter sonst ans Logo */
-@media(max-width:1400px){
+@media(max-width:1620px){
   .navtoggle{display:block}
   nav .nl{position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--ink);
     max-height:0;overflow:hidden;transition:max-height .55s var(--ease)}
@@ -695,6 +695,20 @@ section em,.metall.hell{
 .auswahl .marke{display:block;font-family:var(--sans);font-size:9.5px;letter-spacing:.32em;text-transform:uppercase;
   color:var(--brass2);margin-bottom:10px}
 </style>
+<style>
+/* Unterkunft — Villen-Galerie */
+#accommodation .villa+ .villa{margin-top:clamp(40px,5vw,66px)}
+#accommodation .villa-kopf{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:16px;padding-top:14px;border-top:1px solid var(--hair)}
+#accommodation .villa-nm{font-family:var(--serif);font-size:clamp(1.5rem,2.4vw,2rem);line-height:1.2}
+#accommodation .villa-ort{font-family:var(--sans);font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--brass2)}
+#accommodation .villa-gal{display:grid;grid-template-columns:1fr 1fr;gap:clamp(10px,1.4vw,18px)}
+#accommodation .villa-gal figure{margin:0;overflow:hidden;background:#e7e0d2}
+#accommodation .villa-gal img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block;transition:transform 1.3s var(--ease)}
+#accommodation .villa-gal figure:hover img{transform:scale(1.04)}
+#accommodation .villa-gal .wide{grid-column:1/-1}
+#accommodation .villa-gal .wide img{aspect-ratio:16/9}
+@media(max-width:600px){#accommodation .villa-gal{grid-template-columns:1fr}#accommodation .villa-gal .wide img{aspect-ratio:3/2}}
+</style>
 </head>
 <body>
 <!-- Bildnachweis Kopfbereich:
@@ -717,6 +731,7 @@ section em,.metall.hell{
     <a href="advisory.html">Advisory Board</a>
     <a href="teachers.html">The Faculty</a>
     <a href="agency-partners.html">Agency Partners</a>
+    <a href="conservatoires.html">Conservatoire Partners</a>
     <a href="events.html">Events</a>
     <a href="#apply">Apply</a>
   </div>
@@ -729,7 +744,7 @@ section em,.metall.hell{
     <div class="ey">ECP-Arts &middot; The 2027 Edition</div>
     <h1>You have the training.<br>We build the <em>career</em>.</h1>
     <div class="hrule"></div>
-    <p class="body">A one-month intensive for emerging opera singers &mdash; master&rsquo;s and post-graduate. We teach what training leaves out: how to turn it into a working career.</p>
+    <p class="body">ECP&#8209;Arts is a one-month intensive programme for emerging opera singers who have completed their training &mdash; master&rsquo;s or post-graduate level. A faculty of working professionals &mdash; r&eacute;p&eacute;titeurs, conductors, casting directors and artist managers &mdash; teaches what the conservatoire leaves out: how to audition, how to find and work with an agent, and the business of building a career. Three weeks in Germany and a final week in Tuscany, ending on a real stage &mdash; with live auditions before agencies and casting directors and a professionally filmed final performance.</p>
   </div>
   <div class="stamp">Est. 2026 &middot; Edition I</div>
   <div class="cue">Scroll<i></i></div>
@@ -865,6 +880,39 @@ section em,.metall.hell{
   </div>
 </section>
 
+<!-- UNTERKUNFT -->
+<section id="accommodation">
+  <div class="wrap narrow">
+    <div class="ey rv">Accommodation &amp; Full Board</div>
+    <p class="lede rv" style="margin-top:24px;max-width:24ch">A focused mind needs the right&nbsp;<em>environment</em>.</p>
+    <p class="body rv" style="margin-top:26px;max-width:62ch">The best work begins with feeling at ease. We arrange comfortable accommodation and full board throughout the month, so that participants can give their attention to what matters most &mdash; their artistic and professional development.</p>
+    <p class="body rv" style="margin-top:16px;max-width:62ch">When everyday worries are taken care of, there is more room to learn, to grow and to prepare for the next step of an artistic career.</p>
+    <p class="body rv" style="margin-top:16px;max-width:62ch">Participants are hosted in two elegant residences: <em>Villa B&ouml;ckelmann</em> in Magdeburg, and <em>Villa Elena</em> in Guardistallo, Tuscany.</p>
+  </div>
+  <div class="wrap" style="margin-top:clamp(36px,4vw,56px)">
+    <div class="villa rv">
+      <div class="villa-kopf"><span class="villa-nm">Villa B&ouml;ckelmann</span><span class="villa-ort">Magdeburg · Germany</span></div>
+      <div class="villa-gal">
+        <figure class="wide"><img src="img/accommodation/boeckelmann-villa.jpg" alt="Villa Böckelmann — the historic residence and park" loading="lazy"></figure>
+        <figure><img src="img/accommodation/boeckelmann-front.jpg" alt="Villa Böckelmann — front façade" loading="lazy"></figure>
+        <figure><img src="img/accommodation/boeckelmann-salon.jpg" alt="Villa Böckelmann — the panelled salon" loading="lazy"></figure>
+        <figure><img src="img/accommodation/boeckelmann-dining.jpg" alt="Villa Böckelmann — dining room" loading="lazy"></figure>
+        <figure><img src="img/accommodation/boeckelmann-room.jpg" alt="Villa Böckelmann — guest room" loading="lazy"></figure>
+      </div>
+    </div>
+    <div class="villa rv">
+      <div class="villa-kopf"><span class="villa-nm">Villa Elena</span><span class="villa-ort">Guardistallo · Tuscany</span></div>
+      <div class="villa-gal">
+        <figure class="wide"><img src="img/accommodation/elena-terrace.jpg" alt="Villa Elena — garden terrace with a view to the Tuscan coast" loading="lazy"></figure>
+        <figure><img src="img/accommodation/elena-entrance.jpg" alt="Villa Elena — ivy-clad entrance" loading="lazy"></figure>
+        <figure><img src="img/accommodation/elena-hall.jpg" alt="Villa Elena — marble entrance hall" loading="lazy"></figure>
+        <figure><img src="img/accommodation/elena-garden.jpg" alt="Villa Elena — garden and residence" loading="lazy"></figure>
+        <figure><img src="img/accommodation/elena-room.jpg" alt="Villa Elena — guest room" loading="lazy"></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ECKDATEN -->
 <section class="tint fakten" style="padding-top:clamp(56px,6vw,84px);padding-bottom:clamp(56px,6vw,84px)">
   <div class="wrap">
@@ -931,6 +979,7 @@ section em,.metall.hell{
         <span class="usd" id="usd" role="tooltip" hidden></span>
       </div>
       <p class="ustnote">VAT already included.</p>
+      <p class="ustnote" style="margin-top:6px">The programme fee can be paid in instalments &mdash; just ask us.</p>
       <p class="body" style="margin-top:28px">One figure, paid once, covers the month itself &mdash; the teaching, a bed, meals, the travel we organise, the stage. What it cannot cover is what happens before you arrive and after you leave.</p>
       <div class="preisduo">
         <div>
@@ -1126,7 +1175,7 @@ section em,.metall.hell{
     <div class="grid">
       <div>
         <span class="ecplogo flogo"><img src="ecp-arts-logo-weiss-web.png" alt="European Centre of Performing Arts"></span>
-        <p class="fp" style="margin-top:22px;max-width:34ch">A one-month intensive preparing emerging opera singers for the realities of a career. Beginning May 2027.</p>
+        <p class="fp" style="margin-top:22px;max-width:34ch">A one-month intensive programme preparing emerging opera singers for the realities of a career. Beginning May 2027.</p>
         <div class="social-row" id="social-row"></div>
       </div>
       <div>
@@ -1137,6 +1186,7 @@ section em,.metall.hell{
         <a href="advisory.html">Advisory Board</a>
         <a href="teachers.html">The Faculty</a>
     <a href="agency-partners.html">Agency Partners</a>
+    <a href="conservatoires.html">Conservatoire Partners</a>
     <a href="events.html">Events</a>
         <a href="#apply">Apply</a>
       </div>
@@ -1580,7 +1630,18 @@ const pgMail = document.getElementById('pg-mail'), pgTel = document.getElementBy
 </script>
 <script src="i18n.js" defer></script>
 <script src="hinweis.js" defer></script>
-<script>/* ecpa-count: anonyme Seitenzaehlung, keine Cookies, keine IP */
-(function(){try{var r="";if(document.referrer){try{r=new URL(document.referrer).host}catch(e){}}new Image().src="https://imac-von-callidus.tail200fa5.ts.net/z?p="+encodeURIComponent(location.pathname)+"&r="+encodeURIComponent(r)+"&t="+Date.now();}catch(e){}})();</script>
+<script>/* ecpa-count: anonyme Seitenzaehlung + aktive Lesezeit, keine Cookies, keine IP, keine Besucher-ID */
+(function(){try{
+ var B="https://imac-von-callidus.tail200fa5.ts.net/z";
+ var P=encodeURIComponent(location.pathname);
+ var r="";if(document.referrer){try{r=new URL(document.referrer).host}catch(e){}}
+ new Image().src=B+"?p="+P+"&r="+encodeURIComponent(r)+"&t="+Date.now();
+ var aktiv=0,start=Date.now(),sicht=!document.hidden,weg=false;
+ function pause(){if(sicht){aktiv+=Date.now()-start;sicht=false;}}
+ function los(){if(!sicht){start=Date.now();sicht=true;}}
+ function sende(){if(weg)return;pause();var s=Math.round(aktiv/1000);if(s<2||s>3600){weg=true;return;}weg=true;try{navigator.sendBeacon(B+"?p="+P+"&d="+s);}catch(e){}}
+ document.addEventListener("visibilitychange",function(){if(document.hidden){pause();sende();}else{los();}});
+ addEventListener("pagehide",sende);
+}catch(e){}})();</script>
 </body>
 </html>

@@ -45,7 +45,7 @@
   html[dir="rtl"] .sprache li button{text-align:right}
   html[dir="rtl"] body{text-align:right}
   html[dir="rtl"] .duo .side,html[dir="rtl"] .wochen .r{text-align:right}
-  @media(max-width:1400px){.sprache{order:2;margin-left:auto;margin-right:2px}
+  @media(max-width:1620px){.sprache{order:2;margin-left:auto;margin-right:2px}
     nav .navtoggle{order:3}}
   `;
   document.head.appendChild(stil);
