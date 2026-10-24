@@ -1,11 +1,1138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ecp-arts.com/</loc></url>
-  <url><loc>https://ecp-arts.com/advisory.html</loc></url>
-  <url><loc>https://ecp-arts.com/teachers.html</loc></url>
-  <url><loc>https://ecp-arts.com/agency-partners.html</loc></url>
-  <url><loc>https://ecp-arts.com/events.html</loc></url>
-  <url><loc>https://ecp-arts.com/imprint.html</loc></url>
-  <url><loc>https://ecp-arts.com/privacy.html</loc></url>
-  <url><loc>https://ecp-arts.com/terms.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://ecp-arts.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/advisory.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/advisory.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/de/advisory.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/advisory.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/it/advisory.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/advisory.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/es/advisory.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/advisory.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/pt/advisory.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/advisory.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ru/advisory.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/advisory.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/zh/advisory.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/advisory.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ja/advisory.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/advisory.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ar/advisory.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/advisory.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/advisory.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/teachers.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/teachers.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/de/teachers.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/teachers.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/it/teachers.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/teachers.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/es/teachers.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/teachers.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/pt/teachers.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/teachers.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ru/teachers.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/teachers.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/zh/teachers.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/teachers.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ja/teachers.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/teachers.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ar/teachers.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/teachers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/teachers.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/agency-partners.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/agency-partners.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/de/agency-partners.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/agency-partners.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/it/agency-partners.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/agency-partners.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/es/agency-partners.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/agency-partners.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/pt/agency-partners.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/agency-partners.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ru/agency-partners.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/agency-partners.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/zh/agency-partners.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/agency-partners.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ja/agency-partners.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/agency-partners.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ar/agency-partners.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/agency-partners.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/agency-partners.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/conservatoires.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/conservatoires.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/de/conservatoires.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/conservatoires.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/it/conservatoires.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/conservatoires.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/es/conservatoires.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/conservatoires.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/pt/conservatoires.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/conservatoires.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ru/conservatoires.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/conservatoires.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/zh/conservatoires.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/conservatoires.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ja/conservatoires.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/conservatoires.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ar/conservatoires.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/conservatoires.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/conservatoires.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/events.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/events.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/events.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/events.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/events.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/events.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/events.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/events.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/de/events.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/events.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/events.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/events.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/events.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/events.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/events.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/events.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/it/events.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/events.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/events.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/events.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/events.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/events.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/events.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/events.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/es/events.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/events.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/events.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/events.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/events.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/events.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/events.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/events.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/pt/events.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/events.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/events.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/events.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/events.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/events.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/events.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/events.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ru/events.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/events.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/events.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/events.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/events.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/events.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/events.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/events.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/zh/events.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/events.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/events.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/events.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/events.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/events.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/events.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/events.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ja/events.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/events.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/events.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/events.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/events.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/events.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/events.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/events.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ar/events.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/events.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/events.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/events.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/events.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/events.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/events.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/events.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/events.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/imprint.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/imprint.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/de/imprint.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/imprint.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/it/imprint.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/imprint.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/es/imprint.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/imprint.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/pt/imprint.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/imprint.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ru/imprint.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/imprint.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/zh/imprint.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/imprint.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ja/imprint.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/imprint.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ar/imprint.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/imprint.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/privacy.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/de/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/privacy.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/it/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/privacy.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/es/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/privacy.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/pt/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/privacy.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ru/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/privacy.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/zh/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/privacy.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ja/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/privacy.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ar/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/privacy.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/terms.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/de/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/terms.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/it/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/terms.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/es/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/terms.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/pt/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/terms.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ru/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/terms.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/zh/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/terms.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ja/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/terms.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ecp-arts.com/ar/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ecp-arts.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ecp-arts.com/de/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ecp-arts.com/it/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ecp-arts.com/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ecp-arts.com/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ecp-arts.com/ru/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ecp-arts.com/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ecp-arts.com/ja/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ecp-arts.com/ar/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ecp-arts.com/terms.html"/>
+    <lastmod>2026-10-21</lastmod>
+  </url>
 </urlset>

@@ -22,6 +22,18 @@
   const AUSWAHL = 'h1,h2,h3,h4,p,li,button,option,label,title,figcaption,div,a,span';
   const norm = (s) => s.replace(/\s+/g, ' ').trim();
 
+  /* Jede Sprache hat eine eigene Adresse: Englisch liegt an der Wurzel,
+     alle anderen in einem Ordner (/de/, /it/ ...). Das ist die Voraussetzung
+     dafuer, dass Suchmaschinen die Fassungen ueberhaupt einzeln finden. */
+  const CODES = SPRACHEN.map(([c]) => c).filter(c => c !== 'en');
+  const sprachAdresse = (code) => {
+    const teile = location.pathname.split('/').filter(Boolean);
+    if (teile.length && CODES.includes(teile[0])) teile.shift();
+    const rest = teile.join('/');
+    return code === 'en' ? '/' + rest : '/' + code + '/' + rest;
+  };
+
+
   const stil = document.createElement('style');
   stil.textContent = `
   .sprache{position:relative;margin-left:clamp(14px,2vw,26px);flex:none}
@@ -130,7 +142,9 @@
 
   schalter.querySelectorAll('li button').forEach(b =>
     b.addEventListener('click', (e) => { e.stopPropagation();
-      schalter.classList.remove('auf'); laden(b.dataset.l); }));
+      schalter.classList.remove('auf');
+      try { localStorage.setItem('ecpa-lang', b.dataset.l); } catch (err) {}
+      location.href = sprachAdresse(b.dataset.l); }));
 
   /* Englisch ist immer die Ausgangssprache. Die Browsersprache wird bewusst NICHT
      ausgewertet: der Besucher soll selbst umschalten. Nur eine zuvor angeklickte
@@ -140,6 +154,9 @@
   /* Uebersetzt eine einzelne Zeichenkette (z. B. eine Formular-Meldung, die erst
      beim Absenden entsteht) in die gerade gewaehlte Sprache. Ohne Treffer bleibt
      der englische Text. */
+  /* Haken fuer den Seiten-Bau: setzt eine Sprache, ohne sie zu merken. */
+  window.ecpaSetzen = (code) => laden(code);
+
   window.ecpaT = (s) => { const v = aktuell.get(norm(s)); return v === undefined ? s : v; };
 
   window.ecpaNachtragen = (wurzel) => {
@@ -153,7 +170,33 @@
     });
   };
 
-  let start = null;
-  try { start = localStorage.getItem('ecpa-lang'); } catch (e) {}
-  if (start && start !== 'en') laden(start); else setzen('en', null);
+  /* Vorgerenderte Sprachseiten tragen ihren Text schon im Quelltext. Dort wird
+     das Woerterbuch nur geladen, damit spaeter nachgeladene Inhalte und
+     Formularmeldungen in derselben Sprache erscheinen -- der feste Text bleibt
+     unangetastet. */
+  const vorgerendert = document.documentElement.dataset.vorgerendert;
+  if (vorgerendert) {
+    const code = vorgerendert;
+    document.documentElement.dir = RTL.has(code) ? 'rtl' : 'ltr';
+    if (SCHRIFT[code]) {
+      document.documentElement.style.setProperty('--serif', SCHRIFT[code][0]);
+      document.documentElement.style.setProperty('--sans', SCHRIFT[code][1]);
+    }
+    schalter.querySelectorAll('li button').forEach(b =>
+      b.setAttribute('aria-current', b.dataset.l === code));
+    if (code !== 'en') {
+      fetch(`/i18n/${code}.json`, {cache: 'no-cache'}).then(r => r.json()).then(buch => {
+        const t = document.createElement('div'); const karte = new Map();
+        for (const [q, z] of Object.entries(buch)) {
+          if (q.startsWith('_')) continue;
+          t.innerHTML = q; karte.set(norm(t.innerHTML), z);
+        }
+        aktuell = karte;
+      }).catch(() => {});
+    }
+  } else {
+    let start = null;
+    try { start = localStorage.getItem('ecpa-lang'); } catch (e) {}
+    if (start && start !== 'en') location.href = sprachAdresse(start); else setzen('en', null);
+  }
 })();
