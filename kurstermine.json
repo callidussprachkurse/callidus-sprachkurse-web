@@ -53,7 +53,7 @@
       "tage": "Montag",
       "zeit": "18:00–20:00",
       "start": "11.01.2027",
-      "plaetze_frei": 7,
+      "plaetze_frei": 6,
       "ort": "Italienisches Kulturinstitut Hamburg",
       "plaetze_max": 8
     },
@@ -64,7 +64,7 @@
       "tage": "Donnerstag",
       "zeit": "18:00–20:00",
       "start": "07.01.2027",
-      "plaetze_frei": 5,
+      "plaetze_frei": 6,
       "ort": "Italienisches Kulturinstitut Hamburg",
       "plaetze_max": 8
     },
