@@ -80,6 +80,17 @@
       "plaetze_max": 8
     },
     {
+      "id": "a1-2-di-1201",
+      "kurs": "A1",
+      "titel": "A1.2",
+      "tage": "Dienstag",
+      "zeit": "18:00–20:00",
+      "start": "12.01.2027",
+      "plaetze_frei": 8,
+      "ort": "Italienisches Kulturinstitut Hamburg",
+      "plaetze_max": 8
+    },
+    {
       "id": "a2-2-mo-2501",
       "kurs": "A2",
       "titel": "A2.2",
