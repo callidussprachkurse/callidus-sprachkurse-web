@@ -1096,7 +1096,7 @@ body.gs-noflo .ig-fab,body.gs-noflo .mail-fab{opacity:0;pointer-events:none;tran
         <div class="anm-field"><label>Ihr Name</label><input id="gs-name" type="text"></div>
         <div class="anm-field"><label>Ihre E-Mail</label><input id="gs-mail" type="email"></div>
       </div>
-      <div class="anm-field"><label>Ihre Anschrift (freiwillig)</label><input id="gs-strasse" type="text" placeholder="Straße und Hausnummer"></div>
+      <div class="anm-field"><label>Ihre Anschrift (für die Rechnung)</label><input id="gs-strasse" type="text" placeholder="Straße und Hausnummer" required></div>
       <div class="anm-row">
         <div class="anm-field"><label>PLZ</label><input id="gs-plz" type="text" inputmode="numeric"></div>
         <div class="anm-field"><label>Ort</label><input id="gs-ort" type="text"></div>
@@ -1238,6 +1238,10 @@ body.gs-noflo .ig-fab,body.gs-noflo .mail-fab{opacity:0;pointer-events:none;tran
     var strasse=document.getElementById('gs-strasse').value.trim();
     var plz=document.getElementById('gs-plz').value.trim();
     var ort=document.getElementById('gs-ort').value.trim();
+    if(!strasse||!plz||!ort){
+      err.textContent='Bitte Ihre vollständige Anschrift angeben — wir brauchen sie für Ihre Rechnung.';
+      err.style.display='block'; return;
+    }
     err.style.display='none';
     var sbtn=document.getElementById('gs-submit'); sbtn.disabled=true;
     sbtn.textContent = zahlweg==='ueberweisung' ? 'Bitte warten …' : 'Weiter zu PayPal …';
