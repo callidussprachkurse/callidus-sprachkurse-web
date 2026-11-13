@@ -4,6 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
+  // API-Adresse: auf der Live-Domain spricht die Seite den iMac im Hintergrund an;
+  // in der Vorschau (gleicher Server) bleibt sie leer (gleicher Ursprung).
+  window.CALLIDUS_API = (location.hostname.indexOf('callidus-sprachkurse.de') >= 0)
+    ? 'https://imac-von-callidus.tail200fa5.ts.net:8443' : '';
+</script>
+<script>
 (function(){
   var p = location.pathname, last = p.split('/').pop() || '';
   // Aufruf ohne abschließenden Schrägstrich (z. B. /vorschau): einmal auf .../ umleiten,
@@ -684,6 +690,33 @@ footer a{color:#9a917f;text-decoration:none}
   </div>
 </div>
 
+<!-- ============ GESCHENKGUTSCHEINE ============ -->
+<section class="gs-sec" id="gutscheine">
+  <div class="wrap">
+    <span class="ey reveal gs-ey">Geschenkidee</span>
+    <div class="sh serif reveal">Schenken Sie Italien</div>
+    <p class="gs-intro reveal">Ein Italienisch-Kurs oder ein Wertgutschein — ein Geschenk, das bleibt. Zu Weihnachten, zum Geburtstag oder einfach so.</p>
+    <div class="gs-cards reveal">
+      <div class="gs-card">
+        <div class="gs-badge">Kurs-Gutschein</div>
+        <h4 class="serif">Ein A1-Präsenzkurs</h4>
+        <p>Ein vollständiger Italienisch-Kurs der Stufe A1 — Präsenz in Hamburg, am Italienischen Kulturinstitut. Termine nach der Kursübersicht.</p>
+        <div class="gs-price">475&nbsp;€</div>
+      </div>
+      <div class="gs-card">
+        <div class="gs-badge">Wertgutschein</div>
+        <h4 class="serif">Für Präsenz &amp; Online</h4>
+        <p>Anrechenbar auf jeden Kurs — Präsenz in Hamburg und bundesweit online. Die oder der Beschenkte wählt den Kurs selbst.</p>
+        <div class="gs-price">100&nbsp;€, 200&nbsp;€, 300&nbsp;€</div>
+      </div>
+    </div>
+    <div class="gs-cta reveal">
+      <button type="button" class="btn bp gs-openbtn" id="gs-open">🎁&nbsp; Gutschein bestellen</button>
+      <span class="gs-cta-note">In wenigen Minuten bestellt. Sichere Zahlung per PayPal — der Gutschein kommt sofort nach der Zahlung als druckfertiges PDF.</span>
+    </div>
+  </div>
+</section>
+
 <section class="sec" id="cils">
   <div class="wrap">
     <span class="ey reveal">Zertifizierung</span>
@@ -960,5 +993,321 @@ footer a{color:#9a917f;text-decoration:none}
 </script>
 <script>/* hh-count */(function(){try{var r="";if(document.referrer){try{r=new URL(document.referrer).host}catch(e){}}
 new Image().src="https://imac-von-callidus.tail200fa5.ts.net/z?p="+encodeURIComponent(location.pathname)+"&r="+encodeURIComponent(r)+"&s=hamburg&t="+Date.now();}catch(e){}})();</script>
+<!-- ============ GUTSCHEINE: Styles ============ -->
+<style>
+.gs-sec{background:linear-gradient(180deg,#F3E7CE 0%,#EFE2CD 100%);
+  border-top:1px solid var(--brass);border-bottom:1px solid var(--brass);
+  padding:84px 0;text-align:center;position:relative}
+.gs-sec .wrap{max-width:900px}
+.gs-ey{color:var(--brass2)!important}
+.gs-intro{max-width:640px;margin:18px auto 0;color:#5c5446;font-weight:300;font-size:17px;line-height:1.6}
+.gs-cards{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px;text-align:left}
+.gs-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:30px 28px;
+  box-shadow:0 14px 40px rgba(140,105,56,.1);transition:.25s;position:relative;overflow:hidden}
+.gs-card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--brass)}
+.gs-card:hover{transform:translateY(-4px);box-shadow:0 22px 56px rgba(140,105,56,.18)}
+.gs-badge{display:inline-block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--brass2);font-weight:600;margin-bottom:12px}
+.gs-card h4{font-size:24px;font-weight:600;margin-bottom:8px;color:var(--ink)}
+.gs-card p{font-size:14.5px;color:var(--muted);font-weight:300;line-height:1.55}
+.gs-price{margin-top:16px;font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;color:var(--brass2)}
+.gs-cta{margin-top:42px;display:flex;flex-direction:column;align-items:center;gap:14px}
+.gs-openbtn{font-size:17px;padding:16px 40px}
+.gs-cta-note{font-size:13px;color:var(--muted);max-width:460px;line-height:1.5}
+@media(max-width:620px){.gs-cards{grid-template-columns:1fr}.gs-sec{padding:62px 0}}
+
+/* Bestell-Modal: Anlass-Segment darf umbrechen */
+#gs-overlay .anm-seg{flex-wrap:wrap}
+#gs-overlay .anm-seg button{min-width:88px}
+#gs-overlay .anm-head .t{font-size:22px}
+
+/* Weihnachts-Popup */
+.gs-pop{position:fixed;z-index:1300;right:24px;bottom:24px;width:340px;max-width:calc(100vw - 32px);
+  background:var(--paper);border:1px solid var(--brass);border-radius:16px;
+  box-shadow:0 26px 70px rgba(15,12,9,.4);padding:26px 24px 24px;text-align:center;
+  transform:translateY(26px);opacity:0;pointer-events:none;transition:.4s cubic-bezier(.2,.8,.2,1)}
+.gs-pop.open{transform:none;opacity:1;pointer-events:auto}
+.gs-pop-x{position:absolute;top:10px;right:14px;background:none;border:none;font-size:24px;
+  line-height:1;color:var(--muted);cursor:pointer}
+.gs-pop-x:hover{color:var(--ink)}
+.gs-pop-ic{font-size:40px;line-height:1;margin-bottom:8px}
+.gs-pop-h{font-size:21px;font-weight:600;color:var(--ink);line-height:1.25}
+.gs-pop-p{font-size:14px;color:var(--muted);font-weight:300;margin:10px 0 18px;line-height:1.5}
+.gs-pop-cta{width:100%;justify-content:center}
+@media(max-width:600px){.gs-pop{right:12px;left:12px;bottom:12px;width:auto}}
+/* Modal über die Schwebe-Buttons heben, und diese bei offenem Popup/Modal ausblenden */
+#gs-overlay{z-index:1300}
+#gs-terms-overlay{z-index:1400}
+body.gs-noflo .ig-fab,body.gs-noflo .mail-fab{opacity:0;pointer-events:none;transform:translateX(34px);transition:opacity .25s,transform .25s}
+.gs-fixed{padding:13px 15px;border:.5px solid var(--line);border-radius:7px;background:#fff;font-size:14.5px;color:var(--ink);line-height:1.5}
+.gs-dim{color:var(--muted)}
+.gs-count{text-align:right;font-size:11.5px;color:var(--muted);margin-top:5px}
+/* Gutscheincode im Buchungsformular */
+.anm-gift{margin-top:18px;border-top:.5px solid var(--line);padding-top:16px}
+.anm-gift-lab{display:block;font-size:12.5px;letter-spacing:.04em;color:var(--muted);margin-bottom:6px}
+.anm-gift-row{display:flex;gap:8px}
+.anm-gift-inp{flex:1;padding:12px 14px;border:.5px solid var(--line);border-radius:7px;font-family:'Inter',sans-serif;font-size:15px;background:#fff;color:var(--ink)}
+.anm-gift-inp:focus{outline:none;border-color:var(--brass);box-shadow:0 0 0 3px rgba(168,129,74,.12)}
+.anm-gift-btn{padding:0 18px;border:.5px solid var(--brass);border-radius:7px;background:var(--brass);color:#1a140b;font-family:'Inter',sans-serif;font-size:14px;cursor:pointer;white-space:nowrap}
+.anm-gift-btn:hover{background:#bd9357}
+.anm-gift-btn:disabled{opacity:.5;cursor:default}
+.anm-gift-msg{font-size:13px;margin-top:8px;line-height:1.5}
+.anm-gift-msg.ok{color:#2e7d46}
+.anm-gift-msg.err{color:#b3402f}
+</style>
+
+<!-- ============ GUTSCHEINE: Bestell-Modal ============ -->
+<div class="anm-overlay" id="gs-overlay" role="dialog" aria-modal="true" aria-label="Gutschein bestellen">
+  <div class="anm-modal">
+    <div class="anm-head"><span class="t serif">Gutschein bestellen</span><button class="anm-close" id="gs-close" aria-label="Schließen">&times;</button></div>
+    <div class="anm-body" id="gs-form">
+      <div class="anm-field">
+        <label>Was möchten Sie verschenken?</label>
+        <div class="anm-seg" id="gs-typ">
+          <button type="button" data-typ="kurs" class="on">Kurs-Gutschein</button>
+          <button type="button" data-typ="wert">Wertgutschein</button>
+        </div>
+      </div>
+      <div class="anm-field" id="gs-kursfield">
+        <label>Ihr Kurs-Gutschein</label>
+        <div class="gs-fixed">Italienisch-Kurs A1 · <b>475&nbsp;€</b> <span class="gs-dim">(Präsenz in Hamburg)</span><br><span class="gs-dim">Kurstermine entsprechend der Kursübersicht auf der Website</span></div>
+      </div>
+      <div class="anm-field" id="gs-wertfield" style="display:none">
+        <label>Welcher Wert?</label>
+        <div class="anm-seg" id="gs-wert">
+          <button type="button" data-wert="100" class="on">100 €</button>
+          <button type="button" data-wert="200">200 €</button>
+          <button type="button" data-wert="300">300 €</button>
+        </div>
+        <div class="gs-dim" style="margin-top:8px;font-size:12.5px">Einlösbar für Präsenzkurse in Hamburg und bundesweite Online-Kurse.</div>
+      </div>
+      <div class="anm-field">
+        <label>Zu welchem Anlass?</label>
+        <div class="anm-seg" id="gs-anlass">
+          <button type="button" data-anlass="weihnachten" class="on">Weihnachten</button>
+          <button type="button" data-anlass="ostern">Ostern</button>
+          <button type="button" data-anlass="geburtstag">Geburtstag</button>
+          <button type="button" data-anlass="ohne">Ohne</button>
+        </div>
+      </div>
+      <div class="anm-field"><label>Name der oder des Beschenkten</label><input id="gs-empf" type="text" placeholder="z. B. Maria Muster" required><div class="gs-dim" style="font-size:12px;margin-top:5px">Der Gutschein ist personenbezogen und wird auf diesen Namen ausgestellt.</div></div>
+      <div class="anm-field"><label>Persönliche Nachricht auf dem Gutschein (optional)</label><textarea id="gs-msg" rows="2" maxlength="160" placeholder="Ein paar Worte — erscheinen auf dem Gutschein"></textarea><div class="gs-count"><span id="gs-msg-count">0</span>/160 Zeichen</div></div>
+      <div class="anm-row">
+        <div class="anm-field"><label>Ihr Name</label><input id="gs-name" type="text"></div>
+        <div class="anm-field"><label>Ihre E-Mail</label><input id="gs-mail" type="email"></div>
+      </div>
+      <div class="anm-field"><label>Ihre Anschrift (freiwillig)</label><input id="gs-strasse" type="text" placeholder="Straße und Hausnummer"></div>
+      <div class="anm-row">
+        <div class="anm-field"><label>PLZ</label><input id="gs-plz" type="text" inputmode="numeric"></div>
+        <div class="anm-field"><label>Ort</label><input id="gs-ort" type="text"></div>
+      </div>
+      <input id="gs-website" type="text" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+      <div class="anm-note" id="gs-summary"></div>
+      <label class="anm-consent"><input type="checkbox" id="gs-consent"><span>Ich bestelle kostenpflichtig. Die <a href="#" id="gs-terms">Gutschein-Bedingungen</a> und die <a href="#" id="gs-wr">Widerrufsbelehrung</a> habe ich zur Kenntnis genommen; sie gehen mir mit dem Gutschein per E-Mail zu.</span></label>
+      <div class="anm-errmsg" id="gs-err" style="display:none"></div>
+      <div style="text-align:center;margin-top:14px">
+        <a href="#" id="gs-ueberweisung" style="font-size:13.5px;color:var(--brass2);text-decoration:underline">Lieber per Überweisung zahlen</a>
+        <div style="font-size:12px;color:var(--muted);margin-top:4px">Sicher per PayPal erhalten Sie den Gutschein sofort. Bei Überweisung dauert es bis zu zwei Werktage.</div>
+      </div>
+    </div>
+    <div class="anm-danke" id="gs-danke" style="display:none;padding:34px 28px">
+      <div class="big">🎁</div>
+      <p><b>Vielen Dank — Ihre Bestellung ist eingegangen!</b><br>Nach Ihrer Zahlung senden wir Ihnen den Gutschein sofort als druckfertiges PDF.</p>
+    </div>
+    <div class="anm-foot" id="gs-footbar">
+      <button class="anm-btn ghost" id="gs-cancel">Abbrechen</button>
+      <button class="anm-btn prim" id="gs-submit">Kostenpflichtig bestellen</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ GUTSCHEINE: Weihnachts-Popup ============ -->
+<div class="gs-pop" id="gs-pop" role="dialog" aria-label="Geschenkidee zu Weihnachten">
+  <button class="gs-pop-x" id="gs-pop-x" aria-label="Schließen">&times;</button>
+  <div class="gs-pop-ic">🎁</div>
+  <div class="gs-pop-h serif">Noch keine Geschenkidee zu Weihnachten?</div>
+  <p class="gs-pop-p">Verschenken Sie einen Italienischkurs oder einen Wertgutschein.</p>
+  <a class="btn bp gs-pop-cta" id="gs-pop-go" href="#gutscheine">Zu den Gutscheinen →</a>
+</div>
+
+<!-- ============ GUTSCHEINE: Bedingungen (Overlay) ============ -->
+<div class="anm-overlay" id="gs-terms-overlay" role="dialog" aria-modal="true" aria-label="Gutschein-Bedingungen">
+  <div class="anm-modal">
+    <div class="anm-head"><span class="t serif">Gutschein-Bedingungen</span><button class="anm-close" id="gs-terms-close" aria-label="Schließen">&times;</button></div>
+    <div class="anm-body" style="font-size:14px;color:var(--muted);line-height:1.6">
+      <p style="color:var(--ink);font-weight:600;margin:0 0 6px">Kurs-Gutschein (Italienisch-Kurs A1)</p>
+      <p>Berechtigt zur Teilnahme an einem vollständigen regulären Italienisch-Kurs der Stufe A1. Dies ist ein <b>Präsenzkurs, der in Hamburg am Italienischen Kulturinstitut stattfindet</b>; die Kurstermine richten sich nach der Kursübersicht auf callidus-sprachkurse.de. Die Anmeldung muss innerhalb der Einlösefrist und vor Kursbeginn erfolgen, vorbehaltlich verfügbarer Termine und freier Plätze. Steigt der Kurspreis bis zur Einlösung, ist die Differenz bei der Anmeldung zuzuzahlen. Keine Barauszahlung. Der Gutschein ist personenbezogen und nicht übertragbar.</p>
+      <p style="color:var(--ink);font-weight:600;margin:16px 0 6px">Wertgutschein</p>
+      <p>Anrechenbar auf die Gebühr eines regulären Italienisch-Kurses bei CALLIDUS Sprachkurse Hamburg — <b>sowohl auf die Präsenzkurse in Hamburg als auch bundesweit auf die Online-Kurse</b>. Einlösung durch Anmeldung innerhalb der Einlösefrist; der Gutscheinwert wird auf die Kursgebühr angerechnet. Liegt die Gebühr über dem Gutscheinwert, ist die Differenz zuzuzahlen; ein Restguthaben bleibt erhalten (Teileinlösung möglich). Keine Barauszahlung. Der Gutschein ist personenbezogen und nicht übertragbar.</p>
+      <p style="color:var(--ink);font-weight:600;margin:16px 0 6px">Gültigkeit &amp; Einlösung</p>
+      <p>Die Einlösefrist ist auf dem Gutschein angegeben. Kann eine Leistung aus Gründen, die CALLIDUS zu vertreten hat, nicht erbracht werden, wird der gezahlte Betrag erstattet. Es gilt die Widerrufsbelehrung für Online-Bestellungen. Die vollständigen Bedingungen gehen Ihnen mit der Bestätigung per E-Mail zu.</p>
+    </div>
+    <div class="anm-foot"><span></span><button class="anm-btn prim" id="gs-terms-ok">Verstanden</button></div>
+  </div>
+</div>
+
+<!-- ============ GUTSCHEINE: Logik ============ -->
+<script>
+(function(){
+  var ov=document.getElementById('gs-overlay');
+  if(!ov) return;
+  var state={typ:'kurs',wert:475,anlass:'weihnachten'};
+  var ANL={weihnachten:'Weihnachten',ostern:'Ostern',geburtstag:'Geburtstag',ohne:'ohne Anlass'};
+  var sum=document.getElementById('gs-summary');
+  var pop=document.getElementById('gs-pop');
+
+  function noflo(on){
+    if(on){ document.body.classList.add('gs-noflo'); }
+    else if(!ov.classList.contains('open') && !pop.classList.contains('open')){ document.body.classList.remove('gs-noflo'); }
+  }
+  function setSeg(group,attr,val){
+    group.querySelectorAll('button').forEach(function(b){ b.classList.toggle('on', b.getAttribute(attr)===val); });
+  }
+  function updateSummary(){
+    var produkt;
+    if(state.typ==='kurs'){ state.wert=475; produkt='Kurs-Gutschein · Italienisch-Kurs A1'; }
+    else { produkt='Wertgutschein'; }
+    var anl = state.anlass==='ohne' ? '' : ' · Anlass: '+ANL[state.anlass];
+    sum.innerHTML='<b>Ihre Wahl:</b> '+produkt+' — <b>'+(state.wert||0)+'&nbsp;€</b>'+anl;
+  }
+  // Typ umschalten
+  document.getElementById('gs-typ').addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b) return;
+    state.typ=b.getAttribute('data-typ'); setSeg(this,'data-typ',state.typ);
+    var isKurs=state.typ==='kurs';
+    document.getElementById('gs-kursfield').style.display=isKurs?'':'none';
+    document.getElementById('gs-wertfield').style.display=isKurs?'none':'';
+    if(!isKurs){ var on=document.querySelector('#gs-wert button.on'); state.wert=parseInt(on.getAttribute('data-wert'),10); }
+    updateSummary();
+  });
+  // Wertstufe (100 / 200 / 300 €)
+  document.getElementById('gs-wert').addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b) return;
+    state.wert=parseInt(b.getAttribute('data-wert'),10); setSeg(this,'data-wert',String(state.wert)); updateSummary();
+  });
+  // Anlass
+  document.getElementById('gs-anlass').addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b) return;
+    state.anlass=b.getAttribute('data-anlass'); setSeg(this,'data-anlass',state.anlass); updateSummary();
+  });
+  // Zeichenzähler Nachricht
+  var msgEl=document.getElementById('gs-msg'), msgCount=document.getElementById('gs-msg-count');
+  if(msgEl) msgEl.addEventListener('input',function(){ msgCount.textContent=msgEl.value.length; });
+
+  // Öffnen / Schließen Bestell-Modal
+  function openModal(){ resetForm(); ov.classList.add('open'); noflo(true); document.body.style.overflow='hidden'; }
+  function closeModal(){ ov.classList.remove('open'); noflo(false); document.body.style.overflow=''; }
+  function resetForm(){
+    document.getElementById('gs-form').style.display='';
+    document.getElementById('gs-footbar').style.display='';
+    document.getElementById('gs-danke').style.display='none';
+    document.getElementById('gs-err').style.display='none';
+    updateSummary();
+  }
+  document.getElementById('gs-open').addEventListener('click',openModal);
+  document.getElementById('gs-close').addEventListener('click',closeModal);
+  document.getElementById('gs-cancel').addEventListener('click',closeModal);
+  ov.addEventListener('click',function(e){ if(e.target===ov) closeModal(); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&ov.classList.contains('open')) closeModal(); });
+  var wr=document.getElementById('gs-wr');
+  if(wr) wr.addEventListener('click',function(e){ e.preventDefault(); var l=document.getElementById('wr-link'); if(l) l.click(); });
+
+  // Bedingungen-Overlay
+  var termsOv=document.getElementById('gs-terms-overlay');
+  var terms=document.getElementById('gs-terms');
+  if(terms) terms.addEventListener('click',function(e){ e.preventDefault(); termsOv.classList.add('open'); });
+  document.getElementById('gs-terms-close').addEventListener('click',function(){ termsOv.classList.remove('open'); });
+  document.getElementById('gs-terms-ok').addEventListener('click',function(){ termsOv.classList.remove('open'); });
+  termsOv.addEventListener('click',function(e){ if(e.target===termsOv) termsOv.classList.remove('open'); });
+
+  // Absenden -> E-Mail an info@ mit allen Angaben
+  function bestellen(zahlweg){
+    var name=document.getElementById('gs-name').value.trim();
+    var mail=document.getElementById('gs-mail').value.trim();
+    var consent=document.getElementById('gs-consent').checked;
+    var err=document.getElementById('gs-err');
+    var empfName=document.getElementById('gs-empf').value.trim();
+    if(!empfName){
+      err.textContent='Bitte den Namen der oder des Beschenkten angeben — der Gutschein ist personenbezogen.';
+      err.style.display='block'; return;
+    }
+    if(!name||!mail||!/.+@.+\..+/.test(mail)||!consent){
+      err.textContent='Bitte Namen, eine gültige E-Mail-Adresse und das Einverständnis angeben.';
+      err.style.display='block'; return;
+    }
+    var strasse=document.getElementById('gs-strasse').value.trim();
+    var plz=document.getElementById('gs-plz').value.trim();
+    var ort=document.getElementById('gs-ort').value.trim();
+    err.style.display='none';
+    var sbtn=document.getElementById('gs-submit'); sbtn.disabled=true;
+    sbtn.textContent = zahlweg==='ueberweisung' ? 'Bitte warten …' : 'Weiter zu PayPal …';
+    var ubtn=document.getElementById('gs-ueberweisung'); if(ubtn) ubtn.style.pointerEvents='none';
+    function zuruecksetzen(){ sbtn.disabled=false; sbtn.textContent='Kostenpflichtig bestellen'; if(ubtn) ubtn.style.pointerEvents=''; }
+    var payload={typ:state.typ,wert:state.wert,anlass:ANL[state.anlass],zahlweg:zahlweg,
+      empfaenger:empfName,nachricht:document.getElementById('gs-msg').value.trim(),
+      name:name,email:mail,strasse:strasse,plz:plz,ort:ort,return_base:location.origin,
+      website:document.getElementById('gs-website').value};
+    fetch(CALLIDUS_API+'/api/gutschein-bestellung',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})
+      .then(function(r){return r.json();})
+      .then(function(res){
+        if(res&&res.ok&&res.redirect){
+          window.location.href=res.redirect;   // direkt zu PayPal
+        } else if(res&&res.ok&&res.zahlweg==='ueberweisung'){
+          var d=document.getElementById('gs-danke');
+          d.innerHTML='<div class="big">🏦</div>'
+            +'<p><b>Vielen Dank — Ihre Bestellung ist eingegangen!</b></p>'
+            +'<p style="font-size:14px;color:var(--muted);line-height:1.6">Bitte überweisen Sie den Betrag auf folgendes Konto. Sobald die Zahlung bei uns eingegangen ist, senden wir Ihnen den Gutschein als druckfertiges PDF — das kann <b>bis zu zwei Werktage</b> dauern.</p>'
+            +'<div style="text-align:left;max-width:360px;margin:14px auto;font-size:14px;line-height:1.9">'
+            +'<div><span style="color:var(--muted)">Empfänger:</span> CALLIDUS</div>'
+            +'<div><span style="color:var(--muted)">Betrag:</span> '+res.betrag+' €</div>'
+            +'<div><span style="color:var(--muted)">IBAN:</span> '+res.iban+'</div>'
+            +'<div><span style="color:var(--muted)">BIC:</span> '+res.bic+'</div>'
+            +'<div><span style="color:var(--muted)">Verwendungszweck:</span> <b>'+res.verwendungszweck+'</b></div>'
+            +'</div>'
+            +'<p style="font-size:13px;color:var(--muted)">Bitte den Verwendungszweck <b>'+res.verwendungszweck+'</b> angeben, damit wir Ihre Zahlung zuordnen können.</p>';
+          document.getElementById('gs-form').style.display='none';
+          document.getElementById('gs-footbar').style.display='none';
+          d.style.display='block';
+        } else { zuruecksetzen(); err.textContent='Die Bestellung ist gerade nicht möglich. Bitte später erneut oder an info@callidus-sprachkurse.de.'; err.style.display='block'; }
+      })
+      .catch(function(){ zuruecksetzen(); err.textContent='Die Bestellung ist gerade nicht möglich. Bitte später erneut oder an info@callidus-sprachkurse.de.'; err.style.display='block'; });
+  }
+  document.getElementById('gs-submit').addEventListener('click',function(){ bestellen('paypal'); });
+  var gsUeb=document.getElementById('gs-ueberweisung');
+  if(gsUeb) gsUeb.addEventListener('click',function(e){ e.preventDefault(); bestellen('ueberweisung'); });
+
+  // Anlass-Popup: erscheint nur ~1,5 Monate (45 Tage) vor Weihnachten bzw. Ostern.
+  // Sonst bleibt es aus. Weitere Anlässe lassen sich in activeOccasion() ergänzen.
+  function easter(yr){ // Ostersonntag (gregorianisch)
+    var a=yr%19,b=Math.floor(yr/100),c=yr%100,d=Math.floor(b/4),e=b%4,
+        f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-d-g+15)%30,
+        i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7,m=Math.floor((a+11*h+22*l)/451),
+        mo=Math.floor((h+l-7*m+114)/31),da=((h+l-7*m+114)%31)+1;
+    return new Date(yr,mo-1,da);
+  }
+  function activeOccasion(now){
+    var WIN=45, y=now.getFullYear(), occs=[];
+    function add(key,label,target){ var s=new Date(target); s.setDate(s.getDate()-WIN);
+      var en=new Date(target); en.setHours(23,59,59); occs.push({key:key,label:label,start:s,end:en}); }
+    add('weihnachten','Weihnachten',new Date(y,11,25));   add('weihnachten','Weihnachten',new Date(y+1,11,25));
+    add('ostern','Ostern',easter(y));                      add('ostern','Ostern',easter(y+1));
+    for(var j=0;j<occs.length;j++){ if(now>=occs[j].start && now<=occs[j].end) return occs[j]; }
+    return null;
+  }
+  var occ=activeOccasion(new Date());
+  var popKey=occ ? ('gsPopSeen_'+occ.key+'_'+occ.end.getFullYear()) : null;
+  function hidePop(){ pop.classList.remove('open'); noflo(false); if(popKey){ try{sessionStorage.setItem(popKey,'1');}catch(e){} } }
+  if(occ){
+    var hEl=pop.querySelector('.gs-pop-h'); if(hEl) hEl.textContent='Noch keine Geschenkidee zu '+occ.label+'?';
+    var seen=false; try{ seen=sessionStorage.getItem(popKey)==='1'; }catch(e){}
+    if(!seen){ setTimeout(function(){ pop.classList.add('open'); noflo(true); },1400); }
+  }
+  document.getElementById('gs-pop-x').addEventListener('click',hidePop);
+  document.getElementById('gs-pop-go').addEventListener('click',function(e){
+    e.preventDefault(); hidePop();
+    var t=document.getElementById('gutscheine'); if(t) t.scrollIntoView({behavior:'smooth'});
+  });
+}());
+</script>
 </body>
 </html>

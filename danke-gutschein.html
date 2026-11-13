@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vielen Dank — CALLIDUS Sprachkurse</title>
+<meta name="robots" content="noindex">
+<style>
+  :root{ --ink:#2a2622; --muted:#7a7268; --cream:#efe9df; --brass:#b08a3e; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+        background:var(--cream); color:var(--ink); padding:24px;
+        font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  .card{ max-width:480px; width:100%; background:#fff; border-radius:16px; padding:46px 34px;
+         text-align:center; box-shadow:0 14px 44px rgba(0,0,0,.10); }
+  .ic{ font-size:50px; line-height:1; margin-bottom:10px; }
+  .eyebrow{ font-size:12px; letter-spacing:2.5px; text-transform:uppercase; color:var(--brass); font-weight:600; }
+  h1{ font-family:Georgia,"Times New Roman",serif; font-size:27px; margin:10px 0 14px; color:var(--ink); }
+  p{ font-size:15.5px; line-height:1.65; color:#55504a; margin:0 0 16px; }
+  .ref{ display:inline-block; margin:2px 0 20px; font-size:13px; color:var(--muted); }
+  a.btn{ display:inline-block; background:var(--brass); color:#fff; text-decoration:none;
+         font-weight:600; padding:12px 28px; border-radius:26px; }
+  .foot{ margin-top:26px; font-size:12px; color:var(--muted); line-height:1.5; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="ic">🎁</div>
+    <div class="eyebrow">CALLIDUS Sprachkurse Hamburg</div>
+    <h1>Vielen Dank!</h1>
+    <p>Ihre Zahlung war erfolgreich. Ihr Gutschein und Ihre Rechnung sind unterwegs an
+       Ihre E-Mail-Adresse — in der Regel innerhalb weniger Augenblicke.</p>
+    <div class="ref" id="ref"></div>
+    <a class="btn" href="/">Zurück zur Startseite</a>
+    <div class="foot">Sollte in den nächsten Minuten nichts ankommen, schauen Sie bitte im Spam-Ordner
+       nach oder schreiben Sie uns an info@callidus-sprachkurse.de.</div>
+  </div>
+  <script>
+    try{
+      var r = new URLSearchParams(location.search).get('ref');
+      if(r && /^B-\d{4}$/.test(r)){ document.getElementById('ref').textContent = 'Ihre Bestellnummer: ' + r; }
+    }catch(e){}
+  </script>
+</body>
+</html>

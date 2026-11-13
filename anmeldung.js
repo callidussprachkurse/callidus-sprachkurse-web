@@ -367,6 +367,13 @@
   function preisZahl(s) { return parseInt(String(s).replace(/[^\d]/g, ""), 10) || 0; }
   function preisStr(n) { return n.toLocaleString("de-DE") + " €"; }
 
+  // ---- Geschenkgutschein (Live-Prüfung gegen /api/gutschein) --------------
+  var GIFT_LOCK_MSG = "Das hat nicht geklappt. Bitte kontaktieren Sie unser Team unter info@callidus-sprachkurse.de";
+  var giftState = null;     // { code, typ, wert, empfaenger, meldung } nach erfolgreicher Prüfung
+  var giftFails = 0;        // Fehlversuche (nach 3 wird gesperrt)
+  var giftLocked = false;
+  function giftBetrag(preis) { return giftState ? Math.min(giftState.wert || 0, preis) : 0; }
+
   // ---- Zustand ------------------------------------------------------------
   var slotsData = null;       // aus kurstermine.json
   var st = null;              // aktueller Anmelde-Zustand
@@ -672,27 +679,72 @@
 
     var sum = el("div", "anm-sum");
     function r(k, v) { return '<div class="r"><span class="k">' + esc(k) + '</span><span class="v">' + esc(v || "—") + '</span></div>'; }
-    var gutschein = aktiverGutschein();
-    var preisBlock;
-    if (gutschein && preisZahl(c.preis) > 0) {
-      preisBlock = r(t("sum_preis"), c.preis)
-        + '<div class="r anm-rabatt"><span class="k">' + esc(t("sum_rabatt")) + '</span><span class="v">− ' + GUTSCHEIN_WERT + ' €</span></div>'
-        + '<div class="r anm-total"><span class="k">' + esc(t("sum_zuzahlen")) + '</span><span class="v">' + esc(preisStr(Math.max(0, preisZahl(c.preis) - GUTSCHEIN_WERT))) + '</span></div>';
-    } else {
-      preisBlock = r(t("sum_preis"), c.preis);
+    var preis = preisZahl(c.preis);
+    function renderSum() {
+      var pb = r(t("sum_preis"), c.preis), sumDisc = 0, hasDisc = false;
+      if (aktiverGutschein() && preis > 0) {
+        hasDisc = true; sumDisc += GUTSCHEIN_WERT;
+        pb += '<div class="r anm-rabatt"><span class="k">' + esc(t("sum_rabatt")) + '</span><span class="v">− ' + GUTSCHEIN_WERT + ' €</span></div>';
+      }
+      if (giftState && preis > 0) {
+        var gb = giftBetrag(preis); sumDisc += gb; hasDisc = true;
+        var glab = (giftState.typ === "kurs" ? "Kurs-Gutschein" : "Wertgutschein");
+        pb += '<div class="r anm-rabatt"><span class="k">' + esc(glab) + '</span><span class="v">− ' + gb + ' €</span></div>';
+      }
+      if (hasDisc) pb += '<div class="r anm-total"><span class="k">' + esc(t("sum_zuzahlen")) + '</span><span class="v">' + esc(preisStr(Math.max(0, preis - sumDisc))) + '</span></div>';
+      sum.innerHTML =
+        r(t("sum_kurs"), kursLabel(st.kurs)) +
+        r(t("sum_form"), st.branch === "einzel" ? t("form_einzel") : t("form_gruppe")) +
+        r(t("sum_termin"), termin) +
+        pb +
+        r(t("sum_teilnehmer"), ((d.vorname||"") + " " + (d.nachname||"")).trim() + (d.fuer === "kind" ? t("kind_suffix") : "")) +
+        r(t("sum_email"), d.email) +
+        r(t("sum_telefon"), d.telefon);
     }
-    sum.innerHTML =
-      r(t("sum_kurs"), kursLabel(st.kurs)) +
-      r(t("sum_form"), st.branch === "einzel" ? t("form_einzel") : t("form_gruppe")) +
-      r(t("sum_termin"), termin) +
-      preisBlock +
-      r(t("sum_teilnehmer"), ((d.vorname||"") + " " + (d.nachname||"")).trim() + (d.fuer === "kind" ? t("kind_suffix") : "")) +
-      r(t("sum_email"), d.email) +
-      r(t("sum_telefon"), d.telefon);
+    renderSum();
     elBody.appendChild(sum);
-    if (gutschein && preisZahl(c.preis) > 0) {
-      elBody.appendChild(el("div", "anm-coupon-banner", t("coupon_banner_a") + GUTSCHEIN_WERT + t("coupon_banner_b") + esc(gutschein) + t("coupon_banner_c")));
+    if (aktiverGutschein() && preis > 0) {
+      elBody.appendChild(el("div", "anm-coupon-banner", t("coupon_banner_a") + GUTSCHEIN_WERT + t("coupon_banner_b") + esc(aktiverGutschein()) + t("coupon_banner_c")));
     }
+    // --- Geschenkgutschein einlösen (Live-Prüfung) ---
+    (function () {
+      var box = el("div", "anm-gift");
+      box.innerHTML =
+        '<label class="anm-gift-lab">Gutscheincode einlösen (falls vorhanden)</label>'
+        + '<div class="anm-gift-row"><input type="text" class="anm-gift-inp" placeholder="GS-C-…" autocomplete="off" spellcheck="false"><button type="button" class="anm-gift-btn">Einlösen</button></div>'
+        + '<div class="anm-gift-msg" role="status"></div>';
+      elBody.appendChild(box);
+      var inp = box.querySelector(".anm-gift-inp"), btn = box.querySelector(".anm-gift-btn"), msg = box.querySelector(".anm-gift-msg");
+      if (giftState) { inp.value = giftState.code; inp.disabled = true; btn.style.display = "none"; msg.className = "anm-gift-msg ok"; msg.textContent = "✓ " + (giftState.meldung || "Gutschein angewendet."); }
+      if (giftLocked) { inp.disabled = true; btn.disabled = true; msg.className = "anm-gift-msg err"; msg.textContent = GIFT_LOCK_MSG; }
+      function pruefe() {
+        if (giftLocked || giftState) return;
+        var code = (inp.value || "").trim(); if (!code) return;
+        var nm = ((st.data.vorname || "") + " " + (st.data.nachname || "")).trim();
+        btn.disabled = true; msg.className = "anm-gift-msg"; msg.textContent = "Prüfe …";
+        fetch((window.CALLIDUS_API || "") + "/api/gutschein?code=" + encodeURIComponent(code) + "&name=" + encodeURIComponent(nm), { cache: "no-store" })
+          .then(function (r2) { return r2.json(); })
+          .then(function (res) {
+            btn.disabled = false;
+            if (res && res.ok) {
+              giftState = { code: code, typ: res.typ, wert: res.wert, empfaenger: res.empfaenger, meldung: res.meldung };
+              giftFails = 0; inp.disabled = true; btn.style.display = "none";
+              msg.className = "anm-gift-msg ok"; msg.textContent = "✓ " + res.meldung; renderSum();
+            } else if (res && res.grund === "name") {
+              msg.className = "anm-gift-msg err"; msg.textContent = res.meldung;
+            } else if (res && res.grund === "rate") {
+              giftLocked = true; inp.disabled = true; btn.disabled = true; msg.className = "anm-gift-msg err"; msg.textContent = GIFT_LOCK_MSG;
+            } else {
+              giftFails++;
+              if (giftFails >= 3) { giftLocked = true; inp.disabled = true; btn.disabled = true; msg.className = "anm-gift-msg err"; msg.textContent = GIFT_LOCK_MSG; }
+              else { msg.className = "anm-gift-msg err"; msg.textContent = ((res && res.meldung) || "Code ungültig.") + " (Versuch " + giftFails + " von 3)"; }
+            }
+          })
+          .catch(function () { btn.disabled = false; msg.className = "anm-gift-msg err"; msg.textContent = "Prüfung gerade nicht möglich. Bitte später erneut versuchen."; });
+      }
+      btn.addEventListener("click", pruefe);
+      inp.addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); pruefe(); } });
+    }());
 
     if (d.fuer === "kind") {
       elBody.appendChild(el("div", "anm-note", t("kind_hinweis")));
@@ -847,6 +899,7 @@
       + "Teilnehmer: "+(d.fuer==="kind"?"Kind":"Erwachsen")
       + "\nVorzeitiger Kursbeginn verlangt: "+(d._vorzeitig ? "ja (Wertersatz bekannt)" : "nein")
       + (aktiverGutschein() ? ("\nRabatt: "+GUTSCHEIN_WERT+" € Willkommensgutschein (Code "+aktiverGutschein()+", Einstufungstest)") : "")
+      + (giftState ? ("\nGeschenkgutschein: "+giftState.code+" ("+(giftState.typ==='kurs'?'Kurs-Gutschein':'Wertgutschein')+", "+giftState.wert+" € — vor Bestaetigung im Register abhaken/einloesen)") : "")
       + (d.anmerkung ? ("\nAnmerkung: "+d.anmerkung) : "");
     var gb = (d.geburt||"").split("-");
 
