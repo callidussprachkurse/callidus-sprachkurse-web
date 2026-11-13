@@ -1116,7 +1116,7 @@ body.gs-noflo .ig-fab,body.gs-noflo .mail-fab{opacity:0;pointer-events:none;tran
     </div>
     <div class="anm-foot" id="gs-footbar">
       <button class="anm-btn ghost" id="gs-cancel">Abbrechen</button>
-      <button class="anm-btn prim" id="gs-submit">Kostenpflichtig bestellen</button>
+      <button class="anm-btn prim" id="gs-submit">Jetzt mit PayPal bezahlen</button>
     </div>
   </div>
 </div>
@@ -1242,7 +1242,7 @@ body.gs-noflo .ig-fab,body.gs-noflo .mail-fab{opacity:0;pointer-events:none;tran
     var sbtn=document.getElementById('gs-submit'); sbtn.disabled=true;
     sbtn.textContent = zahlweg==='ueberweisung' ? 'Bitte warten …' : 'Weiter zu PayPal …';
     var ubtn=document.getElementById('gs-ueberweisung'); if(ubtn) ubtn.style.pointerEvents='none';
-    function zuruecksetzen(){ sbtn.disabled=false; sbtn.textContent='Kostenpflichtig bestellen'; if(ubtn) ubtn.style.pointerEvents=''; }
+    function zuruecksetzen(){ sbtn.disabled=false; sbtn.textContent='Jetzt mit PayPal bezahlen'; if(ubtn) ubtn.style.pointerEvents=''; }
     var payload={typ:state.typ,wert:state.wert,anlass:ANL[state.anlass],zahlweg:zahlweg,
       empfaenger:empfName,nachricht:document.getElementById('gs-msg').value.trim(),
       name:name,email:mail,strasse:strasse,plz:plz,ort:ort,return_base:location.origin,
