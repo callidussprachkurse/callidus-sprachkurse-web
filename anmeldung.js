@@ -112,6 +112,7 @@
       consent_a: "Ich habe die <a href=\"agb-datenschutz.pdf\" target=\"_blank\" rel=\"noopener\">AGB</a>, die <a href=\"#\" id=\"anm-ds-link\">Datenschutzerklärung</a> und die <a href=\"#\" id=\"anm-wr-link2\">Widerrufsbelehrung</a> gelesen und willige in die Verarbeitung meiner Daten zur Bearbeitung meiner Anmeldung ein. *",
       consent_err: "Bitte bestätigen Sie die Einwilligung.",
       widerruf_a: "Falls mein Kurs innerhalb der 14-tägigen Widerrufsfrist beginnt: Ich verlange ausdrücklich den Beginn vor Ablauf der Frist und weiß, dass ich bei einem Widerruf für bereits erbrachte Leistungen anteilig Wertersatz schulde. (optional)",
+      newsletter_a: "Ja, halten Sie mich über weitere Kursangebote auf dem Laufenden. (optional, jederzeit widerrufbar)",
       // Danke
       danke_titel: "Grazie mille!",
       danke_h: "Ihre Anmeldung ist eingegangen",
@@ -226,6 +227,7 @@
       consent_a: "I have read the <a href=\"agb-datenschutz.pdf\" target=\"_blank\" rel=\"noopener\">terms and conditions</a>, the <a href=\"#\" id=\"anm-ds-link\">privacy policy</a> and the <a href=\"#\" id=\"anm-wr-link2\">cancellation policy</a> and consent to the processing of my data for the purpose of handling my registration. *",
       consent_err: "Please confirm your consent.",
       widerruf_a: "If my course begins within the 14-day cancellation period: I expressly request that it start before the period expires and I am aware that, in the event of cancellation, I owe proportionate compensation for services already provided. (optional)",
+      newsletter_a: "Yes, keep me informed about further course offerings. (optional, can be withdrawn at any time)",
       // Thank you
       danke_titel: "Grazie mille!",
       danke_h: "Your registration has been received",
@@ -771,6 +773,14 @@
     wr.querySelector("#anm-widerruf").addEventListener("change", function(){ d._vorzeitig = this.checked; });
     var wl = wr.querySelector("#anm-wr-link");
     if (wl) wl.addEventListener("click", function(e){ e.preventDefault(); _openLegal("wr-overlay"); });
+
+    // Optionaler Werbe-Haken (nicht vorausgewählt) – DSGVO-konforme Einwilligung
+    var nl = el("label", "anm-consent");
+    nl.innerHTML =
+      '<input type="checkbox" id="anm-newsletter"' + (d._newsletter ? ' checked' : '') + '> ' +
+      '<span style="font-size:12.5px">' + t("newsletter_a") + '</span>';
+    elBody.appendChild(nl);
+    nl.querySelector("#anm-newsletter").addEventListener("change", function(){ d._newsletter = this.checked; });
   }
 
   function r_danke() {
@@ -898,6 +908,7 @@
       + "Vorkenntnisse: "+(d.vorkenntnisse||"-")+"\n"
       + "Teilnehmer: "+(d.fuer==="kind"?"Kind":"Erwachsen")
       + "\nVorzeitiger Kursbeginn verlangt: "+(d._vorzeitig ? "ja (Wertersatz bekannt)" : "nein")
+      + "\nKurs-Infos erwünscht (auf dem Laufenden halten): "+(d._newsletter ? "ja" : "nein")
       + (aktiverGutschein() ? ("\nRabatt: "+GUTSCHEIN_WERT+" € Willkommensgutschein (Code "+aktiverGutschein()+", Einstufungstest)") : "")
       + (giftState ? ("\nGeschenkgutschein: "+giftState.code+" ("+(giftState.typ==='kurs'?'Kurs-Gutschein':'Wertgutschein')+", "+giftState.wert+" € — vor Bestaetigung im Register abhaken/einloesen)") : "")
       + (d.anmerkung ? ("\nAnmerkung: "+d.anmerkung) : "");
