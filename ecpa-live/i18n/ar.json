@@ -103,8 +103,8 @@
  "Tenor": "تينور",
  "Baritone": "باريتون",
  "Bass": "باس",
- "Répétiteur / pianist": "مرافق موسيقي / عازف بيانو",
- "Opera manager": "مدير أوبرا",
+ "Répétiteur / pianist": "Répétiteur / pianist",
+ "Opera manager": "Opera manager",
  "Year of birth": "سنة الميلاد",
  "Training &mdash; where, with whom, until when": "التدريب &mdash; أين، ومع من، وحتى متى",
  "Repertoire you would bring": "الذخيرة التي ستحضرها",
@@ -329,5 +329,13 @@
  "For Singers": "للمغنّين",
  "Doors most singers never&nbsp;<em>reach</em>.": "أبوابٌ قلّما <em>يَبلُغها</em> معظم المغنّين.",
  "Early in a career the hardest step is not singing well — it is being heard by the people who can open a career. ECP-Arts is built to close that gap. As a participant you perform for, and meet, agencies and casting managers in Germany and Italy — in live auditions, a meet &amp; greet and two filmed concerts.": "في بداية المسيرة، أصعب خطوة ليست أن تُحسن الغناء — بل أن يسمعك مَن يستطيعون فتح الأبواب. أُنشئت ECP-Arts لتجسر هذه الفجوة. بوصفك مشاركاً، ستغنّي أمام الوكالات ومسؤولي اختيار الأداء في ألمانيا وإيطاليا وتلتقي بهم شخصياً — في اختبارات صوتية، ولقاء تعارف (meet &amp; greet)، وحفلتين مصوّرتين.",
- "You arrive prepared, and you are heard by the people who sign the next generation — access that is hard to reach on your own. ECP-Arts does not represent you and takes no commission; it brings you into the room and leaves your independence untouched.": "تأتي مستعدّاً، ويسمعك مَن يتعاقدون مع الجيل القادم — وهو وصولٌ يصعب تحقيقه بمفردك. لا تمثّلك ECP-Arts ولا تتقاضى أي عمولة؛ إنها تُدخلك الغرفة وتترك استقلالك كما هو."
+ "You arrive prepared, and you are heard by the people who sign the next generation — access that is hard to reach on your own. ECP-Arts does not represent you and takes no commission; it brings you into the room and leaves your independence untouched.": "تأتي مستعدّاً، ويسمعك مَن يتعاقدون مع الجيل القادم — وهو وصولٌ يصعب تحقيقه بمفردك. لا تمثّلك ECP-Arts ولا تتقاضى أي عمولة؛ إنها تُدخلك الغرفة وتترك استقلالك كما هو.",
+ "We share the detailed programme with artists who are genuinely considering the 2027 edition. Tell us your track, leave your name, email and telephone number, and it opens right here on this page.": "نشارك البرنامج المفصّل مع الفنانين الذين يفكّرون جدّيًا في دورة 2027. أخبرنا بمسارك، واترك اسمك وبريدك الإلكتروني ورقم هاتفك، وسيُفتح هنا مباشرةً على هذه الصفحة.",
+ "I am interested as": "أنا مهتمّ بصفتي",
+ "Singer": "مغنٍّ",
+ "Please choose…": "اختر…",
+ "Your prospectus is ready to download.": "الكتيّب جاهز للتنزيل.",
+ "Download the prospectus (PDF)": "تنزيل الكتيّب (PDF)",
+ "Please tell us which track you are interested in.": "من فضلك أخبرنا بأي مسار أنت مهتم.",
+ "Répétiteur": "Répétiteur"
 }

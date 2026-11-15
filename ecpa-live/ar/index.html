@@ -604,6 +604,9 @@ section em,.metall.hell{
 .torform input{background:transparent;border:0;border-bottom:1px solid var(--hair);padding:10px 0;color:var(--text);
   font-family:var(--sans);font-size:1rem;border-radius:0;transition:border-color .4s var(--ease)}
 .torform input:focus{outline:none;border-bottom-color:var(--brass)}
+.torform select{background:transparent;border:0;border-bottom:1px solid var(--hair);padding:10px 0;color:var(--text);
+  font-family:var(--sans);font-size:1rem;border-radius:0;cursor:pointer;transition:border-color .4s var(--ease)}
+.torform select:focus{outline:none;border-bottom-color:var(--brass)}
 .torform .voll{grid-column:1/-1}
 .torform .zu{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden;clip-path:inset(50%);pointer-events:none}
 .torform label.einwill{display:flex;gap:12px;align-items:flex-start;font-size:.88rem;line-height:1.6;color:var(--muted);cursor:pointer;margin-top:4px;text-transform:none;letter-spacing:.005em;font-family:var(--sans)}
@@ -621,6 +624,16 @@ section em,.metall.hell{
 
 .liste{margin-top:clamp(36px,5vw,60px);display:none}
 .liste.da{display:block}
+.liste .dl{border:1px solid var(--hair);background:linear-gradient(180deg,#F2ECDE,#E7DFCE);
+  padding:clamp(20px,2.6vw,30px);margin-bottom:clamp(30px,4vw,50px);display:flex;flex-wrap:wrap;
+  align-items:center;justify-content:space-between;gap:18px;
+  box-shadow:0 24px 50px -28px rgba(20,14,8,.26),inset 0 1px 0 rgba(255,250,240,.6)}
+.liste .dl .t{font-family:var(--serif);font-size:clamp(1.15rem,1.9vw,1.4rem);color:var(--text);max-width:40ch;line-height:1.2}
+.liste .dl .lnk{display:flex;flex-wrap:wrap;gap:12px;flex:none}
+.liste .dl a{background:linear-gradient(180deg,#C6A263,#8C6938);color:#140E06;border:1px solid #8C6938;
+  padding:15px 26px;font-family:var(--sans);font-size:11px;letter-spacing:.26em;text-transform:uppercase;
+  text-decoration:none;white-space:nowrap;transition:background .4s var(--ease),transform .3s var(--ease)}
+.liste .dl a:hover{background:linear-gradient(180deg,#D4B277,#98773F);transform:translateY(-2px)}
 .liste .w{border-top:1px solid var(--hair);padding:26px 0 8px}
 .liste h4{font-family:var(--serif);font-weight:400;font-size:1.35rem;margin-bottom:4px}
 .liste .ort{font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--brass2)}
@@ -805,8 +818,15 @@ section em,.metall.hell{
 
     <div class="tor rv" id="tor">
       <h3>البرنامج كاملاً، أسبوعاً بأسبوع.</h3>
-      <p class="hint">نشارك البرنامج المفصّل مع المغنّين الذين يفكرون جدياً في دورة 2027. اترك اسمك وبريدك ورقم هاتفك، وسيُفتح هنا في هذه الصفحة.</p>
+      <p class="hint">نشارك البرنامج المفصّل مع الفنانين الذين يفكّرون جدّيًا في دورة 2027. أخبرنا بمسارك، واترك اسمك وبريدك الإلكتروني ورقم هاتفك، وسيُفتح هنا مباشرةً على هذه الصفحة.</p>
       <form class="torform" id="torform" novalidate="">
+        <div class="f voll"><label for="pg-role">أنا مهتمّ بصفتي</label>
+          <select id="pg-role" required="">
+            <option value="" disabled="" selected="" hidden="">اختر…</option>
+            <option value="singer">مغنٍّ</option>
+            <option value="repetiteur">Répétiteur</option>
+            <option value="manager">Opera manager</option>
+          </select></div>
         <div class="f"><label for="pg-vor">الاسم</label><input id="pg-vor" type="text" autocomplete="given-name" placeholder="Maria" required=""></div>
         <div class="f"><label for="pg-nach">اللقب</label><input id="pg-nach" type="text" autocomplete="family-name" placeholder="Rossi" required=""></div>
         <div class="f"><label for="pg-mail">البريد الإلكتروني</label><input id="pg-mail" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required=""></div>
@@ -1044,11 +1064,11 @@ section em,.metall.hell{
     <div class="cdown rv" aria-live="polite">
       <span class="cd-lab">Applications close in</span>
       <div class="cd-clock">
-        <div class="cd-seg"><span class="cd-num" id="cd-d">59</span><span class="cd-u" id="cd-du">days</span></div>
+        <div class="cd-seg"><span class="cd-num" id="cd-d">36</span><span class="cd-u" id="cd-du">days</span></div>
         <span class="cd-sep">·</span>
-        <div class="cd-seg"><span class="cd-num" id="cd-h">20</span><span class="cd-u" id="cd-hu">hours</span></div>
+        <div class="cd-seg"><span class="cd-num" id="cd-h">21</span><span class="cd-u" id="cd-hu">hours</span></div>
         <span class="cd-sep">·</span>
-        <div class="cd-seg"><span class="cd-num" id="cd-m">59</span><span class="cd-u" id="cd-mu">minutes</span></div>
+        <div class="cd-seg"><span class="cd-num" id="cd-m">32</span><span class="cd-u" id="cd-mu">minutes</span></div>
       </div>
       <span class="cd-date" id="cd-date">Deadline · 20 December 2026, 18:00 CET</span>
     </div>
@@ -1110,7 +1130,7 @@ section em,.metall.hell{
       </div>
       <div class="field"><label for="c">بلد الإقامة</label><input id="c" name="country" type="text" autocomplete="country-name" placeholder="Where you live now"></div>
       <div class="field"><label for="v">أتقدّم بصفتي</label>
-        <select id="v" name="voice"><option value="">اختر…</option><option>سوبرانو</option><option>ميتزو سوبرانو</option><option>كونترالتو</option><option>كونترتينور</option><option>تينور</option><option>باريتون</option><option>باس</option><option>مرافق موسيقي / عازف بيانو</option><option>مدير أوبرا</option></select>
+        <select id="v" name="voice"><option value="">اختر…</option><option>سوبرانو</option><option>ميتزو سوبرانو</option><option>كونترالتو</option><option>كونترتينور</option><option>تينور</option><option>باريتون</option><option>باس</option><option>Répétiteur / pianist</option><option>Opera manager</option></select>
       </div>
       <div class="field full gebdat">
         <div><label for="gt">تاريخ الميلاد — اليوم</label><select id="gt"><option value="">–</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option></select></div>
@@ -1567,10 +1587,36 @@ document.querySelectorAll('#pg-tel, #t').forEach(f => {
   f.addEventListener('input', () => { if (f.classList.contains('schief')) pruef(); });
 });
 
+// Passende Broschuere je Rolle (Singer / Repetiteur / Manager)
+const PROSPEKTE = {
+  singer:     ['Singer',        '/prospectus/ECP-Arts-Edition-2027-Singers.pdf'],
+  repetiteur: ['Répétiteur', '/prospectus/ECP-Arts-Edition-2027-Repetiteurs.pdf'],
+  manager:    ['Opera manager', '/prospectus/ECP-Arts-Edition-2027-Managers.pdf'],
+};
+function downloadBlock(role) {
+  let links;
+  if (PROSPEKTE[role]) {
+    links = `<a href="${PROSPEKTE[role][1]}" download data-dl="${role}">Download the prospectus (PDF)</a>`;
+  } else {
+    links = Object.entries(PROSPEKTE).map(([key, [lab, href]]) =>
+      `<a href="${href}" download data-dl="${key}">${lab} (PDF)</a>`).join('');
+  }
+  return `<div class="dl"><div class="t">Your prospectus is ready to download.</div><div class="lnk">${links}</div></div>`;
+}
+// Anonyme Download-Zaehlung (keine Cookies, keine IP) — feuert neben dem eigentlichen Download.
+document.addEventListener('click', function (e) {
+  const a = e.target.closest && e.target.closest('a[data-dl]');
+  if (!a) return;
+  try {
+    new Image().src = 'https://imac-von-callidus.tail200fa5.ts.net/z?dl='
+      + encodeURIComponent(a.getAttribute('data-dl')) + '&t=' + Date.now();
+  } catch (_) {}
+});
+
 // Detailprogramm einsetzen — vom Formular oder vom Hausschluessel
-function zeigeProgramm(prog, springen) {
+function zeigeProgramm(prog, springen, role) {
   const liste = document.getElementById('liste');
-  let html = (prog.weeks || []).map((w, i) =>
+  let html = downloadBlock(role) + (prog.weeks || []).map((w, i) =>
     `<div class="w"><div class="ort">Week ${w.week || (i+1)} · ${w.place}</div><h4>${w.theme}</h4>`
     + ((w.items && w.items.length) ? `<ul>${w.items.map(t => `<li>${t}</li>`).join('')}</ul>` : '')
     + `</div>`).join('');
@@ -1619,6 +1665,10 @@ function ecpaSendLead(obj){
 async function ecpaLadeProgramm(){
   const r = await fetch('programm.json', {cache:'no-cache'}); return r.json();
 }
+// Doppelanfragen verhindern: wer das Programm schon freigeschaltet hat, sieht es
+// beim naechsten Mal sofort wieder — ohne einen zweiten Eintrag in der Liste.
+function programmGesehen(){ try { return localStorage.getItem('ecpa-programm-gesehen'); } catch(e){ return null; } }
+function programmMerken(role){ try { localStorage.setItem('ecpa-programm-gesehen', role||'1'); } catch(e){} }
 
 document.getElementById('torform')?.addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -1626,10 +1676,16 @@ document.getElementById('torform')?.addEventListener('submit', async (e) => {
   const msg = document.getElementById('pg-msg');
   msg.textContent = '';
   if (document.getElementById('pg-web').value) { return; }           // Honeypot
+  if (programmGesehen()) {   // schon freigeschaltet — kein zweiter Listeneintrag
+    try { const prog = await ecpaLadeProgramm(); zeigeProgramm(prog, true, programmGesehen()); } catch(e){}
+    return;
+  }
+  const role  = document.getElementById('pg-role').value;
   const name  = nameGanz('pg-vor','pg-nach');
   const email = pgMail.value.trim();
   const phone = telefonGanz('pg-vw','pg-tel');
   const ok    = document.getElementById('pg-ok').checked;
+  if (!role) { msg.textContent='Please tell us which track you are interested in.'; return; }
   if (!pruefeFeld(pgMail,'mail') || !mailOk(email)) { msg.textContent='Please enter a valid email address.'; return; }
   if (!telOk(phone)) { msg.textContent='Please choose your country code and enter your number.'; return; }
   if (name.split(' ').filter(Boolean).length < 2) { msg.textContent='Please enter first name and surname.'; return; }
@@ -1637,11 +1693,17 @@ document.getElementById('torform')?.addEventListener('submit', async (e) => {
   btn.disabled = true; btn.textContent = 'One moment\u2026';
   const t = name.split(' ');
   ecpaSendLead({anliegen:'Programm-Anfrage', vorname:t[0]||'', nachname:t.slice(1).join(' '),
-                email:email, telefon:phone, einwilligung:ok?'ja':'nein'});
-  try { const prog = await ecpaLadeProgramm(); zeigeProgramm(prog, true); }
+                email:email, telefon:phone, stimmfach:role, einwilligung:ok?'ja':'nein'});
+  try { const prog = await ecpaLadeProgramm(); zeigeProgramm(prog, true, role); programmMerken(role); }
   catch(err){ msg.textContent='Sorry \u2014 please try again.'; btn.disabled=false; btn.textContent='Show the full programme'; }
 });
 const pgMail = document.getElementById('pg-mail'), pgTel = document.getElementById('pg-tel');
+
+// Beim Laden: wer das Programm schon gesehen hat, bekommt es direkt \u2014 ohne neuen Eintrag.
+(async () => {
+  const r = programmGesehen(); if (!r) return;
+  try { const prog = await ecpaLadeProgramm(); zeigeProgramm(prog, false, r); } catch(e){}
+})();
 </script>
 <script src="i18n.js" defer=""></script>
 <script src="hinweis.js" defer=""></script>

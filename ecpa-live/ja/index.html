@@ -604,6 +604,9 @@ section em,.metall.hell{
 .torform input{background:transparent;border:0;border-bottom:1px solid var(--hair);padding:10px 0;color:var(--text);
   font-family:var(--sans);font-size:1rem;border-radius:0;transition:border-color .4s var(--ease)}
 .torform input:focus{outline:none;border-bottom-color:var(--brass)}
+.torform select{background:transparent;border:0;border-bottom:1px solid var(--hair);padding:10px 0;color:var(--text);
+  font-family:var(--sans);font-size:1rem;border-radius:0;cursor:pointer;transition:border-color .4s var(--ease)}
+.torform select:focus{outline:none;border-bottom-color:var(--brass)}
 .torform .voll{grid-column:1/-1}
 .torform .zu{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden;clip-path:inset(50%);pointer-events:none}
 .torform label.einwill{display:flex;gap:12px;align-items:flex-start;font-size:.88rem;line-height:1.6;color:var(--muted);cursor:pointer;margin-top:4px;text-transform:none;letter-spacing:.005em;font-family:var(--sans)}
@@ -621,6 +624,16 @@ section em,.metall.hell{
 
 .liste{margin-top:clamp(36px,5vw,60px);display:none}
 .liste.da{display:block}
+.liste .dl{border:1px solid var(--hair);background:linear-gradient(180deg,#F2ECDE,#E7DFCE);
+  padding:clamp(20px,2.6vw,30px);margin-bottom:clamp(30px,4vw,50px);display:flex;flex-wrap:wrap;
+  align-items:center;justify-content:space-between;gap:18px;
+  box-shadow:0 24px 50px -28px rgba(20,14,8,.26),inset 0 1px 0 rgba(255,250,240,.6)}
+.liste .dl .t{font-family:var(--serif);font-size:clamp(1.15rem,1.9vw,1.4rem);color:var(--text);max-width:40ch;line-height:1.2}
+.liste .dl .lnk{display:flex;flex-wrap:wrap;gap:12px;flex:none}
+.liste .dl a{background:linear-gradient(180deg,#C6A263,#8C6938);color:#140E06;border:1px solid #8C6938;
+  padding:15px 26px;font-family:var(--sans);font-size:11px;letter-spacing:.26em;text-transform:uppercase;
+  text-decoration:none;white-space:nowrap;transition:background .4s var(--ease),transform .3s var(--ease)}
+.liste .dl a:hover{background:linear-gradient(180deg,#D4B277,#98773F);transform:translateY(-2px)}
 .liste .w{border-top:1px solid var(--hair);padding:26px 0 8px}
 .liste h4{font-family:var(--serif);font-weight:400;font-size:1.35rem;margin-bottom:4px}
 .liste .ort{font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--brass2)}
@@ -805,13 +818,20 @@ section em,.metall.hell{
 
     <div class="tor rv" id="tor">
       <h3>全プログラムを、週ごとに。</h3>
-      <p class="hint">詳細なプログラムは、2027年度を本気で検討している歌手にお渡しします。お名前、メールアドレス、電話番号をご記入いただければ、このページ上で開きます。</p>
+      <p class="hint">2027年エディションを真剣にご検討の方に、詳細なプログラムをお渡しします。ご関心のある分野をお選びのうえ、お名前・メールアドレス・電話番号をご記入いただくと、このページ上で開きます。</p>
       <form class="torform" id="torform" novalidate="">
+        <div class="f voll"><label for="pg-role">関心のある分野</label>
+          <select id="pg-role" required="">
+            <option value="" disabled="" selected="" hidden="">選択してください…</option>
+            <option value="singer">声楽家</option>
+            <option value="repetiteur">Répétiteur</option>
+            <option value="manager">Opera manager</option>
+          </select></div>
         <div class="f"><label for="pg-vor">名</label><input id="pg-vor" type="text" autocomplete="given-name" placeholder="Maria" required=""></div>
         <div class="f"><label for="pg-nach">姓</label><input id="pg-nach" type="text" autocomplete="family-name" placeholder="Rossi" required=""></div>
         <div class="f"><label for="pg-mail">メールアドレス</label><input id="pg-mail" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required=""></div>
         <div class="f voll tel2">
-          <div><label for="pg-vw">国番号</label><select id="pg-vw" class="vorwahl"><option value="">お選びください…</option><option value="+355">+355 · Albania</option><option value="+376">+376 · Andorra</option><option value="+54">+54 · Argentina</option><option value="+374">+374 · Armenia</option><option value="+61">+61 · Australia</option><option value="+43">+43 · Austria</option><option value="+994">+994 · Azerbaijan</option><option value="+375">+375 · Belarus</option><option value="+32">+32 · Belgium</option><option value="+591">+591 · Bolivia</option><option value="+387">+387 · Bosnia and Herzegovina</option><option value="+55">+55 · Brazil</option><option value="+359">+359 · Bulgaria</option><option value="+1">+1 · Canada</option><option value="+56">+56 · Chile</option><option value="+86">+86 · China</option><option value="+57">+57 · Colombia</option><option value="+506">+506 · Costa Rica</option><option value="+385">+385 · Croatia</option><option value="+53">+53 · Cuba</option><option value="+357">+357 · Cyprus</option><option value="+420">+420 · Czechia</option><option value="+45">+45 · Denmark</option><option value="+593">+593 · Ecuador</option><option value="+20">+20 · Egypt</option><option value="+372">+372 · Estonia</option><option value="+358">+358 · Finland</option><option value="+33">+33 · France</option><option value="+995">+995 · Georgia</option><option value="+49">+49 · Germany</option><option value="+30">+30 · Greece</option><option value="+852">+852 · Hong Kong</option><option value="+36">+36 · Hungary</option><option value="+354">+354 · Iceland</option><option value="+91">+91 · India</option><option value="+62">+62 · Indonesia</option><option value="+353">+353 · Ireland</option><option value="+972">+972 · Israel</option><option value="+39">+39 · Italy</option><option value="+81">+81 · Japan</option><option value="+962">+962 · Jordan</option><option value="+7">+7 · Kazakhstan</option><option value="+254">+254 · Kenya</option><option value="+965">+965 · Kuwait</option><option value="+371">+371 · Latvia</option><option value="+961">+961 · Lebanon</option><option value="+423">+423 · Liechtenstein</option><option value="+370">+370 · Lithuania</option><option value="+352">+352 · Luxembourg</option><option value="+60">+60 · Malaysia</option><option value="+356">+356 · Malta</option><option value="+52">+52 · Mexico</option><option value="+373">+373 · Moldova</option><option value="+377">+377 · Monaco</option><option value="+976">+976 · Mongolia</option><option value="+382">+382 · Montenegro</option><option value="+212">+212 · Morocco</option><option value="+31">+31 · Netherlands</option><option value="+64">+64 · New Zealand</option><option value="+389">+389 · North Macedonia</option><option value="+47">+47 · Norway</option><option value="+968">+968 · Oman</option><option value="+507">+507 · Panama</option><option value="+595">+595 · Paraguay</option><option value="+51">+51 · Peru</option><option value="+63">+63 · Philippines</option><option value="+48">+48 · Poland</option><option value="+351">+351 · Portugal</option><option value="+974">+974 · Qatar</option><option value="+40">+40 · Romania</option><option value="+7">+7 · Russia</option><option value="+378">+378 · San Marino</option><option value="+966">+966 · Saudi Arabia</option><option value="+381">+381 · Serbia</option><option value="+65">+65 · Singapore</option><option value="+421">+421 · Slovakia</option><option value="+386">+386 · Slovenia</option><option value="+27">+27 · South Africa</option><option value="+82">+82 · South Korea</option><option value="+34">+34 · Spain</option><option value="+94">+94 · Sri Lanka</option><option value="+46">+46 · Sweden</option><option value="+41">+41 · Switzerland</option><option value="+886">+886 · Taiwan</option><option value="+66">+66 · Thailand</option><option value="+216">+216 · Tunisia</option><option value="+90">+90 · Türkiye</option><option value="+380">+380 · Ukraine</option><option value="+971">+971 · United Arab Emirates</option><option value="+44">+44 · United Kingdom</option><option value="+1">+1 · United States</option><option value="+598">+598 · Uruguay</option><option value="+998">+998 · Uzbekistan</option><option value="+58">+58 · Venezuela</option><option value="+84">+84 · Vietnam</option><option value="frei">その他 — 番号を入力</option></select>
+          <div><label for="pg-vw">国番号</label><select id="pg-vw" class="vorwahl"><option value="">選択してください…</option><option value="+355">+355 · Albania</option><option value="+376">+376 · Andorra</option><option value="+54">+54 · Argentina</option><option value="+374">+374 · Armenia</option><option value="+61">+61 · Australia</option><option value="+43">+43 · Austria</option><option value="+994">+994 · Azerbaijan</option><option value="+375">+375 · Belarus</option><option value="+32">+32 · Belgium</option><option value="+591">+591 · Bolivia</option><option value="+387">+387 · Bosnia and Herzegovina</option><option value="+55">+55 · Brazil</option><option value="+359">+359 · Bulgaria</option><option value="+1">+1 · Canada</option><option value="+56">+56 · Chile</option><option value="+86">+86 · China</option><option value="+57">+57 · Colombia</option><option value="+506">+506 · Costa Rica</option><option value="+385">+385 · Croatia</option><option value="+53">+53 · Cuba</option><option value="+357">+357 · Cyprus</option><option value="+420">+420 · Czechia</option><option value="+45">+45 · Denmark</option><option value="+593">+593 · Ecuador</option><option value="+20">+20 · Egypt</option><option value="+372">+372 · Estonia</option><option value="+358">+358 · Finland</option><option value="+33">+33 · France</option><option value="+995">+995 · Georgia</option><option value="+49">+49 · Germany</option><option value="+30">+30 · Greece</option><option value="+852">+852 · Hong Kong</option><option value="+36">+36 · Hungary</option><option value="+354">+354 · Iceland</option><option value="+91">+91 · India</option><option value="+62">+62 · Indonesia</option><option value="+353">+353 · Ireland</option><option value="+972">+972 · Israel</option><option value="+39">+39 · Italy</option><option value="+81">+81 · Japan</option><option value="+962">+962 · Jordan</option><option value="+7">+7 · Kazakhstan</option><option value="+254">+254 · Kenya</option><option value="+965">+965 · Kuwait</option><option value="+371">+371 · Latvia</option><option value="+961">+961 · Lebanon</option><option value="+423">+423 · Liechtenstein</option><option value="+370">+370 · Lithuania</option><option value="+352">+352 · Luxembourg</option><option value="+60">+60 · Malaysia</option><option value="+356">+356 · Malta</option><option value="+52">+52 · Mexico</option><option value="+373">+373 · Moldova</option><option value="+377">+377 · Monaco</option><option value="+976">+976 · Mongolia</option><option value="+382">+382 · Montenegro</option><option value="+212">+212 · Morocco</option><option value="+31">+31 · Netherlands</option><option value="+64">+64 · New Zealand</option><option value="+389">+389 · North Macedonia</option><option value="+47">+47 · Norway</option><option value="+968">+968 · Oman</option><option value="+507">+507 · Panama</option><option value="+595">+595 · Paraguay</option><option value="+51">+51 · Peru</option><option value="+63">+63 · Philippines</option><option value="+48">+48 · Poland</option><option value="+351">+351 · Portugal</option><option value="+974">+974 · Qatar</option><option value="+40">+40 · Romania</option><option value="+7">+7 · Russia</option><option value="+378">+378 · San Marino</option><option value="+966">+966 · Saudi Arabia</option><option value="+381">+381 · Serbia</option><option value="+65">+65 · Singapore</option><option value="+421">+421 · Slovakia</option><option value="+386">+386 · Slovenia</option><option value="+27">+27 · South Africa</option><option value="+82">+82 · South Korea</option><option value="+34">+34 · Spain</option><option value="+94">+94 · Sri Lanka</option><option value="+46">+46 · Sweden</option><option value="+41">+41 · Switzerland</option><option value="+886">+886 · Taiwan</option><option value="+66">+66 · Thailand</option><option value="+216">+216 · Tunisia</option><option value="+90">+90 · Türkiye</option><option value="+380">+380 · Ukraine</option><option value="+971">+971 · United Arab Emirates</option><option value="+44">+44 · United Kingdom</option><option value="+1">+1 · United States</option><option value="+598">+598 · Uruguay</option><option value="+998">+998 · Uzbekistan</option><option value="+58">+58 · Venezuela</option><option value="+84">+84 · Vietnam</option><option value="frei">その他 — 番号を入力</option></select>
             <input id="pg-vw-frei" class="vwfrei" type="tel" inputmode="tel" placeholder="+000" hidden=""></div>
           <div><label for="pg-tel">電話番号</label><input id="pg-tel" type="tel" autocomplete="tel-national" inputmode="tel" placeholder="333 1234567" required=""></div>
         </div>
@@ -1044,11 +1064,11 @@ section em,.metall.hell{
     <div class="cdown rv" aria-live="polite">
       <span class="cd-lab">Applications close in</span>
       <div class="cd-clock">
-        <div class="cd-seg"><span class="cd-num" id="cd-d">59</span><span class="cd-u" id="cd-du">days</span></div>
+        <div class="cd-seg"><span class="cd-num" id="cd-d">36</span><span class="cd-u" id="cd-du">days</span></div>
         <span class="cd-sep">·</span>
-        <div class="cd-seg"><span class="cd-num" id="cd-h">20</span><span class="cd-u" id="cd-hu">hours</span></div>
+        <div class="cd-seg"><span class="cd-num" id="cd-h">21</span><span class="cd-u" id="cd-hu">hours</span></div>
         <span class="cd-sep">·</span>
-        <div class="cd-seg"><span class="cd-num" id="cd-m">59</span><span class="cd-u" id="cd-mu">minutes</span></div>
+        <div class="cd-seg"><span class="cd-num" id="cd-m">32</span><span class="cd-u" id="cd-mu">minutes</span></div>
       </div>
       <span class="cd-date" id="cd-date">Deadline · 20 December 2026, 18:00 CET</span>
     </div>
@@ -1104,13 +1124,13 @@ section em,.metall.hell{
       <div class="field"><label for="nn">姓</label><input id="nn" type="text" autocomplete="family-name" placeholder="Rossi" required=""></div>
       <div class="field"><label for="e">メールアドレス</label><input id="e" name="email" type="email" autocomplete="email" placeholder="you@example.com" required=""></div>
       <div class="field tel2">
-        <div><label for="bw-vw">国番号</label><select id="bw-vw" class="vorwahl"><option value="">お選びください…</option><option value="+355">+355 · Albania</option><option value="+376">+376 · Andorra</option><option value="+54">+54 · Argentina</option><option value="+374">+374 · Armenia</option><option value="+61">+61 · Australia</option><option value="+43">+43 · Austria</option><option value="+994">+994 · Azerbaijan</option><option value="+375">+375 · Belarus</option><option value="+32">+32 · Belgium</option><option value="+591">+591 · Bolivia</option><option value="+387">+387 · Bosnia and Herzegovina</option><option value="+55">+55 · Brazil</option><option value="+359">+359 · Bulgaria</option><option value="+1">+1 · Canada</option><option value="+56">+56 · Chile</option><option value="+86">+86 · China</option><option value="+57">+57 · Colombia</option><option value="+506">+506 · Costa Rica</option><option value="+385">+385 · Croatia</option><option value="+53">+53 · Cuba</option><option value="+357">+357 · Cyprus</option><option value="+420">+420 · Czechia</option><option value="+45">+45 · Denmark</option><option value="+593">+593 · Ecuador</option><option value="+20">+20 · Egypt</option><option value="+372">+372 · Estonia</option><option value="+358">+358 · Finland</option><option value="+33">+33 · France</option><option value="+995">+995 · Georgia</option><option value="+49">+49 · Germany</option><option value="+30">+30 · Greece</option><option value="+852">+852 · Hong Kong</option><option value="+36">+36 · Hungary</option><option value="+354">+354 · Iceland</option><option value="+91">+91 · India</option><option value="+62">+62 · Indonesia</option><option value="+353">+353 · Ireland</option><option value="+972">+972 · Israel</option><option value="+39">+39 · Italy</option><option value="+81">+81 · Japan</option><option value="+962">+962 · Jordan</option><option value="+7">+7 · Kazakhstan</option><option value="+254">+254 · Kenya</option><option value="+965">+965 · Kuwait</option><option value="+371">+371 · Latvia</option><option value="+961">+961 · Lebanon</option><option value="+423">+423 · Liechtenstein</option><option value="+370">+370 · Lithuania</option><option value="+352">+352 · Luxembourg</option><option value="+60">+60 · Malaysia</option><option value="+356">+356 · Malta</option><option value="+52">+52 · Mexico</option><option value="+373">+373 · Moldova</option><option value="+377">+377 · Monaco</option><option value="+976">+976 · Mongolia</option><option value="+382">+382 · Montenegro</option><option value="+212">+212 · Morocco</option><option value="+31">+31 · Netherlands</option><option value="+64">+64 · New Zealand</option><option value="+389">+389 · North Macedonia</option><option value="+47">+47 · Norway</option><option value="+968">+968 · Oman</option><option value="+507">+507 · Panama</option><option value="+595">+595 · Paraguay</option><option value="+51">+51 · Peru</option><option value="+63">+63 · Philippines</option><option value="+48">+48 · Poland</option><option value="+351">+351 · Portugal</option><option value="+974">+974 · Qatar</option><option value="+40">+40 · Romania</option><option value="+7">+7 · Russia</option><option value="+378">+378 · San Marino</option><option value="+966">+966 · Saudi Arabia</option><option value="+381">+381 · Serbia</option><option value="+65">+65 · Singapore</option><option value="+421">+421 · Slovakia</option><option value="+386">+386 · Slovenia</option><option value="+27">+27 · South Africa</option><option value="+82">+82 · South Korea</option><option value="+34">+34 · Spain</option><option value="+94">+94 · Sri Lanka</option><option value="+46">+46 · Sweden</option><option value="+41">+41 · Switzerland</option><option value="+886">+886 · Taiwan</option><option value="+66">+66 · Thailand</option><option value="+216">+216 · Tunisia</option><option value="+90">+90 · Türkiye</option><option value="+380">+380 · Ukraine</option><option value="+971">+971 · United Arab Emirates</option><option value="+44">+44 · United Kingdom</option><option value="+1">+1 · United States</option><option value="+598">+598 · Uruguay</option><option value="+998">+998 · Uzbekistan</option><option value="+58">+58 · Venezuela</option><option value="+84">+84 · Vietnam</option><option value="frei">その他 — 番号を入力</option></select>
+        <div><label for="bw-vw">国番号</label><select id="bw-vw" class="vorwahl"><option value="">選択してください…</option><option value="+355">+355 · Albania</option><option value="+376">+376 · Andorra</option><option value="+54">+54 · Argentina</option><option value="+374">+374 · Armenia</option><option value="+61">+61 · Australia</option><option value="+43">+43 · Austria</option><option value="+994">+994 · Azerbaijan</option><option value="+375">+375 · Belarus</option><option value="+32">+32 · Belgium</option><option value="+591">+591 · Bolivia</option><option value="+387">+387 · Bosnia and Herzegovina</option><option value="+55">+55 · Brazil</option><option value="+359">+359 · Bulgaria</option><option value="+1">+1 · Canada</option><option value="+56">+56 · Chile</option><option value="+86">+86 · China</option><option value="+57">+57 · Colombia</option><option value="+506">+506 · Costa Rica</option><option value="+385">+385 · Croatia</option><option value="+53">+53 · Cuba</option><option value="+357">+357 · Cyprus</option><option value="+420">+420 · Czechia</option><option value="+45">+45 · Denmark</option><option value="+593">+593 · Ecuador</option><option value="+20">+20 · Egypt</option><option value="+372">+372 · Estonia</option><option value="+358">+358 · Finland</option><option value="+33">+33 · France</option><option value="+995">+995 · Georgia</option><option value="+49">+49 · Germany</option><option value="+30">+30 · Greece</option><option value="+852">+852 · Hong Kong</option><option value="+36">+36 · Hungary</option><option value="+354">+354 · Iceland</option><option value="+91">+91 · India</option><option value="+62">+62 · Indonesia</option><option value="+353">+353 · Ireland</option><option value="+972">+972 · Israel</option><option value="+39">+39 · Italy</option><option value="+81">+81 · Japan</option><option value="+962">+962 · Jordan</option><option value="+7">+7 · Kazakhstan</option><option value="+254">+254 · Kenya</option><option value="+965">+965 · Kuwait</option><option value="+371">+371 · Latvia</option><option value="+961">+961 · Lebanon</option><option value="+423">+423 · Liechtenstein</option><option value="+370">+370 · Lithuania</option><option value="+352">+352 · Luxembourg</option><option value="+60">+60 · Malaysia</option><option value="+356">+356 · Malta</option><option value="+52">+52 · Mexico</option><option value="+373">+373 · Moldova</option><option value="+377">+377 · Monaco</option><option value="+976">+976 · Mongolia</option><option value="+382">+382 · Montenegro</option><option value="+212">+212 · Morocco</option><option value="+31">+31 · Netherlands</option><option value="+64">+64 · New Zealand</option><option value="+389">+389 · North Macedonia</option><option value="+47">+47 · Norway</option><option value="+968">+968 · Oman</option><option value="+507">+507 · Panama</option><option value="+595">+595 · Paraguay</option><option value="+51">+51 · Peru</option><option value="+63">+63 · Philippines</option><option value="+48">+48 · Poland</option><option value="+351">+351 · Portugal</option><option value="+974">+974 · Qatar</option><option value="+40">+40 · Romania</option><option value="+7">+7 · Russia</option><option value="+378">+378 · San Marino</option><option value="+966">+966 · Saudi Arabia</option><option value="+381">+381 · Serbia</option><option value="+65">+65 · Singapore</option><option value="+421">+421 · Slovakia</option><option value="+386">+386 · Slovenia</option><option value="+27">+27 · South Africa</option><option value="+82">+82 · South Korea</option><option value="+34">+34 · Spain</option><option value="+94">+94 · Sri Lanka</option><option value="+46">+46 · Sweden</option><option value="+41">+41 · Switzerland</option><option value="+886">+886 · Taiwan</option><option value="+66">+66 · Thailand</option><option value="+216">+216 · Tunisia</option><option value="+90">+90 · Türkiye</option><option value="+380">+380 · Ukraine</option><option value="+971">+971 · United Arab Emirates</option><option value="+44">+44 · United Kingdom</option><option value="+1">+1 · United States</option><option value="+598">+598 · Uruguay</option><option value="+998">+998 · Uzbekistan</option><option value="+58">+58 · Venezuela</option><option value="+84">+84 · Vietnam</option><option value="frei">その他 — 番号を入力</option></select>
           <input id="bw-vw-frei" class="vwfrei" type="tel" inputmode="tel" placeholder="+000" hidden=""></div>
         <div><label for="t">電話番号</label><input id="t" type="tel" autocomplete="tel-national" inputmode="tel" placeholder="333 1234567" required=""></div>
       </div>
       <div class="field"><label for="c">居住国</label><input id="c" name="country" type="text" autocomplete="country-name" placeholder="Where you live now"></div>
       <div class="field"><label for="v">応募する立場</label>
-        <select id="v" name="voice"><option value="">お選びください…</option><option>ソプラノ</option><option>メゾソプラノ</option><option>コントラルト</option><option>カウンターテナー</option><option>テノール</option><option>バリトン</option><option>バス</option><option>コレペティトゥーア／ピアニスト</option><option>オペラ・マネージャー</option></select>
+        <select id="v" name="voice"><option value="">選択してください…</option><option>ソプラノ</option><option>メゾソプラノ</option><option>コントラルト</option><option>カウンターテナー</option><option>テノール</option><option>バリトン</option><option>バス</option><option>Répétiteur / pianist</option><option>Opera manager</option></select>
       </div>
       <div class="field full gebdat">
         <div><label for="gt">生年月日 — 日</label><select id="gt"><option value="">–</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option></select></div>
@@ -1119,7 +1139,7 @@ section em,.metall.hell{
       </div>
       <div class="field"><label for="na">国籍</label><input id="na" name="nationality" type="text" placeholder="Italian"></div>
       <div class="field"><label for="g">Gender</label>
-        <select id="g" name="gender"><option value="">お選びください…</option><option value="female">Female</option><option value="male">Male</option><option value="diverse">Diverse</option></select>
+        <select id="g" name="gender"><option value="">選択してください…</option><option value="female">Female</option><option value="male">Male</option><option value="diverse">Diverse</option></select>
       </div>
       <div class="field full"><label>Which languages do you speak?</label>
         <div class="msel" id="langsel">
@@ -1567,10 +1587,36 @@ document.querySelectorAll('#pg-tel, #t').forEach(f => {
   f.addEventListener('input', () => { if (f.classList.contains('schief')) pruef(); });
 });
 
+// Passende Broschuere je Rolle (Singer / Repetiteur / Manager)
+const PROSPEKTE = {
+  singer:     ['Singer',        '/prospectus/ECP-Arts-Edition-2027-Singers.pdf'],
+  repetiteur: ['Répétiteur', '/prospectus/ECP-Arts-Edition-2027-Repetiteurs.pdf'],
+  manager:    ['Opera manager', '/prospectus/ECP-Arts-Edition-2027-Managers.pdf'],
+};
+function downloadBlock(role) {
+  let links;
+  if (PROSPEKTE[role]) {
+    links = `<a href="${PROSPEKTE[role][1]}" download data-dl="${role}">Download the prospectus (PDF)</a>`;
+  } else {
+    links = Object.entries(PROSPEKTE).map(([key, [lab, href]]) =>
+      `<a href="${href}" download data-dl="${key}">${lab} (PDF)</a>`).join('');
+  }
+  return `<div class="dl"><div class="t">Your prospectus is ready to download.</div><div class="lnk">${links}</div></div>`;
+}
+// Anonyme Download-Zaehlung (keine Cookies, keine IP) — feuert neben dem eigentlichen Download.
+document.addEventListener('click', function (e) {
+  const a = e.target.closest && e.target.closest('a[data-dl]');
+  if (!a) return;
+  try {
+    new Image().src = 'https://imac-von-callidus.tail200fa5.ts.net/z?dl='
+      + encodeURIComponent(a.getAttribute('data-dl')) + '&t=' + Date.now();
+  } catch (_) {}
+});
+
 // Detailprogramm einsetzen — vom Formular oder vom Hausschluessel
-function zeigeProgramm(prog, springen) {
+function zeigeProgramm(prog, springen, role) {
   const liste = document.getElementById('liste');
-  let html = (prog.weeks || []).map((w, i) =>
+  let html = downloadBlock(role) + (prog.weeks || []).map((w, i) =>
     `<div class="w"><div class="ort">Week ${w.week || (i+1)} · ${w.place}</div><h4>${w.theme}</h4>`
     + ((w.items && w.items.length) ? `<ul>${w.items.map(t => `<li>${t}</li>`).join('')}</ul>` : '')
     + `</div>`).join('');
@@ -1619,6 +1665,10 @@ function ecpaSendLead(obj){
 async function ecpaLadeProgramm(){
   const r = await fetch('programm.json', {cache:'no-cache'}); return r.json();
 }
+// Doppelanfragen verhindern: wer das Programm schon freigeschaltet hat, sieht es
+// beim naechsten Mal sofort wieder — ohne einen zweiten Eintrag in der Liste.
+function programmGesehen(){ try { return localStorage.getItem('ecpa-programm-gesehen'); } catch(e){ return null; } }
+function programmMerken(role){ try { localStorage.setItem('ecpa-programm-gesehen', role||'1'); } catch(e){} }
 
 document.getElementById('torform')?.addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -1626,10 +1676,16 @@ document.getElementById('torform')?.addEventListener('submit', async (e) => {
   const msg = document.getElementById('pg-msg');
   msg.textContent = '';
   if (document.getElementById('pg-web').value) { return; }           // Honeypot
+  if (programmGesehen()) {   // schon freigeschaltet — kein zweiter Listeneintrag
+    try { const prog = await ecpaLadeProgramm(); zeigeProgramm(prog, true, programmGesehen()); } catch(e){}
+    return;
+  }
+  const role  = document.getElementById('pg-role').value;
   const name  = nameGanz('pg-vor','pg-nach');
   const email = pgMail.value.trim();
   const phone = telefonGanz('pg-vw','pg-tel');
   const ok    = document.getElementById('pg-ok').checked;
+  if (!role) { msg.textContent='Please tell us which track you are interested in.'; return; }
   if (!pruefeFeld(pgMail,'mail') || !mailOk(email)) { msg.textContent='Please enter a valid email address.'; return; }
   if (!telOk(phone)) { msg.textContent='Please choose your country code and enter your number.'; return; }
   if (name.split(' ').filter(Boolean).length < 2) { msg.textContent='Please enter first name and surname.'; return; }
@@ -1637,11 +1693,17 @@ document.getElementById('torform')?.addEventListener('submit', async (e) => {
   btn.disabled = true; btn.textContent = 'One moment\u2026';
   const t = name.split(' ');
   ecpaSendLead({anliegen:'Programm-Anfrage', vorname:t[0]||'', nachname:t.slice(1).join(' '),
-                email:email, telefon:phone, einwilligung:ok?'ja':'nein'});
-  try { const prog = await ecpaLadeProgramm(); zeigeProgramm(prog, true); }
+                email:email, telefon:phone, stimmfach:role, einwilligung:ok?'ja':'nein'});
+  try { const prog = await ecpaLadeProgramm(); zeigeProgramm(prog, true, role); programmMerken(role); }
   catch(err){ msg.textContent='Sorry \u2014 please try again.'; btn.disabled=false; btn.textContent='Show the full programme'; }
 });
 const pgMail = document.getElementById('pg-mail'), pgTel = document.getElementById('pg-tel');
+
+// Beim Laden: wer das Programm schon gesehen hat, bekommt es direkt \u2014 ohne neuen Eintrag.
+(async () => {
+  const r = programmGesehen(); if (!r) return;
+  try { const prog = await ecpaLadeProgramm(); zeigeProgramm(prog, false, r); } catch(e){}
+})();
 </script>
 <script src="i18n.js" defer=""></script>
 <script src="hinweis.js" defer=""></script>

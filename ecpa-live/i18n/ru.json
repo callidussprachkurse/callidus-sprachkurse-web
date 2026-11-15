@@ -103,8 +103,8 @@
  "Tenor": "Тенор",
  "Baritone": "Баритон",
  "Bass": "Бас",
- "Répétiteur / pianist": "Концертмейстер / пианист",
- "Opera manager": "Оперный менеджер",
+ "Répétiteur / pianist": "Répétiteur / pianist",
+ "Opera manager": "Opera manager",
  "Year of birth": "Год рождения",
  "Training &mdash; where, with whom, until when": "Образование &mdash; где, у кого, до какого года",
  "Repertoire you would bring": "Репертуар, который вы принесёте",
@@ -329,5 +329,13 @@
  "For Singers": "Для певцов",
  "Doors most singers never&nbsp;<em>reach</em>.": "Двери, которые большинству певцов&nbsp;<em>недоступны</em>.",
  "Early in a career the hardest step is not singing well — it is being heard by the people who can open a career. ECP-Arts is built to close that gap. As a participant you perform for, and meet, agencies and casting managers in Germany and Italy — in live auditions, a meet &amp; greet and two filmed concerts.": "В начале карьеры самое трудное — не спеть хорошо, а быть услышанным теми, кто может открыть путь. ECP-Arts создан, чтобы закрыть этот разрыв. Как участник вы поёте для агентств и кастинг-директоров в Германии и Италии и знакомитесь с ними лично — на прослушиваниях, встрече meet &amp; greet и двух концертах со съёмкой.",
- "You arrive prepared, and you are heard by the people who sign the next generation — access that is hard to reach on your own. ECP-Arts does not represent you and takes no commission; it brings you into the room and leaves your independence untouched.": "Вы приходите подготовленными, и вас слышат те, кто подписывает контракты со следующим поколением, — доступ, которого трудно добиться в одиночку. ECP-Arts не представляет вас и не берёт комиссию; он лишь вводит вас в зал и оставляет вашу независимость нетронутой."
+ "You arrive prepared, and you are heard by the people who sign the next generation — access that is hard to reach on your own. ECP-Arts does not represent you and takes no commission; it brings you into the room and leaves your independence untouched.": "Вы приходите подготовленными, и вас слышат те, кто подписывает контракты со следующим поколением, — доступ, которого трудно добиться в одиночку. ECP-Arts не представляет вас и не берёт комиссию; он лишь вводит вас в зал и оставляет вашу независимость нетронутой.",
+ "We share the detailed programme with artists who are genuinely considering the 2027 edition. Tell us your track, leave your name, email and telephone number, and it opens right here on this page.": "Подробную программу мы показываем артистам, которые всерьёз рассматривают выпуск 2027 года. Укажите своё направление, оставьте имя, e-mail и номер телефона — и она откроется прямо здесь, на этой странице.",
+ "I am interested as": "Мне интересно как",
+ "Singer": "Певец / певица",
+ "Please choose…": "Выберите…",
+ "Your prospectus is ready to download.": "Ваш проспект готов к загрузке.",
+ "Download the prospectus (PDF)": "Скачать проспект (PDF)",
+ "Please tell us which track you are interested in.": "Укажите, какое направление вас интересует.",
+ "Répétiteur": "Répétiteur"
 }

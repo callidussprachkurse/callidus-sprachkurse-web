@@ -103,8 +103,8 @@
  "Tenor": "テノール",
  "Baritone": "バリトン",
  "Bass": "バス",
- "Répétiteur / pianist": "コレペティトゥーア／ピアニスト",
- "Opera manager": "オペラ・マネージャー",
+ "Répétiteur / pianist": "Répétiteur / pianist",
+ "Opera manager": "Opera manager",
  "Year of birth": "生年",
  "Training &mdash; where, with whom, until when": "訓練歴 &mdash; どこで、誰のもとで、いつまで",
  "Repertoire you would bring": "お持ちになるレパートリー",
@@ -329,5 +329,13 @@
  "For Singers": "歌い手の皆さまへ",
  "Doors most singers never&nbsp;<em>reach</em>.": "多くの歌い手が決して<em>届かない</em>扉。",
  "Early in a career the hardest step is not singing well — it is being heard by the people who can open a career. ECP-Arts is built to close that gap. As a participant you perform for, and meet, agencies and casting managers in Germany and Italy — in live auditions, a meet &amp; greet and two filmed concerts.": "キャリアの初めに最も難しいのは、上手に歌うことではなく、道を開いてくれる人々に聴いてもらうことです。ECP-Arts はその隔たりを埋めるために生まれました。参加者として、あなたはドイツとイタリアでエージェンシーやキャスティング担当者のために歌い、直接出会います——オーディション、ミート＆グリート、そして収録される二つのコンサートで。",
- "You arrive prepared, and you are heard by the people who sign the next generation — access that is hard to reach on your own. ECP-Arts does not represent you and takes no commission; it brings you into the room and leaves your independence untouched.": "あなたは準備を整えて臨み、次世代を契約する人々に聴いてもらえます——ひとりではたどり着きにくい機会です。ECP-Arts はあなたを代理せず、手数料も取りません。ただ部屋へと導き、あなたの自立性はそのままに保ちます。"
+ "You arrive prepared, and you are heard by the people who sign the next generation — access that is hard to reach on your own. ECP-Arts does not represent you and takes no commission; it brings you into the room and leaves your independence untouched.": "あなたは準備を整えて臨み、次世代を契約する人々に聴いてもらえます——ひとりではたどり着きにくい機会です。ECP-Arts はあなたを代理せず、手数料も取りません。ただ部屋へと導き、あなたの自立性はそのままに保ちます。",
+ "We share the detailed programme with artists who are genuinely considering the 2027 edition. Tell us your track, leave your name, email and telephone number, and it opens right here on this page.": "2027年エディションを真剣にご検討の方に、詳細なプログラムをお渡しします。ご関心のある分野をお選びのうえ、お名前・メールアドレス・電話番号をご記入いただくと、このページ上で開きます。",
+ "I am interested as": "関心のある分野",
+ "Singer": "声楽家",
+ "Please choose…": "選択してください…",
+ "Your prospectus is ready to download.": "案内資料をダウンロードいただけます。",
+ "Download the prospectus (PDF)": "案内資料をダウンロード（PDF）",
+ "Please tell us which track you are interested in.": "ご関心のある分野をお選びください。",
+ "Répétiteur": "Répétiteur"
 }
