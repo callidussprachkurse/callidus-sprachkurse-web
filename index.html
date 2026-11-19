@@ -22,6 +22,15 @@
 }());
 window.addEventListener('load', function(){ window.scrollTo(0,0); });
 window.addEventListener('pageshow', function(){ window.scrollTo(0,0); });
+// Deep-Link aus Mail/Weiterleitung (?s=preise): nach dem Laden gezielt zum Abschnitt
+// scrollen und den Layout-Sprung der nachladenden Bilder mehrfach aussteuern.
+window.addEventListener('load', function(){
+  var m = /[?&]s=([a-z0-9-]+)/i.exec(location.search); if (!m) return;
+  var el = document.getElementById(m[1]); if (!el) return;
+  var go = function(){ var y = el.getBoundingClientRect().top + window.pageYOffset - 80; window.scrollTo(0, Math.max(0, y)); };
+  setTimeout(go, 80); setTimeout(go, 300); setTimeout(go, 700); setTimeout(go, 1200);
+  try { history.replaceState(null, '', location.pathname); } catch (e) {}
+});
 </script>
 <title>Italienischkurs Hamburg — Sprach- & Kulturkurse | CALLIDUS</title>
 <meta name="description" content="Italienisch lernen in Hamburg: Sprach- und Kulturkurse von A1 bis C2, CILS-Vorbereitung und Konversation — im Auftrag des Italienischen Kulturinstituts. Kostenloser Einstufungstest.">
