@@ -17,7 +17,9 @@
   if (!/\/$/.test(p) && !/\.[a-z0-9]+$/i.test(last)) { location.replace(p + '/' + location.search); return; }
   // Beim Aufruf/Neuladen immer oben starten (keine wiederhergestellte Scroll-Position)
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-  // Sprungmarke (#preise o.ä.) frueh entfernen, damit beim Neuladen oben gestartet wird
+  // Ankommende Sprungmarke (#preise o.ä.) MERKEN, bevor wir sie entfernen — damit ein
+  // Deep-Link aus Mail/Post gezielt zum Abschnitt scrollt, der normale Reload aber oben startet.
+  window.__deepSection = (location.hash || '').replace(/^#/, '');
   if (location.hash) { try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {} }
 }());
 window.addEventListener('load', function(){ window.scrollTo(0,0); });
@@ -25,8 +27,10 @@ window.addEventListener('pageshow', function(){ window.scrollTo(0,0); });
 // Deep-Link aus Mail/Weiterleitung (?s=preise): nach dem Laden gezielt zum Abschnitt
 // scrollen und den Layout-Sprung der nachladenden Bilder mehrfach aussteuern.
 window.addEventListener('load', function(){
-  var m = /[?&]s=([a-z0-9-]+)/i.exec(location.search); if (!m) return;
-  var el = document.getElementById(m[1]); if (!el) return;
+  var m = /[?&]s=([a-z0-9-]+)/i.exec(location.search);
+  var id = m ? m[1] : (window.__deepSection || '');
+  if (!id) return;
+  var el = document.getElementById(id); if (!el) return;
   var go = function(){ var y = el.getBoundingClientRect().top + window.pageYOffset - 80; window.scrollTo(0, Math.max(0, y)); };
   setTimeout(go, 80); setTimeout(go, 300); setTimeout(go, 700); setTimeout(go, 1200);
   try { history.replaceState(null, '', location.pathname); } catch (e) {}
