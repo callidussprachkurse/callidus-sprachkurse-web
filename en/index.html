@@ -940,6 +940,23 @@ footer a{color:#9a917f;text-decoration:none}
   document.addEventListener('click',function(){ p.classList.remove('open'); t.setAttribute('aria-expanded','false'); });
 }());
 </script>
-<script>/* ceogpt-count */(function(){try{var r="";if(document.referrer){try{r=new URL(document.referrer).host}catch(e){}}new Image().src="https://imac-von-callidus.tail200fa5.ts.net/z?p="+encodeURIComponent(location.pathname)+"&r="+encodeURIComponent(r)+"&s=hamburg&t="+Date.now();}catch(e){}})();</script>
+<script>/* hh-count + verweildauer + abschnitte (anonym) */(function(){
+var Z="https://imac-von-callidus.tail200fa5.ts.net/z",SITE="hamburg";
+try{var r="";if(document.referrer){try{r=new URL(document.referrer).host}catch(e){}}
+new Image().src=Z+"?p="+encodeURIComponent(location.pathname)+(r?"&r="+encodeURIComponent(r):"")+"&s="+SITE+"&t="+Date.now();}catch(e){}
+var SEK={},pageAcc=0,vis=(document.visibilityState==="visible"),tPage=vis?Date.now():0,cur=null,tCur=0,sent=false;
+function addPage(){if(vis&&tPage){pageAcc+=(Date.now()-tPage)/1000;tPage=Date.now();}}
+function addCur(){if(cur&&vis&&tCur){SEK[cur]=(SEK[cur]||0)+(Date.now()-tCur)/1000;tCur=Date.now();}}
+function setCur(id){if(id===cur)return;addCur();cur=id;tCur=Date.now();}
+try{var names={kurse:1,preise:1,gutscheine:1,kontakt:1};
+var io=new IntersectionObserver(function(es){var best=null,b=0;
+es.forEach(function(e){if(e.isIntersecting&&e.intersectionRatio>b){b=e.intersectionRatio;best=e.target.id;}});
+if(best&&names[best])setCur(best);},{threshold:[0.3,0.6]});
+["kurse","preise","gutscheine","kontakt"].forEach(function(id){var el=document.getElementById(id);if(el)io.observe(el);});}catch(e){}
+function beacon(p,s){try{s=Math.round(s);if(s>=2&&s<=3600)navigator.sendBeacon(Z+"?p="+p+"&d="+s);}catch(e){}}
+function send(){if(sent)return;addPage();addCur();beacon("/hamburg",pageAcc);for(var k in SEK){beacon("/hamburg/"+k,SEK[k]);}sent=true;}
+document.addEventListener("visibilitychange",function(){if(document.visibilityState==="visible"){vis=true;tPage=Date.now();if(cur)tCur=Date.now();}else{send();}});
+addEventListener("pagehide",send);addEventListener("beforeunload",send);
+})();</script>
 </body>
 </html>
